@@ -7,8 +7,12 @@
         "id": "161d5f1dffecee1c",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Features/Identity.md",
+            "mode": "preview",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Features/Identity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,8 +89,9 @@
   },
   "active": "161d5f1dffecee1c",
   "lastOpenFiles": [
-    "Technical Debts/Db Context Commit.md",
+    "Features/Identity.md",
     "Features/Travel Management/Travel Management.md",
+    "Technical Debts/Db Context Commit.md",
     "Pasted image 20220415145736.png",
     "TravelManagement/Overview.md",
     "TravelManagement.md",
