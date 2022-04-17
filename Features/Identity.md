@@ -20,11 +20,11 @@ The application today can be used for only one perso (me :D), but in the real wo
 ### Steps
  1. Discover which is the best way to go on
 	- [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-6.0&tabs=visual-studio)
+		- [Samples](https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/security/authentication/identity/sample)
 	- [Identity management in multitenant applications](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/)
 	- [Facebook, Google, and external provider authentication in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-6.0&tabs=visual-studio)
 		- [Google external login setup in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0)
 		- [Google Sign In With Flutter](https://medium.flutterdevs.com/google-sign-in-with-flutter-8960580dec96)
-	- 
 1.  Understand the implementation
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
