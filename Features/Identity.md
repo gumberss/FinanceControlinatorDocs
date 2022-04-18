@@ -28,6 +28,7 @@ The application today can be used for only one perso (me :D), but in the real wo
 1.  Understand the implementation
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
+	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
 2. Create the login microservice service
 3. Understand the chalanges
 4. Document the chalanges
