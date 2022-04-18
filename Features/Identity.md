@@ -22,6 +22,9 @@ The application today can be used for only one perso (me :D), but in the real wo
 	- [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-6.0&tabs=visual-studio)
 		- [Samples](https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/security/authentication/identity/sample)
 	- [Identity management in multitenant applications](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/)
+	- [Make secure .NET Microservices and Web Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/)
+
+
 	- [Facebook, Google, and external provider authentication in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-6.0&tabs=visual-studio)
 		- [Google external login setup in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0)
 		- [Google Sign In With Flutter](https://medium.flutterdevs.com/google-sign-in-with-flutter-8960580dec96)
@@ -29,13 +32,14 @@ The application today can be used for only one perso (me :D), but in the real wo
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
 	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
-2. Create the login microservice service
-3. Understand the chalanges
-4. Document the chalanges
-5. Create a login screen in the mobile app
-6. Make the login work
-7. Document how the login works on the front-end
-8. Understand how to authorize in other microservices
-9. Use expense service as a POC
-10. Document how to login in other microservices
-11. Be happy
+1. Think which architecture should be followed
+1. Create the login microservice service
+1. Understand the chalanges
+1. Document the chalanges
+1. Create a login screen in the mobile app
+1. Make the login work
+1. Document how the login works on the front-end
+1. Understand how to authorize in other microservices
+1. Use expense service as a POC
+1. Document how to login in other microservices
+1. Be happy
