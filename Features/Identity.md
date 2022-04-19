@@ -1,6 +1,6 @@
 Type: #Feature
 From: #UserManagement
-Status: #Starting
+Status: #InProgress 
 
 ## Problem definition
 The application today can be used for only one perso (me :D), but in the real world, we usually want more than one person use our systems.
