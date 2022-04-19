@@ -91,13 +91,13 @@
   "lastOpenFiles": [
     "Features/Invoices/Invoices.md",
     "Features/Invoices/Invoices Overview.md",
+    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
     "Features/Travel Management/Travel Management.md",
+    "Technical Docs/Tests/Mutation Tests.md",
+    "Technical Docs/Untitled.md",
     "Features/Identity.md",
-    "Technical Docs/Mutation Tests.md",
     "Technical Debts/Db Context Commit.md",
     "Pasted image 20220415145736.png",
-    "TravelManagement/Overview.md",
-    "TravelManagement.md",
-    "Untitled.md"
+    "TravelManagement/Overview.md"
   ]
 }

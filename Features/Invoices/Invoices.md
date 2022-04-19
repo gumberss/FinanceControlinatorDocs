@@ -39,7 +39,7 @@ But, what we want here is not only able the user to see their monthly invoices, 
 	- Current Month Overview Creation 
 		- Discovery if it is possible to reuse expense bar and expense cards (component creation)
 	- Swap to able customer to see next/previous overview
-1. Migration to .net 6.0
+1. Migration [[Net 5.0 to net 6.0]]
 1. Upgrade libraries version
 1. Month invoice Overview Flow creation
 	- Create logic to every overview card 
