@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c0e96de94865e4f6",
+        "id": "822698204fafb2d6",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Features/Identity/v1/Identity Architecture.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Features/Identity/v1/Identity Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -81,7 +86,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "c0e96de94865e4f6",
+  "active": "822698204fafb2d6",
   "lastOpenFiles": [
     "Features/Identity/v1/Identity Architecture.md",
     "Features/Identity/v1/Identity.md",

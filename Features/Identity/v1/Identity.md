@@ -28,21 +28,22 @@ The application today can be used for only one perso (me :D), but in the real wo
 	- [Facebook, Google, and external provider authentication in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-6.0&tabs=visual-studio)
 		- [Google external login setup in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0)
 		- [Google Sign In With Flutter](https://medium.flutterdevs.com/google-sign-in-with-flutter-8960580dec96)
-1.  Understand the implementation
+2.  Understand the implementation
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
 	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
 	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/)
-1. Think which architecture should be followed
+3. Think which architecture should be followed
 	- [[Identity Architecture]]
 	- Do not create #Roles and #Polices for now
-1. Create the login microservice service
-1. Understand the chalanges
-1. Document the chalanges
-1. Create a login screen in the mobile app
-1. Make the login work
-1. Document how the login works on the front-end
-1. Understand how to authorize in other microservices
-1. Use expense service as a POC
-1. Document how to login in other microservices
-1. Be happy
+4. Create the login microservice service
+	
+5. Understand the chalanges
+6. Document the chalanges
+7. Create a login screen in the mobile app
+8. Make the login work
+9. Document how the login works on the front-end
+10. Understand how to authorize in other microservices
+11. Use expense service as a POC
+12. Document how to login in other microservices
+13. Be happy
