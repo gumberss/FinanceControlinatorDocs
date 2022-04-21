@@ -89,6 +89,7 @@
   "active": "822698204fafb2d6",
   "lastOpenFiles": [
     "Features/Identity/v1/Identity Architecture.md",
+    "Features/Cloud/When Cloud/When Cloud.md",
     "Features/Identity/v1/Identity.md",
     "Identity Architecture.md",
     "Features/Invoices/Invoices.md",
@@ -96,7 +97,6 @@
     "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
     "Features/Invoices/Invoices Overview.md",
     "Features/Travel Management/Travel Management.md",
-    "Technical Docs/Untitled.md",
-    "Technical Debts/Db Context Commit.md"
+    "Technical Docs/Untitled.md"
   ]
 }

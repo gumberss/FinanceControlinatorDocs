@@ -36,4 +36,13 @@
 1. Identity API Creation
 	1. At this moment, identity api will be very simple, I know that it could be improved in the future, but for now, this API can be just a #MinimumAPI with the Authenticate 
 2. Create expense microservice authorization
-3.  Create a login screen in the mobile app
+3. Make Identity API Token be valid in the expense microservice
+4. Create docker file for Identity API with JWT environment variables
+5. Add JWT variables to the expense microservice docker file
+6. Change docker-compose for dev to provide the DEV environment variables 
+7.  Create a login screen in the mobile app
+
+### Steps for production #Future #WhenCloud
+1. Add JWT variables to kubernets
+	1. Think about secrets
+
