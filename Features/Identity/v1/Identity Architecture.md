@@ -30,5 +30,10 @@
 - If the token is expired, the customer should be redirected to the login page
 
 ## Steps
+
+^91e60b
+
 1. Identity API Creation
 	1. At this moment, identity api will be very simple, I know that it could be improved in the future, but for now, this API can be just a #MinimumAPI with the Authenticate 
+2. Create expense microservice authorization
+3.  Create a login screen in the mobile app

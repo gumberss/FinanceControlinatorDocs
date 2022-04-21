@@ -9,9 +9,6 @@ The application today can be used for only one perso (me :D), but in the real wo
 
 - When we develop a system, we want that more than one person use our system, this is a important thing in the system architectures nowadays, so I think this is a important feature for this system.
 
-
-
-
 ## Plan
 ### Remember that:
 1. Steps can be add at any time
@@ -32,18 +29,14 @@ The application today can be used for only one perso (me :D), but in the real wo
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
 	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
-	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/)
+	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/) ^3d60bc
 3. Think which architecture should be followed
 	- [[Identity Architecture]]
 	- Do not create #Roles and #Polices for now
-4. Create the login microservice service
-	
-5. Understand the chalanges
-6. Document the chalanges
-7. Create a login screen in the mobile app
-8. Make the login work
-9. Document how the login works on the front-end
-10. Understand how to authorize in other microservices
-11. Use expense service as a POC
-12. Document how to login in other microservices
-13. Be happy
+5. [[Identity#^3d60bc|Understand how to authorize in other microservices]]
+7. [[Identity Architecture#Steps|Create architecure steps]]
+9. Understand the chalanges
+10. Document the chalanges
+13. Document how the login works on the front-end
+14. Document how to login in other microservices
+15. Be happy
