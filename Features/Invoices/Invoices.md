@@ -31,26 +31,26 @@ But, what we want here is not only able the user to see their monthly invoices, 
 #### Images/prints
 
 ## Plan
-1. Screen creation on Figma
+1. [Screen creation on Figma](https://github.com/gumberss/FinanceControlinatorDocs/issues/1)
 	- List
 	- Overview
-1. Invoice List Implementation 
-1. Invoice Overview Implementation 
+1. [Invoice List Implementation](https://github.com/gumberss/FinanceControlinatorMobile/issues/21)
+1. [Invoice Overview Implementation](https://github.com/gumberss/FinanceControlinatorMobile/issues/22) 
 	- Current Month Overview Creation 
 		- Discovery if it is possible to reuse expense bar and expense cards (component creation)
 	- Swap to able customer to see next/previous overview
-1. Migration [[Net 5.0 to net 6.0]]
-1. Upgrade libraries version
-1. Month invoice Overview Flow creation
+1. Migration [[Net 5.0 to net 6.0]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/82)
+1. [Upgrade libraries version](https://github.com/gumberss/FinanceControlinator/issues/83)
+1. [Month invoice Overview Flow creation](https://github.com/gumberss/FinanceControlinator/issues/84)
 	- Create logic to every overview card 
 	- Create the list of all cards and return it
-1. Month invoice Overview Endpoint Creation
+1. [Month invoice Overview Endpoint Creation](https://github.com/gumberss/FinanceControlinator/issues/85)
 	- Should have two parameters (month and year)
-1. Invoice List
+1. [Invoice List Endpoint](https://github.com/gumberss/FinanceControlinator/issues/86)
 	- Skip/Take (How much quantity?)
-1. Add [[Mutation Tests]]
+1. Add [[Mutation Tests]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/87)
 	- Discovery how to add it on github actions and broke the action when new(any?) mutators are alive
-1. Discovery about integration tests
+1. [Discovery about integration tests](https://github.com/gumberss/FinanceControlinatorDocs/issues/2)
 	- Should I do it?
 	- In-Memory database 
 	- How to run it on Github Actions
