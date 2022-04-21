@@ -32,6 +32,7 @@ The application today can be used for only one perso (me :D), but in the real wo
 	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
 	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
 	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
+	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/)
 1. Think which architecture should be followed
 1. Create the login microservice service
 1. Understand the chalanges

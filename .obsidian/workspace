@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Invoices/Invoices.md",
+            "file": "Features/Identity.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Invoices/Invoices.md",
+                "file": "Features/Identity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,18 +84,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "c0e96de94865e4f6",
   "lastOpenFiles": [
-    "Features/Invoices/Invoices.md",
-    "Features/Invoices/Invoices Overview.md",
-    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
-    "Features/Travel Management/Travel Management.md",
-    "Technical Docs/Tests/Mutation Tests.md",
-    "Technical Docs/Untitled.md",
     "Features/Identity.md",
+    "Features/Invoices/Invoices.md",
+    "Technical Docs/Tests/Mutation Tests.md",
+    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
+    "Features/Invoices/Invoices Overview.md",
+    "Features/Travel Management/Travel Management.md",
+    "Technical Docs/Untitled.md",
     "Technical Debts/Db Context Commit.md",
     "Pasted image 20220415145736.png",
     "TravelManagement/Overview.md"
