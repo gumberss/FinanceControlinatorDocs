@@ -7,12 +7,8 @@
         "id": "c0e96de94865e4f6",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Features/Identity.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -40,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#FeatureFlag",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,14 +65,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Identity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -88,15 +83,15 @@
   },
   "active": "c0e96de94865e4f6",
   "lastOpenFiles": [
-    "Features/Identity.md",
+    "Features/Identity/v1/Identity Architecture.md",
+    "Features/Identity/v1/Identity.md",
+    "Identity Architecture.md",
     "Features/Invoices/Invoices.md",
     "Technical Docs/Tests/Mutation Tests.md",
     "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
     "Features/Invoices/Invoices Overview.md",
     "Features/Travel Management/Travel Management.md",
     "Technical Docs/Untitled.md",
-    "Technical Debts/Db Context Commit.md",
-    "Pasted image 20220415145736.png",
-    "TravelManagement/Overview.md"
+    "Technical Debts/Db Context Commit.md"
   ]
 }
