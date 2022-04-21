@@ -45,4 +45,6 @@
 ### Steps for production #Future #WhenCloud
 1. Add JWT variables to kubernets
 	1. Think about secrets
+2. Anyone can create a new user, it should not AllowAnonymous in the future #SecurityDebt
+	1. Probably need to think about roles but the system is not for the bussiness propouse, but for any customer, so think how to authenticate the app not any request (I don't know how yet)
 
