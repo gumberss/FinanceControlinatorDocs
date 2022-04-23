@@ -39,8 +39,9 @@
 3. Make Identity API Token be valid in the expense microservice
 4. Create docker file for Identity API with JWT environment variables
 5. Add JWT variables to the expense microservice docker file
-6. Change docker-compose for dev to provide the DEV environment variables 
-7.  Create a login screen in the mobile app
+6. Add to docker-compose for dev the IdentityDb
+7. Create a login screen in the mobile app
+
 ### So far, we authenticate in the app
 ### Now we need to make the user see only they data
 1.Add userId claim to JWT
@@ -48,8 +49,9 @@
 2. Segregate data for each user, filtering queries by user
 
 ### Steps for production #Future #WhenCloud
-1. Add JWT variables to kubernets
+1. Create Identity Api/db kubernetes file
+2. Add JWT variables to kubernets
 	1. Think about secrets
-2. Anyone can create a new user, it should not AllowAnonymous in the future #SecurityDebt
+3. Anyone can create a new user, it should not AllowAnonymous in the future #SecurityDebt
 	1. Probably need to think about roles but the system is not for the bussiness propouse, but for any customer, so think how to authenticate the app not any request (I don't know how yet)
 
