@@ -42,20 +42,20 @@
 	- [Add Authorizer to controllers - Example](https://github.com/gumberss/FinanceControlinator/commit/480c1ff2d6bbb23ecb1d7cc8e22f9c1605d1e211)
 6. Make Identity API Token be valid in the expense microservice
 	1. It works, trust me! :)
-7. Create the login screen in the mobile app
-8. Authenticate to identity with the request
-9. Create the Sign Up screen in the mobile app
-10. Sign Up to Identity with the request
-11. Store the JWT in the mobile app
-12. Send JWT in each request to the API
+7. [Create the login screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/23)
+8. [Authenticate to identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/27)
+9. [Create the Sign Up screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/24)
+10. [Sign Up to Identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/28)
+11. [Store the JWT in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/25)
+12. [Send JWT in each request to the API](https://github.com/gumberss/FinanceControlinatorMobile/issues/26)
 
 ### So far, we authenticate in the app
 ### Now we need to make the user see only they data
 1. [Add userId claim to JWT](https://github.com/gumberss/FinanceControlinator/commit/26cb4ca2f6188e2c22f3590c6b87ff5c560c6b6f)
 1. Create the user table in each microservice that keep the user id
-	- For expense microservice now as example
+	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/94)
 2. Segregate data for each user, filtering queries by user
-	- For expense microservice now as example
+	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/95)
 
 ### Steps for production #Future #WhenCloud
 1. Create Identity Api/db kubernetes file
