@@ -46,7 +46,9 @@
 ### Now we need to make the user see only they data
 1.Add userId claim to JWT
 1. Create a table user in each microservice that keep the user id
+	- For expense microservice now as example
 2. Segregate data for each user, filtering queries by user
+	- For expense microservice now as example
 
 ### Steps for production #Future #WhenCloud
 1. Create Identity Api/db kubernetes file
