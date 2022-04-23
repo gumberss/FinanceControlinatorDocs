@@ -40,3 +40,10 @@ The application today can be used for only one perso (me :D), but in the real wo
 13. Document how the login works on the front-end
 14. Document how to login in other microservices
 15. Be happy
+
+## Result
+### Signup screen:
+<img src="https://user-images.githubusercontent.com/38296002/164943121-f4772192-1442-4fc9-8993-4f89f11c4d78.png"
+ width="300" height="600"/>
+
+
