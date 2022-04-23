@@ -41,6 +41,11 @@
 5. Add JWT variables to the expense microservice docker file
 6. Change docker-compose for dev to provide the DEV environment variables 
 7.  Create a login screen in the mobile app
+### So far, we authenticate in the app
+### Now we need to make the user see only they data
+1.Add userId claim to JWT
+1. Create a table user in each microservice that keep the user id
+2. Segregate data for each user, filtering queries by user
 
 ### Steps for production #Future #WhenCloud
 1. Add JWT variables to kubernets

@@ -7,8 +7,12 @@
         "id": "822698204fafb2d6",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Features/Identity/v1/Identity Architecture.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -45,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Features/Identity/v1/Identity Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,10 +88,10 @@
   },
   "active": "822698204fafb2d6",
   "lastOpenFiles": [
-    "Features/Cloud/When Cloud/Starting Cloud.md",
-    "Technical Docs/New Microserivce/New Microservice.md",
     "Features/Identity/v1/Identity Architecture.md",
     "Features/Identity/v1/Identity.md",
+    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Technical Docs/New Microserivce/New Microservice.md",
     "Identity Architecture.md",
     "Features/Invoices/Invoices.md",
     "Technical Docs/Tests/Mutation Tests.md",
