@@ -42,10 +42,10 @@
 	- [Add Authorizer to controllers - Example](https://github.com/gumberss/FinanceControlinator/commit/480c1ff2d6bbb23ecb1d7cc8e22f9c1605d1e211)
 6. Make Identity API Token be valid in the expense microservice
 	1. It works, trust me! :)
-7. [Create the login screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/23)
-8. [Authenticate to identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/27)
-9. [Create the Sign Up screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/24)
-10. [Sign Up to Identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/28)
+7. [Create the Sign Up screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/24)
+8. [Sign Up to Identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/28)
+9. [Create the login screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/23)
+10. [Authenticate to identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/27)
 11. [Store the JWT in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/25)
 12. [Send JWT in each request to the API](https://github.com/gumberss/FinanceControlinatorMobile/issues/26)
 

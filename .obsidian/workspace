@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Identity/v1/Identity Architecture.md",
+            "file": "Features/Cloud/When Cloud/Starting Cloud.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Identity/v1/Identity Architecture.md",
+                "file": "Features/Cloud/When Cloud/Starting Cloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "822698204fafb2d6",
   "lastOpenFiles": [
-    "Features/Identity/v1/Identity Architecture.md",
-    "Features/Identity/v1/Identity.md",
     "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Features/Identity/v1/Identity.md",
+    "Features/Identity/v1/Identity Architecture.md",
     "Technical Docs/New Microserivce/New Microservice.md",
     "Identity Architecture.md",
     "Features/Invoices/Invoices.md",
