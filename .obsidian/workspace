@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Cloud/When Cloud/Starting Cloud.md",
+            "file": "Customer Docs/Expenses/Expenses.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#WhenCloud",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,12 +69,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Cloud/When Cloud/Starting Cloud.md",
+                "file": "Customer Docs/Expenses/Expenses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
+                "showSearch": true,
+                "searchQuery": "technical",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -88,15 +88,15 @@
   },
   "active": "822698204fafb2d6",
   "lastOpenFiles": [
-    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Customer Docs/Expenses/Expenses.md",
+    "Customer Docs/Dashboard/Dashboard.md",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Customer Docs/Authenticate/SignUp.md",
+    "Customer Docs/Customer Docs.md",
+    "Technical Docs/Tests/Mutation Tests.md",
+    "Technical Docs/New Microserivce/New Microservice.md",
     "Features/Identity/v1/Identity.md",
     "Features/Identity/v1/Identity Architecture.md",
-    "Technical Docs/New Microserivce/New Microservice.md",
-    "Identity Architecture.md",
-    "Features/Invoices/Invoices.md",
-    "Technical Docs/Tests/Mutation Tests.md",
-    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
-    "Features/Invoices/Invoices Overview.md",
-    "Features/Travel Management/Travel Management.md"
+    "Features/Identity/v1/SignUp.md"
   ]
 }
