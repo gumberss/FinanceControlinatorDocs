@@ -47,6 +47,7 @@
 9. [Create the login screen in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/23)
 10. [Authenticate to identity with the request](https://github.com/gumberss/FinanceControlinatorMobile/issues/27)
 11. [Store the JWT in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/25)
+	- It was needed to [upgrade the minimum sdk version to 18](https://github.com/gumberss/FinanceControlinatorMobile/pull/34/files#diff-9526ccfd1d1813ed49c39f8c54dbeb512607376a007d824b905bc8b4e4d202d9) because this sdk version is the [minimum accepted](https://pub.dev/packages/flutter_secure_storage#configure-android-version) for the [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
 12. [Send JWT in each request to the API](https://github.com/gumberss/FinanceControlinatorMobile/issues/26)
 
 ### So far, we authenticate in the app

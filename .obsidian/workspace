@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Gateway/v1/Change to Ocelot.md",
+            "file": "Features/Identity/v1/Identity Architecture.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Gateway/v1/Change to Ocelot.md",
+                "file": "Features/Identity/v1/Identity Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,10 +84,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Identity/v1/Identity Architecture.md",
     "Features/Gateway/v1/Change to Ocelot.md",
     "Features/Identity/v1/Identity.md",
     "Features/Gateway/Untitled.md",
@@ -96,7 +98,6 @@
     "Customer Docs/Authenticate/SignIn.md",
     "Customer Docs/Authenticate/SignUp.md",
     "Customer Docs/Customer Docs.md",
-    "Technical Docs/Tests/Mutation Tests.md",
-    "Technical Docs/New Microserivce/New Microservice.md"
+    "Technical Docs/Tests/Mutation Tests.md"
   ]
 }
