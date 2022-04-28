@@ -3,7 +3,7 @@ From: #UserManagement
 Status: #InProgress 
 
 ## Problem definition
-The application today can be used for only one perso (me :D), but in the real world, we usually want more than one person use our systems.
+The application today can be used for only one person (me :D), but in the real world, we usually want more than one person use our systems.
 
 ## Goals / Motivations
 
