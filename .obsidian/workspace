@@ -6,6 +6,7 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
+        "dimension": 54.74358974358975,
         "state": {
           "type": "markdown",
           "state": {
@@ -13,7 +14,72 @@
             "mode": "source",
             "source": false
           }
-        }
+        },
+        "group": "6100864484520416"
+      },
+      {
+        "id": "a0e362bbe137f6bb",
+        "type": "split",
+        "dimension": 45.256410256410255,
+        "children": [
+          {
+            "id": "b385d0f386049b02",
+            "type": "leaf",
+            "dimension": 56.84104627766599,
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Features/Identity/v1/Identity Architecture.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.367521367521368,
+                  "repelStrength": 10.2564102564103,
+                  "linkStrength": 1,
+                  "linkDistance": 155,
+                  "scale": 0.7132754626224425,
+                  "close": false
+                }
+              }
+            },
+            "group": "6100864484520416"
+          },
+          {
+            "id": "c0cb3e3dad281556",
+            "type": "leaf",
+            "dimension": 43.15895372233401,
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Features/Identity/v1/Identity Architecture.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            },
+            "group": "6100864484520416"
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -92,12 +158,12 @@
     "Features/Identity/v1/Identity Architecture.md",
     "Features/Gateway/v1/Change to Ocelot.md",
     "Features/Identity/v1/Identity.md",
+    "Features/Identity/v1/SignIn.md",
+    "Customer Docs/Customer Docs.md",
+    "Customer Docs/Dashboard/Dashboard.md",
     "Features/Gateway/Untitled.md",
     "Customer Docs/Expenses/Expenses.md",
-    "Customer Docs/Dashboard/Dashboard.md",
     "Customer Docs/Authenticate/SignIn.md",
-    "Customer Docs/Authenticate/SignUp.md",
-    "Customer Docs/Customer Docs.md",
-    "Technical Docs/Tests/Mutation Tests.md"
+    "Customer Docs/Authenticate/SignUp.md"
   ]
 }
