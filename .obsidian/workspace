@@ -6,7 +6,7 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 54.74358974358975,
+        "dimension": 54.93589743589744,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,12 +20,12 @@
       {
         "id": "a0e362bbe137f6bb",
         "type": "split",
-        "dimension": 45.256410256410255,
+        "dimension": 45.06410256410256,
         "children": [
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
-            "dimension": 56.84104627766599,
+            "dimension": 46.88128772635815,
             "state": {
               "type": "localgraph",
               "state": {
@@ -60,23 +60,17 @@
             "group": "6100864484520416"
           },
           {
-            "id": "c0cb3e3dad281556",
+            "id": "c5ae6b53662adab9",
             "type": "leaf",
-            "dimension": 43.15895372233401,
+            "dimension": 53.118712273641854,
             "state": {
-              "type": "backlink",
+              "type": "markdown",
               "state": {
                 "file": "Features/Identity/v1/Identity Architecture.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "mode": "preview",
+                "source": false
               }
-            },
-            "group": "6100864484520416"
+            }
           }
         ],
         "direction": "horizontal"

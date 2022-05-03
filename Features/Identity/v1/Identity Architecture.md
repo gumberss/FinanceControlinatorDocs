@@ -49,6 +49,9 @@
 11. [Store the JWT in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/25)
 	- It was needed to [upgrade the minimum sdk version to 18](https://github.com/gumberss/FinanceControlinatorMobile/pull/34/files#diff-9526ccfd1d1813ed49c39f8c54dbeb512607376a007d824b905bc8b4e4d202d9) because this sdk version is the [minimum accepted](https://pub.dev/packages/flutter_secure_storage#configure-android-version) for the [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
 12. [Send JWT in each request to the API](https://github.com/gumberss/FinanceControlinatorMobile/issues/26)
+	- Change http request client to dio - [Reference](https://stackoverflow.com/questions/54321077/best-way-to-set-default-header-for-all-request-in-flutter-http-request)
+	- Migrate log interceptor to dio interceptor
+	- Add InterceptorsWrapper to add token to the request 
 13. [Redirect to signIn page when user is unauthorized or token expire](https://github.com/gumberss/FinanceControlinatorMobile/issues/35)
 
 ### So far, we authenticate in the app
@@ -56,8 +59,10 @@
 1. [Add userId claim to JWT](https://github.com/gumberss/FinanceControlinator/commit/26cb4ca2f6188e2c22f3590c6b87ff5c560c6b6f)
 1. Create the user table in each microservice that keep the user id
 	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/94)
-2. Segregate data for each user, filtering queries by user
-	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/95)
+3. Link user to data when inserted
+	- For expense microservice now as example 
+4. Segregate data for each user, filtering queries by user
+		- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/95)
 
 ### Steps for production #Future #WhenCloud
 1. Create Identity Api/db kubernetes file
