@@ -27,6 +27,10 @@
 	- Create logic to every overview card 
 	- Create the list of all cards and return it
 5. [Invoice overview and List Endpoint](https://github.com/gumberss/FinanceControlinator/issues/86)
+	1. Receive a last sync date fromthe user
+	2. check if some new expenses were added 
+	3. Get the oldest expense date 
+	4. Return all the overview and list data of invoices created/updated after this date
 6. Add [[Mutation Tests]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/87)
 	- Discovery how to add it on github actions and broke the action when new(any?) mutators are alive
 7. [Discovery about integration tests](https://github.com/gumberss/FinanceControlinatorDocs/issues/2)
