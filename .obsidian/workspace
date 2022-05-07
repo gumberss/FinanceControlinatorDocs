@@ -10,8 +10,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Invoices/Screens.md",
+            "file": "Features/Invoices/v1/Invoices Architecture.md",
             "mode": "source",
+            "backlinks": false,
             "source": true
           }
         },
@@ -29,7 +30,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Invoices/Screens.md",
+                "file": "Features/Invoices/v1/Invoices Architecture.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -66,8 +67,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Invoices/Screens.md",
+                "file": "Features/Invoices/v1/Invoices Architecture.md",
                 "mode": "preview",
+                "backlinks": false,
                 "source": true
               }
             },
@@ -130,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Invoices/Screens.md",
+                "file": "Features/Invoices/v1/Invoices Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,15 +152,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Invoices/Screens.md",
-    "Features/Invoices/Invoices Overview.md",
-    "Features/Invoices/Invoices.md",
+    "Features/Invoices/v1/Invoices Architecture.md",
+    "Features/Invoices/v1/Invoices.md",
     "Features/Identity/v1/Identity Architecture.md",
-    "Pasted image 20220507121133.png",
-    "Customer Docs/Authenticate/SignIn.md",
-    "Pasted image 20220507120945.png",
     "Features/Identity/v1/Identity.md",
-    "Features/Identity/v1/SignIn.md",
-    "Technical Debts/Db Context Commit.md"
+    "Features/Invoices/v1/Screens.md",
+    "Features/Invoices/v1/Invoices Overview.md",
+    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
+    "Customer Docs/Expenses/Expenses.md",
+    "Pasted image 20220507121133.png",
+    "Customer Docs/Authenticate/SignIn.md"
   ]
 }

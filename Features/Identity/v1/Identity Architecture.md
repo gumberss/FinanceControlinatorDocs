@@ -21,8 +21,6 @@
 - About the audience, for now Identity API will know and provide a login for all the audiences, but in the future, we can segregate the audience and provide by #FeatureFlag or something about it, simulating a module bought by the customer.
 - #Roles and #Polices will be implemented in the future
 
-
-
 ## Client side
 - Need to provide a login page for the customers be able to authenticate in the system, using their credentials and receiving the generated JWT
 - The app must keep the valid JWT and provide this token in each request made to the server side
