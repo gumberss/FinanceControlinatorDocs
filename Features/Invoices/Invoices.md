@@ -12,7 +12,6 @@ But, what we want here is not only able the user to see their monthly invoices, 
 - The most important thing is present to the customer their invoices (actual and futures). without it, the customer won't be able to know where their money is going to.
 - The second feature is to create an [[Invoices Overview|overview]], able users to have insights about their purchases.
 
-
 ## Product Details
 ###  Requirements
 #### Must have
@@ -29,6 +28,7 @@ But, what we want here is not only able the user to see their monthly invoices, 
 #### Nice to have
 #### Not for now
 #### Images/prints
+[[Screens]]
 
 ## Plan
 1. [Screen creation on Figma](https://github.com/gumberss/FinanceControlinatorDocs/issues/1)

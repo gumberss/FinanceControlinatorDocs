@@ -6,13 +6,13 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 54.93589743589744,
+        "dimension": 53.38055376690277,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Identity/v1/Identity Architecture.md",
+            "file": "Features/Invoices/Screens.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         },
         "group": "6100864484520416"
@@ -20,16 +20,16 @@
       {
         "id": "a0e362bbe137f6bb",
         "type": "split",
-        "dimension": 45.06410256410256,
+        "dimension": 46.619446233097236,
         "children": [
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
-            "dimension": 46.881287726358146,
+            "dimension": 33.062880324543606,
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Identity/v1/Identity Architecture.md",
+                "file": "Features/Invoices/Screens.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -52,7 +52,7 @@
                   "repelStrength": 10.2564102564103,
                   "linkStrength": 1,
                   "linkDistance": 155,
-                  "scale": 0.7132754626224425,
+                  "scale": 0.3628873693012123,
                   "close": false
                 }
               }
@@ -62,15 +62,16 @@
           {
             "id": "c5ae6b53662adab9",
             "type": "leaf",
-            "dimension": 53.118712273641854,
+            "dimension": 66.93711967545639,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Identity/v1/Identity Architecture.md",
+                "file": "Features/Invoices/Screens.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
-            }
+            },
+            "group": "6100864484520416"
           }
         ],
         "direction": "horizontal"
@@ -129,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Identity/v1/Identity Architecture.md",
+                "file": "Features/Invoices/Screens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,15 +150,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Invoices/Screens.md",
+    "Features/Invoices/Invoices Overview.md",
+    "Features/Invoices/Invoices.md",
     "Features/Identity/v1/Identity Architecture.md",
-    "Technical Debts/Db Context Commit.md",
-    "Technical Docs/New Microserivce/New Microservice.md",
-    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
+    "Pasted image 20220507121133.png",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Pasted image 20220507120945.png",
     "Features/Identity/v1/Identity.md",
-    "Features/Gateway/v1/Change to Ocelot.md",
     "Features/Identity/v1/SignIn.md",
-    "Features/Identity/v1/SignUp.md",
-    "Customer Docs/Customer Docs.md",
-    "Customer Docs/Dashboard/Dashboard.md"
+    "Technical Debts/Db Context Commit.md"
   ]
 }

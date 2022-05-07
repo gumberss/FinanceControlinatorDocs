@@ -1,6 +1,6 @@
 Type: #Feature
 From: #UserManagement
-Status: #InProgress 
+Status: #Done
 
 ## Problem definition
 The application today can be used for only one person (me :D), but in the real world, we usually want more than one person use our systems.
@@ -35,10 +35,6 @@ The application today can be used for only one person (me :D), but in the real w
 	- Do not create #Roles and #Polices for now
 5. [[Identity#^3d60bc|Understand how to authorize in other microservices]]
 7. [[Identity Architecture#Steps|Create architecure steps]]
-9. Understand the chalanges
-10. Document the chalanges
-13. Document how the login works on the front-end
-14. Document how to login in other microservices
 15. Be happy
 
 ## Result
