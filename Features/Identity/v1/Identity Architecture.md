@@ -59,10 +59,10 @@
 1. [Add userId claim to JWT](https://github.com/gumberss/FinanceControlinator/commit/26cb4ca2f6188e2c22f3590c6b87ff5c560c6b6f)
 1. Create the user table in each microservice that keep the user id
 	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/94)
-3. Link user to data when inserted
-	- For expense microservice now as example 
+3. Link data to user when inserted
+	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/103) 
 4. Segregate data for each user, filtering queries by user
-		- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/95)
+	- [For expense microservice now as example](https://github.com/gumberss/FinanceControlinator/issues/95)
 
 ### Steps for production #Future #WhenCloud
 1. Create Identity Api/db kubernetes file
@@ -73,6 +73,6 @@
 
 ## PRs
 1. [Identity API and first authentication on expense service](https://github.com/gumberss/FinanceControlinator/pull/98)
-
+2. [Data segregation](https://github.com/gumberss/FinanceControlinator/pull/104)
 ## Troubleshooting
 1. [Make JWT key larger](https://github.com/gumberss/FinanceControlinator/commit/59f66e44841a52fa573db47d93389c9fec3aa5d1)

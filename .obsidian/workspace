@@ -25,7 +25,7 @@
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
-            "dimension": 46.88128772635815,
+            "dimension": 46.881287726358146,
             "state": {
               "type": "localgraph",
               "state": {
@@ -150,14 +150,14 @@
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
     "Features/Identity/v1/Identity Architecture.md",
-    "Features/Gateway/v1/Change to Ocelot.md",
+    "Technical Debts/Db Context Commit.md",
+    "Technical Docs/New Microserivce/New Microservice.md",
+    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
     "Features/Identity/v1/Identity.md",
+    "Features/Gateway/v1/Change to Ocelot.md",
     "Features/Identity/v1/SignIn.md",
+    "Features/Identity/v1/SignUp.md",
     "Customer Docs/Customer Docs.md",
-    "Customer Docs/Dashboard/Dashboard.md",
-    "Features/Gateway/Untitled.md",
-    "Customer Docs/Expenses/Expenses.md",
-    "Customer Docs/Authenticate/SignIn.md",
-    "Customer Docs/Authenticate/SignUp.md"
+    "Customer Docs/Dashboard/Dashboard.md"
   ]
 }
