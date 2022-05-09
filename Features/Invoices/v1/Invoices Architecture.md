@@ -33,14 +33,14 @@
 			1. Will need a status with overdue, open,future, paid, closed, (to make the background of the overview red)
 
 ### Client Side
-1.  Overview Creation 
+1.  [Overview Creation](https://github.com/gumberss/FinanceControlinatorMobile/issues/37)
 		- Discovery if it is possible to reuse expense bar and expense cards (component creation)
-		- Swap to able customer to see next/previous month data
-2. Create the list to show the invoice items
-3. Disvery how to store things in mobile app
-4. Store the date of the last sync in the mobile app
-5. Store Invoice Sync data (list and overview) in the mobile app
+2. [Create the list to show the invoice items](https://github.com/gumberss/FinanceControlinatorMobile/issues/39)
+3. [Disvery how to store things in mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/38)
+4. [Store the date of the last sync in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/40)
+5. [Store Invoice Sync data (list and overview) in the mobile app](https://github.com/gumberss/FinanceControlinatorMobile/issues/41)
 	1. Maybe a dictionary by invoiceId?
+6. [Swap to able customer to see next/previous month data](https://github.com/gumberss/FinanceControlinatorMobile/issues/42)
 
 
 ### Others
