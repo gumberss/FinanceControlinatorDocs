@@ -16,24 +16,37 @@
 
 
 ## Steps
-[Invoice List Implementation](https://github.com/gumberss/FinanceControlinatorMobile/issues/21)
-1. [Invoice Overview Implementation](https://github.com/gumberss/FinanceControlinatorMobile/issues/22) 
-	- Current Month Overview Creation 
+### Server-side 
+1. Migration [[Net 5.0 to net 6.0]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/82)
+2. [Upgrade libraries version](https://github.com/gumberss/FinanceControlinator/issues/83)
+4. [Invoice overview and List Endpoint](https://github.com/gumberss/FinanceControlinator/issues/86)
+	2. Receive a last sync date from the user
+	3. check if some new expenses were added 
+	4. Get the oldest expense date 
+	5. Return all the overview and list data of invoices created/updated after this date
+		1. Build the endpoint to sync invoice data
+		2. [Business rules creation for Briefs](https://github.com/gumberss/FinanceControlinator/issues/84) 
+			1. Will need a status to make the background color of the overview card)
+		3. [Business rules creation for partitions](https://github.com/gumberss/FinanceControlinator/issues/109)
+		4. [Find the invoices that have changes since the last sync date](https://github.com/gumberss/FinanceControlinator/issues/110)
+		5. [Build the InvoiceSyncData and return it](https://github.com/gumberss/FinanceControlinator/issues/111)
+			1. Will need a status with overdue, open,future, paid, closed, (to make the background of the overview red)
+
+### Client Side
+1.  Overview Creation 
 		- Discovery if it is possible to reuse expense bar and expense cards (component creation)
-	- Swap to able customer to see next/previous overview
-2. Migration [[Net 5.0 to net 6.0]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/82)
-3. [Upgrade libraries version](https://github.com/gumberss/FinanceControlinator/issues/83)
-3. [Month invoice Overview Flow creation](https://github.com/gumberss/FinanceControlinator/issues/84)
-	- Create logic to every overview card 
-	- Create the list of all cards and return it
-5. [Invoice overview and List Endpoint](https://github.com/gumberss/FinanceControlinator/issues/86)
-	1. Receive a last sync date fromthe user
-	2. check if some new expenses were added 
-	3. Get the oldest expense date 
-	4. Return all the overview and list data of invoices created/updated after this date
-6. Add [[Mutation Tests]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/87)
+		- Swap to able customer to see next/previous month data
+2. Create the list to show the invoice items
+3. Disvery how to store things in mobile app
+4. Store the date of the last sync in the mobile app
+5. Store Invoice Sync data (list and overview) in the mobile app
+	1. Maybe a dictionary by invoiceId?
+
+
+### Others
+1. Add [[Mutation Tests]] - [Issue](https://github.com/gumberss/FinanceControlinator/issues/87)
 	- Discovery how to add it on github actions and broke the action when new(any?) mutators are alive
-7. [Discovery about integration tests](https://github.com/gumberss/FinanceControlinatorDocs/issues/2)
+2. [Discovery about integration tests](https://github.com/gumberss/FinanceControlinatorDocs/issues/2)
 	- Should I do it?
 	- In-Memory database 
 	- How to run it on Github Actions
