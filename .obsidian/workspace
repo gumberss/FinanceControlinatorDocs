@@ -10,10 +10,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Invoices/v1/Invoices Architecture.md",
+            "file": "Customer Docs/Customer Docs.md",
             "mode": "source",
-            "backlinks": false,
-            "source": true
+            "source": false
           }
         },
         "group": "6100864484520416"
@@ -30,7 +29,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Invoices/v1/Invoices Architecture.md",
+                "file": "Customer Docs/Customer Docs.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -67,10 +66,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Invoices/v1/Invoices Architecture.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "file": "Customer Docs/Customer Docs.md",
+                "mode": "source",
+                "source": false
               }
             },
             "group": "6100864484520416"
@@ -103,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "^",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Invoices/v1/Invoices Architecture.md",
+                "file": "Customer Docs/Customer Docs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,15 +150,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Invoices/v1/Invoices Architecture.md",
-    "Features/Invoices/v1/Invoices.md",
-    "Features/Invoices/v1/Screens.md",
-    "Features/Invoices/v1/Invoices Overview.md",
+    "Customer Docs/Customer Docs.md",
+    "Customer Docs/Authenticate/SignUp.md",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Customer Docs/Expenses/Expenses.md",
+    "Customer Docs/Dashboard/Dashboard.md",
     "Features/Identity/v1/Identity Architecture.md",
     "Features/Identity/v1/Identity.md",
-    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
-    "Customer Docs/Expenses/Expenses.md",
-    "Pasted image 20220507121133.png",
-    "Customer Docs/Authenticate/SignIn.md"
+    "Features/i18n/v1/Change localization clases to json.md",
+    "Features/i18n/v1/Client side i18n.md",
+    "Technical Debts/Invoice Item installment Count.md"
   ]
 }
