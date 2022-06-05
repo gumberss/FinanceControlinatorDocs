@@ -10,71 +10,49 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Customer Docs/Customer Docs.md",
+            "file": "Features/Market Handler/v1/Purchase Handler.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         },
         "group": "6100864484520416"
       },
       {
-        "id": "a0e362bbe137f6bb",
-        "type": "split",
+        "id": "b385d0f386049b02",
+        "type": "leaf",
         "dimension": 46.619446233097236,
-        "children": [
-          {
-            "id": "b385d0f386049b02",
-            "type": "leaf",
-            "dimension": 33.062880324543606,
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Customer Docs/Customer Docs.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 2,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": true,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": true,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": false,
-                  "centerStrength": 0.367521367521368,
-                  "repelStrength": 10.2564102564103,
-                  "linkStrength": 1,
-                  "linkDistance": 155,
-                  "scale": 0.3628873693012123,
-                  "close": false
-                }
-              }
-            },
-            "group": "6100864484520416"
-          },
-          {
-            "id": "c5ae6b53662adab9",
-            "type": "leaf",
-            "dimension": 66.93711967545639,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Customer Docs/Customer Docs.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "6100864484520416"
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "Features/Market Handler/v1/Purchase Handler.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 2,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": true,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": true,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": false,
+              "centerStrength": 0.367521367521368,
+              "repelStrength": 10.2564102564103,
+              "linkStrength": 1,
+              "linkDistance": 155,
+              "scale": 0.3628873693012123,
+              "close": false
+            }
           }
-        ],
-        "direction": "horizontal"
+        },
+        "group": "6100864484520416"
       }
     ],
     "direction": "vertical"
@@ -130,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Customer Docs/Customer Docs.md",
+                "file": "Features/Market Handler/v1/Purchase Handler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,15 +128,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Market Handler/v1/Purchase Handler.md",
+    "Features/Invoices/v1/Invoices.md",
+    "Technical Debts/DateTime.Now.md",
+    "Technical Debts/Db Context Commit.md",
+    "Technical Debts/Invoice Item installment Count.md",
     "Customer Docs/Customer Docs.md",
     "Customer Docs/Authenticate/SignUp.md",
     "Customer Docs/Authenticate/SignIn.md",
     "Customer Docs/Expenses/Expenses.md",
-    "Customer Docs/Dashboard/Dashboard.md",
-    "Features/Identity/v1/Identity Architecture.md",
-    "Features/Identity/v1/Identity.md",
-    "Features/i18n/v1/Change localization clases to json.md",
-    "Features/i18n/v1/Client side i18n.md",
-    "Technical Debts/Invoice Item installment Count.md"
+    "Customer Docs/Dashboard/Dashboard.md"
   ]
 }
