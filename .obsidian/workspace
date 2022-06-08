@@ -6,7 +6,7 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 53.380553766902764,
+        "dimension": 53.58974358974359,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,41 +18,60 @@
         "group": "6100864484520416"
       },
       {
-        "id": "b385d0f386049b02",
-        "type": "leaf",
-        "dimension": 46.619446233097236,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "Features/Market Handler/v1/Purchase Handler.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 2,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": true,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": true,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": false,
-              "centerStrength": 0.367521367521368,
-              "repelStrength": 10.2564102564103,
-              "linkStrength": 1,
-              "linkDistance": 155,
-              "scale": 0.3628873693012123,
-              "close": false
+        "id": "79aea5b91f135770",
+        "type": "split",
+        "dimension": 46.41025641025641,
+        "children": [
+          {
+            "id": "b385d0f386049b02",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Features/Market Handler/v1/Purchase Handler.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.367521367521368,
+                  "repelStrength": 10.2564102564103,
+                  "linkStrength": 1,
+                  "linkDistance": 155,
+                  "scale": 0.3628873693012123,
+                  "close": false
+                }
+              }
+            },
+            "group": "6100864484520416"
+          },
+          {
+            "id": "c92e9459829740fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Features/Market Handler/v1/Purchase Handler.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
-        },
-        "group": "6100864484520416"
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"

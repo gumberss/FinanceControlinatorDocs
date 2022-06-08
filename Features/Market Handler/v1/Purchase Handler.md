@@ -23,6 +23,10 @@ We won't change this flow, we just want to improve it with some features in each
 
 
 
+## Why
+First and the most important thing is to help the customer remember, manage and buy things, enabling the customer to create new items, add quantity to buy, order the products and separate in categories.
+
+The second thing is an increase in the expenses manageability, producing insights to the customer, like "What is the product with the greatest increase in value in a certain period", "What is the order of the products that you spend more money in a certain period"
 
 
 group itens by category
@@ -36,8 +40,14 @@ count items
 
 #### Nice to have
 #### Not for now
+- Schedule item add to the buy list automaticaly
+- Order list by last buy order
+- Save the photo of the receipt
 #### Images/prints
-
+- [Prototype](https://www.figma.com/file/HQfY5y66G4PsOC1CvvWqje/Untitled?node-id=0%3A1)
+- [Prototype Flow](https://www.figma.com/proto/HQfY5y66G4PsOC1CvvWqje/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Plan
 
+- https://www.youtube.com/watch?v=QzA4c4QHZCY
+- 
