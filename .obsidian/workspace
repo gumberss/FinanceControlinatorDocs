@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Market Handler/v1/Purchase Handler.md",
+            "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
             "mode": "source",
             "source": true
           }
@@ -28,7 +28,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Market Handler/v1/Purchase Handler.md",
+                "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Market Handler/v1/Purchase Handler.md",
+                "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,15 +147,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Market Handler/v1/Purchase Handler Plan.md",
     "Features/Market Handler/v1/Purchase Handler.md",
+    "Features/Market Handler/v1/Purchase Handler Architecture.md",
+    "Features/Market Handler/v1/Purchase Handler Development Flow.md",
+    "Features/Invoices/v1/Invoices Overview.md",
+    "Features/Invoices/v1/Screens.md",
+    "Features/Invoices/v1/Invoices Architecture.md",
     "Features/Invoices/v1/Invoices.md",
     "Technical Debts/DateTime.Now.md",
-    "Technical Debts/Db Context Commit.md",
-    "Technical Debts/Invoice Item installment Count.md",
-    "Customer Docs/Customer Docs.md",
-    "Customer Docs/Authenticate/SignUp.md",
-    "Customer Docs/Authenticate/SignIn.md",
-    "Customer Docs/Expenses/Expenses.md",
-    "Customer Docs/Dashboard/Dashboard.md"
+    "Technical Debts/Db Context Commit.md"
   ]
 }

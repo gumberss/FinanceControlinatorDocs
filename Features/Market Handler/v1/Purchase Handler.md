@@ -2,8 +2,10 @@ Status: #Discovery #OnlyIdea
 Type: #Feature
 From: #MarketHandler
 
+## TL;DR 
+It's pretty much the google keep list with superpowers
+
 ## What
-TL;DR It's pretty much the google keep list with superpowers
 
 #Expense microservice is a good handler of expenses, but ask to customers to detail their expenses is a little boring, and I do not want this kind of experience to the customers. Ask everithing aboug a expense to the customer is a good start (of course) because the cost to develop it is the lowest, but the drawback is that the customer take too long to fill one expense. Actualy, the part that take much time of the customer is filling the expense items.
 Thinking of it, one thing that all the customers need to do is go to the market, and buy a lot of **items** and fill it one by one is very boring. So, **we find a good potential problem**.
@@ -41,13 +43,17 @@ count items
 #### Nice to have
 #### Not for now
 - Schedule item add to the buy list automaticaly
+- Rules for the customer configure how many of the items they consume per day, and present messages like "You have only 2 bananas, if you not buy more, tomorrow you won't have bananas!!!"
 - Order list by last buy order
 - Save the photo of the receipt
+- Rules if the customer do not buy the item for much time. Ex: "It's been 4 days you not buy potato, you will die"
+- Real time notes, if you want tomake questions and the other people in the group answer them for you (like editables notes in the header)
 #### Images/prints
-- [Prototype](https://www.figma.com/file/HQfY5y66G4PsOC1CvvWqje/Untitled?node-id=0%3A1)
-- [Prototype Flow](https://www.figma.com/proto/HQfY5y66G4PsOC1CvvWqje/Untitled?node-id=1%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3)
+
 
 ## Plan
+[[Purchase Handler Plan]]
 
-- https://www.youtube.com/watch?v=QzA4c4QHZCY
-- 
+
+## Architecture 
+[[Purchase Handler Architecture]]
