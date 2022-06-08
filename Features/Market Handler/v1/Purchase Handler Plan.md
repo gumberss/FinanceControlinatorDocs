@@ -5,5 +5,6 @@
 ### Prototype debriefing Details
 
 ### Architecture definition
+- [[Purchase Handler Architecture]]
 
 ### Coding

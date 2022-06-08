@@ -145,11 +145,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3e022a2c426616ef",
+  "active": "b385d0f386049b02",
   "lastOpenFiles": [
     "Features/Market Handler/v1/Purchase Handler Plan.md",
-    "Features/Market Handler/v1/Purchase Handler.md",
     "Features/Market Handler/v1/Purchase Handler Architecture.md",
+    "Features/Market Handler/v1/Purchase Handler.md",
     "Features/Market Handler/v1/Purchase Handler Development Flow.md",
     "Features/Invoices/v1/Invoices Overview.md",
     "Features/Invoices/v1/Screens.md",
