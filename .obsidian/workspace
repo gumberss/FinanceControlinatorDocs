@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
+            "file": "Features/Market Handler/v1/Purchase Handler.md",
             "mode": "source",
             "source": true
           }
@@ -28,7 +28,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
+                "file": "Features/Market Handler/v1/Purchase Handler.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Market Handler/v1/Purchase Handler Plan.md",
+                "file": "Features/Market Handler/v1/Purchase Handler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,9 +147,9 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Market Handler/v1/Purchase Handler Plan.md",
-    "Features/Market Handler/v1/Purchase Handler Architecture.md",
     "Features/Market Handler/v1/Purchase Handler.md",
+    "Features/Market Handler/v1/Purchase Handler Architecture.md",
+    "Features/Market Handler/v1/Purchase Handler Plan.md",
     "Features/Market Handler/v1/Purchase Handler Development Flow.md",
     "Features/Invoices/v1/Invoices Overview.md",
     "Features/Invoices/v1/Screens.md",
