@@ -10,8 +10,6 @@
 	- Get the place name
 	- What to buy in this kind of place
 - https://c4model.com
-	- https://icepanel.io
-	- https://github.com/8T4/c4sharp
 - http://pedestal.io/guides/pedestal-with-component
 - https://devcenter.heroku.com/articles/getting-started-with-clojure
 - Dbs:
