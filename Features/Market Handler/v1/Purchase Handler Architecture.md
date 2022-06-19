@@ -1,5 +1,6 @@
 ### C4 model
-
+- [C4 Model issue](https://github.com/gumberss/FinanceControlinatorDocs/issues/6)
+- [C4 Model](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527688605747&cot=14)
 
 
 ## POCs

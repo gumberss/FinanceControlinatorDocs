@@ -48,6 +48,7 @@ count items
 - Save the photo of the receipt
 - Rules if the customer do not buy the item for much time. Ex: "It's been 4 days you not buy potato, you will die"
 - Real time notes, if you want tomake questions and the other people in the group answer them for you (like editables notes in the header)
+- Store "in purchase" category and items reorder 
 #### Images/prints
 
 
