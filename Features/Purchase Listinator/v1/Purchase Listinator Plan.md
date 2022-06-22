@@ -5,6 +5,6 @@
 ### Prototype debriefing Details
 - [Debriefing details](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527133240724&cot=14)
 ### Architecture definition
-- [[Purchase Handler Architecture]]
+- [[Purchase Listinator Architecture]]
 
 ### Coding

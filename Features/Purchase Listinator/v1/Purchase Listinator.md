@@ -53,8 +53,8 @@ count items
 
 
 ## Plan
-[[Purchase Handler Plan]]
+[[Purchase Listinator Plan]]
 
 
 ## Architecture 
-[[Purchase Handler Architecture]]
+[[Purchase Listinator Architecture]]
