@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
-            "mode": "preview",
+            "file": "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -28,7 +28,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
+                "file": "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "^",
+                "query": "learnla",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +107,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
+                "file": "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,15 +148,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
+    "Features/Identity/v1/Identity.md",
+    "Features/Gateway/v1/Change to Ocelot.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/v1/Purchase Listinator.md",
-    "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
     "Pasted image 20220622085110.png",
     "Features/Invoices/v1/Invoices Architecture.md",
     "Features/Market Handler/v1/Purchase Handler Development Flow.md",
-    "Features/Invoices/v1/Invoices Overview.md",
-    "Features/Invoices/v1/Screens.md",
-    "Features/Invoices/v1/Invoices.md"
+    "Features/Invoices/v1/Invoices Overview.md"
   ]
 }

@@ -4,7 +4,7 @@
 
 
 ## POCs
-- [Pedestal + Component + Datomic](https://github.com/gumberss/LearnLanguages/tree/master/Clojure/POCs/pedestal-components)
+- [Pedestal + Component + Datomic](https://github.com/gumberss/Sandboxinator/tree/master/Clojure/POCs/pedestal-components)
 
 ## Technical References
 - Google places integration

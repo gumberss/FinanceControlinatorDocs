@@ -26,10 +26,10 @@ The application today can be used for only one person (me :D), but in the real w
 		- [Google external login setup in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/google-logins?view=aspnetcore-6.0)
 		- [Google Sign In With Flutter](https://medium.flutterdevs.com/google-sign-in-with-flutter-8960580dec96)
 2.  Understand the implementation
-	- [POC JWT](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Auth-POC)
-	- [POC Identity](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Identity)
-	- [POC Identity API - Create and validate user](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/IdentityApi)
-	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/LearnLanguages/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/) ^3d60bc
+	- [POC JWT](https://github.com/gumberss/Sandboxinator/tree/master/C%23/POCs/Authentication/Auth-POC)
+	- [POC Identity](https://github.com/gumberss/Sandboxinator/tree/master/C%23/POCs/Authentication/Identity)
+	- [POC Identity API - Create and validate user](https://github.com/gumberss/Sandboxinator/tree/master/C%23/POCs/Authentication/IdentityApi)
+	- [POC Jwt in microservices with ocelot](https://github.com/gumberss/Sandboxinator/tree/master/C%23/POCs/Authentication/Ocelot) - [Reference](https://www.c-sharpcorner.com/article/jwt-authentication-in-microservices/) ^3d60bc
 3. Think which architecture should be followed
 	- [[Identity Architecture]]
 	- Do not create #Roles and #Polices for now
