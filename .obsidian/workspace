@@ -6,12 +6,12 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 53.58974358974359,
+        "dimension": 58.91025641025641,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
-            "mode": "source",
+            "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
+            "mode": "preview",
             "source": true
           }
         },
@@ -20,7 +20,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 46.41025641025641,
+        "dimension": 41.08974358974359,
         "children": [
           {
             "id": "b385d0f386049b02",
@@ -28,7 +28,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
+                "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
+                "file": "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,15 +147,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
+    "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/v1/Purchase Listinator.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
+    "Features/Purchase Listinator/v1/Purchase Listinator Tasks.md",
+    "Pasted image 20220622085110.png",
     "Features/Invoices/v1/Invoices Architecture.md",
     "Features/Market Handler/v1/Purchase Handler Development Flow.md",
     "Features/Invoices/v1/Invoices Overview.md",
     "Features/Invoices/v1/Screens.md",
-    "Features/Invoices/v1/Invoices.md",
-    "Technical Debts/DateTime.Now.md"
+    "Features/Invoices/v1/Invoices.md"
   ]
 }
