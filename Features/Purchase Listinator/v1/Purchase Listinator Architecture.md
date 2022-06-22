@@ -5,6 +5,8 @@
 
 ## POCs
 - [Pedestal + Component + Datomic](https://github.com/gumberss/Sandboxinator/tree/master/Clojure/POCs/pedestal-components)
+- [Pedestal + Component + Mongo](https://github.com/gumberss/Sandboxinator/tree/master/Clojure/POCs/components-pedestal-mongo)
+- [Redis-carmine](https://github.com/gumberss/Sandboxinator/tree/master/Clojure/POCs/redis-carmine)
 
 ## Technical References
 - Google places integration
