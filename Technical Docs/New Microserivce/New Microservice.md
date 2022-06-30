@@ -14,3 +14,8 @@
 - Add API docker image push to Github actions
 - Add Kubernetes files to db and api (helm)
 - Add API/DB deploy #WhenCloud 
+
+
+## A good start for 
+- [Clojure Microservice](https://github.com/gumberss/PurchaseListinator/pull/2)
+- [Clojure Microservice p2](https://github.com/gumberss/PurchaseListinator/pull/3)
