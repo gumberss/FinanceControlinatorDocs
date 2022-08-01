@@ -31,12 +31,13 @@
 - Define Purchase List schema
 - [[Verify JWToken #^00c7d7]]
 - 
-- Create the endpoint to return the enabled lists of the current user
-- Create the endpoint to save a new list
-- Create the endpoint to edit list name 
-- Create the endpoint to disable the list
-- Create a endpoint to link the list with other user
-- Edit the Purchase Lists Endpoint to return linked lists with the user too
+- [Create the endpoint to return the enabled lists](https://github.com/gumberss/PurchaseListinator/issues/5)
+	- Filter by the current user
+- [Create the endpoint to save a new list](https://github.com/gumberss/FinanceControlinator/issues/120)
+- [Create the endpoint to edit list name ](https://github.com/gumberss/FinanceControlinator/issues/121)
+- [Create the endpoint to disable the list](https://github.com/gumberss/FinanceControlinator/issues/122)
+- [Create a endpoint to link the list with other user](https://github.com/gumberss/FinanceControlinator/issues/123)
+- [Edit the Purchase Lists Endpoint to return linked lists with the user too](https://github.com/gumberss/FinanceControlinator/issues/124)
 	- How does migrations work on Datomic?
 
 #### Nonfunctional requirements

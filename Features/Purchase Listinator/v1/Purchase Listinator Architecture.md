@@ -24,4 +24,4 @@
 	- https://medium.com/@blog.padmal/flutter-dismissible-widget-swipe-both-ways-a696a1edb67b
 	- https://www.fluttercampus.com/guide/68/how-to-make-slide-and-delete-item-list-flutter/
 - https://www.youtube.com/watch?v=QzA4c4QHZCY
-- 
+- https://docs.flutter.dev/development/accessibility-and-localization/internationalization
