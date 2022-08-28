@@ -6,11 +6,11 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 58.91025641025641,
+        "dimension": 46.98717948717949,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+            "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
             "mode": "source",
             "source": true
           }
@@ -20,15 +20,16 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 41.08974358974359,
+        "dimension": 53.01282051282051,
         "children": [
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
+            "dimension": 35.47738693467337,
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -61,10 +62,11 @@
           {
             "id": "c92e9459829740fc",
             "type": "leaf",
+            "dimension": 64.52261306532662,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
                 "mode": "preview",
                 "source": true
               }
@@ -128,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,15 +150,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "calling the server.md",
     "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
     "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+    "Verify JWToken.md",
     "Features/Purchase Listinator/v1/Purchase Listinator.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Cart.md",
     "Technical Docs/Tests/Integration tests.md",
-    "Features/Gateway/v1/Change to Ocelot.md",
-    "Technical Docs/New Microserivce/New Microservice.md",
-    "Technical Docs/New Microserivce/Clojure Microservice.md"
+    "Features/Gateway/v1/Change to Ocelot.md"
   ]
 }
