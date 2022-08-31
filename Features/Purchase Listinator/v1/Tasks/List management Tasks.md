@@ -11,7 +11,8 @@ List management is the screen that able the customer add and edit the list items
 [Miro link](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527277340164&cot=14)
 
 ### Client side
-- [ ] Create a new screen for List Management
+- [x] [Create a new screen for List Management](https://github.com/gumberss/FinanceControlinatorMobile/issues/72)
+- [x] [Make the screen rechable when a list is clicked in the list view](https://github.com/gumberss/FinanceControlinatorMobile/issues/73)
 - [ ] Create the screen header with the title as the name of the list
 - [ ] Discovery how to create categories like we want in flutter
 - [ ] Create the "+ category" button
