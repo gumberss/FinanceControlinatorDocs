@@ -13,8 +13,8 @@ List management is the screen that able the customer add and edit the list items
 ### Client side
 - [x] [Create a new screen for List Management](https://github.com/gumberss/FinanceControlinatorMobile/issues/72)
 - [x] [Make the screen rechable when a list is clicked in the list view](https://github.com/gumberss/FinanceControlinatorMobile/issues/73)
-- [ ] Create the screen header with the title as the name of the list
-- [ ] Discovery how to create categories like we want in flutter
+- [x] [Create the screen header with the title as the name of the list](https://github.com/gumberss/FinanceControlinatorMobile/issues/75)
+- [ ] [Discovery how to create categories like we want in flutter](https://github.com/gumberss/FinanceControlinatorDocs/issues/8)
 - [ ] Create the "+ category" button
 - [ ] Create the popup for "+ category" buton 
 	- [ ] Discovery how to use a color picker in flutter
