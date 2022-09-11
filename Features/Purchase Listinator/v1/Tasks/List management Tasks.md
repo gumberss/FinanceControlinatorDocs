@@ -23,10 +23,10 @@ List management is the screen that able the customer add and edit the list items
 	- [x] [Add a save button with its action calling the server](https://github.com/gumberss/FinanceControlinatorMobile/issues/84) [[#^aed551]]
 - [ ] Make the categories dragable 
 - [ ] Enable the user reorder the categories [[#^659751]]
-- [ ] [Create a button "+ item" inside all the categories](https://github.com/gumberss/FinanceControlinatorMobile/issues/85)
-	- [ ] When this button is clicked, should change the button content to a input
-	- [ ] When the "ok" button is pressed, should create a new item [[#^30335c]]
-- [ ] When a new item is created, should display the item name with 0 amount
+- [x] [Create a button "+ item" inside all the categories](https://github.com/gumberss/FinanceControlinatorMobile/issues/85)
+	- [x] When this button is clicked, should change the button content to a input
+	- [x] When the "ok" button is pressed, should create a new item [[#^30335c]]
+- [ ] [When a new item is created, should display the item name with 0 amount](https://github.com/gumberss/FinanceControlinatorMobile/issues/87) [[#^1da25d]]
 - [ ] Create the increase/decrease buttons
 - [ ] Create increase/decrease button actions 
 	- [ ] Update the amount displayed on the item
@@ -47,11 +47,12 @@ List management is the screen that able the customer add and edit the list items
 	- [ ] When clicked, should open the initial purchase screen 
 
 ### Server side
-- [ ] [Endpoint to create a new category](https://github.com/gumberss/PurchaseListinator/issues/11) ^aed551
+- [x] [Endpoint to create a new category](https://github.com/gumberss/PurchaseListinator/issues/11) ^aed551
 	- [x] Should save the category name, color and position
 	- [ ] Validate if a category with the same name exists
 - [ ] Endpoint to delete a category ^0688fb
 - [ ] Endpoint to change the category order (edit category) ^659751
-- [ ] [Endpoint to add a new item](https://github.com/gumberss/PurchaseListinator/issues/12) ^30335c
+- [x] [Endpoint to add a new item](https://github.com/gumberss/PurchaseListinator/issues/12) ^30335c
 - [ ] Endpoint to edit an item ^27e7ee
 - [ ] Endpoint to delete an item ^644db8
+- [x] [Endpoint to return the management list data](https://github.com/gumberss/FinanceControlinatorMobile/issues/87)  ^1da25d
