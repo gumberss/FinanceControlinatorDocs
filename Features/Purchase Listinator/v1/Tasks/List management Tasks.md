@@ -14,16 +14,16 @@ List management is the screen that able the customer add and edit the list items
 - [x] [Create a new screen for List Management](https://github.com/gumberss/FinanceControlinatorMobile/issues/72)
 - [x] [Make the screen rechable when a list is clicked in the list view](https://github.com/gumberss/FinanceControlinatorMobile/issues/73)
 - [x] [Create the screen header with the title as the name of the list](https://github.com/gumberss/FinanceControlinatorMobile/issues/75)
-- [ ] [Discovery how to create categories like we want in flutter](https://github.com/gumberss/FinanceControlinatorDocs/issues/8)
-- [ ] Create the "+ category" button
-- [ ] Create the popup for "+ category" buton 
-	- [ ] Discovery how to use a color picker in flutter
-	- [ ] Enable customer to put the name and the color of the new category
-	- [ ] Set a random color to the category
-	- [ ] Add a save button with its action calling the server [[#^aed551]]
+- [x] [Discovery how to create categories like we want in flutter](https://github.com/gumberss/FinanceControlinatorDocs/issues/8)
+- [x] [Create the "+ category" button](https://github.com/gumberss/FinanceControlinatorMobile/issues/79)
+- [x] [Create the popup for "+ category" button](https://github.com/gumberss/FinanceControlinatorMobile/issues/80)
+	- [x] [Discovery how to use a color picker in flutter](https://github.com/gumberss/FinanceControlinatorMobile/issues/81)
+	- [x] [Enable customer to put the name and the color of the new category](https://github.com/gumberss/FinanceControlinatorMobile/issues/82)
+	- [x] [Set a random color to the category](https://github.com/gumberss/FinanceControlinatorMobile/issues/83)
+	- [x] [Add a save button with its action calling the server](https://github.com/gumberss/FinanceControlinatorMobile/issues/84) [[#^aed551]]
 - [ ] Make the categories dragable 
-- [ ] Enable the user to reorder the categories [[#^659751]]
-- [ ] Create a button "+ item" inside all the categories
+- [ ] Enable the user reorder the categories [[#^659751]]
+- [ ] [Create a button "+ item" inside all the categories](https://github.com/gumberss/FinanceControlinatorMobile/issues/85)
 	- [ ] When this button is clicked, should change the button content to a input
 	- [ ] When the "ok" button is pressed, should create a new item [[#^30335c]]
 - [ ] When a new item is created, should display the item name with 0 amount
@@ -47,11 +47,11 @@ List management is the screen that able the customer add and edit the list items
 	- [ ] When clicked, should open the initial purchase screen 
 
 ### Server side
-- [ ] Endpoint to create a new category ^aed551
-	- [ ] Should save the category name, color and position
+- [ ] [Endpoint to create a new category](https://github.com/gumberss/PurchaseListinator/issues/11) ^aed551
+	- [x] Should save the category name, color and position
 	- [ ] Validate if a category with the same name exists
 - [ ] Endpoint to delete a category ^0688fb
-- [ ] Endpoint to change the category order ^659751
-- [ ] Endpoint to add a new item ^30335c
+- [ ] Endpoint to change the category order (edit category) ^659751
+- [ ] [Endpoint to add a new item](https://github.com/gumberss/PurchaseListinator/issues/12) ^30335c
 - [ ] Endpoint to edit an item ^27e7ee
 - [ ] Endpoint to delete an item ^644db8

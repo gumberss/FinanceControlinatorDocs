@@ -1,0 +1,3 @@
+- Order Purchase lists
+- Remake the Purchase Lists screen to be minimalist like purchase list management screen
+- 
