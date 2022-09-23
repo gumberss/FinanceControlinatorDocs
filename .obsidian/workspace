@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+            "file": "Technical Debts/PurchaseListinator/Relationship between list, category and items.md",
             "mode": "source",
             "source": true
           }
@@ -29,7 +29,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Technical Debts/PurchaseListinator/Relationship between list, category and items.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -66,7 +66,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Technical Debts/PurchaseListinator/Relationship between list, category and items.md",
                 "mode": "preview",
                 "source": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Technical Debts/PurchaseListinator/Relationship between list, category and items.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,15 +150,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
+    "Technical Debts/Invoice Item installment Count.md",
+    "Technical Debts/Db Context Commit.md",
+    "Technical Debts/DateTime.Now.md",
+    "Technical Debts/PurchaseListinator/Relationship between list, category and items.md",
     "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+    "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/v1/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/v1/Purchase Listinator.md",
-    "Features/Purchase Listinator/v1/Purchase Listinator Plan.md",
-    "Features/Purchase Listinator/For the future.md",
-    "Technical Debts/Db Context Commit.md",
-    "Technical Debts/DateTime.Now.md",
-    "Technical Docs/Tests/Integration tests.md"
+    "Features/Purchase Listinator/v1/Purchase Listinator Plan.md"
   ]
 }
