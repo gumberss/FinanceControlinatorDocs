@@ -49,7 +49,7 @@ List management is the screen that able the customer add and edit the list items
 ### Server side
 - [x] [Endpoint to create a new category](https://github.com/gumberss/PurchaseListinator/issues/11) ^aed551
 	- [x] Should save the category name, color and position
-	- [ ] Validate if a category with the same name exists
+	- [x] Validate if a category with the same name exists
 - [x] Endpoint to delete a category ^0688fb
 - [x] [Endpoint to change the category order (edit category)](https://github.com/gumberss/PurchaseListinator/issues/16) ^659751
 - [x] [Endpoint to add a new item](https://github.com/gumberss/PurchaseListinator/issues/12) ^30335c

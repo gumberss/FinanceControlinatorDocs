@@ -1,5 +1,5 @@
 ## Lists View Tasks
-Status: #wip
+Status: #done
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/38296002/175022520-1f091d29-9b19-46be-bd47-80fa66d42978.png" width="300" />

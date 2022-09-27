@@ -8,3 +8,6 @@
 - [[Purchase Listinator Architecture]]
 
 ### Coding
+
+- [[List management Tasks]]
+- [[Init purchase]]

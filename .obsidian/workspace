@@ -6,11 +6,11 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 46.98717948717949,
+        "dimension": 41.410256410256416,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+            "file": "Features/Purchase Listinator/For the future.md",
             "mode": "source",
             "source": true
           }
@@ -20,7 +20,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 53.01282051282051,
+        "dimension": 58.58974358974359,
         "children": [
           {
             "id": "b385d0f386049b02",
@@ -29,7 +29,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Features/Purchase Listinator/For the future.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -66,7 +66,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Features/Purchase Listinator/For the future.md",
                 "mode": "preview",
                 "source": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
+                "file": "Features/Purchase Listinator/For the future.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,17 +148,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c92e9459829740fc",
+  "active": "68fa501b13c09f03",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/v1/Tasks/Lists View Tasks.md",
-    "Features/Purchase Listinator/v1/Tasks/List management Tasks.md",
-    "Features/Invoices/v1/Screens.md",
-    "Features/Invoices/v1/Invoices Overview.md",
-    "Features/Invoices/v1/Invoices Architecture.md",
-    "Features/Invoices/v1/Invoices.md",
-    "Technical Debts/PurchaseListinator/Done/Relationship between list, category and items.md",
-    "Technical Debts/Invoice Item installment Count.md",
-    "Technical Debts/Db Context Commit.md",
-    "Technical Debts/DateTime.Now.md"
+    "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
+    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
+    "Features/Purchase Listinator/Purchase Listinator Plan.md",
+    "Features/Purchase Listinator/Purchase Listinator.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
+    "Features/Purchase Listinator/Purchase Listinator Cart.md",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Pasted image 20220926223928.png",
+    "Features/Purchase Listinator/For the future.md"
   ]
 }
