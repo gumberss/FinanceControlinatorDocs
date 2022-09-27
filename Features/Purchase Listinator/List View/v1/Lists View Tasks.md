@@ -16,7 +16,7 @@ Status: #done
 	- [Create the edit list name  popup enabling the customer to input the new list name's](https://github.com/gumberss/FinanceControlinatorMobile/issues/53)
 		- Add a button to save the new list
 		- If the user click outside of the popup should close
-- [ ] [Create the lists view - List item ](https://github.com/gumberss/FinanceControlinatorMobile/issues/54)
+- [x] [Create the lists view - List item ](https://github.com/gumberss/FinanceControlinatorMobile/issues/54)
 	- [x] [When the item is clicked, should open the build list screen] (https://github.com/gumberss/FinanceControlinatorMobile/issues/63)
 	- [x] [For each purchase list, make action slide to left and present edit and link button](https://github.com/gumberss/FinanceControlinatorMobile/issues/55)
 		- [When the link button is clicked should open the link user popup, enabling the customer to inform the username to link with the list](https://github.com/gumberss/FinanceControlinatorMobile/issues/57)
@@ -38,8 +38,7 @@ Status: #done
 - [x] [Create the endpoint to save a new list](https://github.com/gumberss/FinanceControlinator/issues/120)
 - [x] [Create the endpoint to edit list name ](https://github.com/gumberss/FinanceControlinator/issues/121)
 - [x] [Create the endpoint to disable the list](https://github.com/gumberss/FinanceControlinator/issues/122)
-- [ ] [Create a endpoint to link the list with other user](https://github.com/gumberss/FinanceControlinator/issues/123)
-- [ ] [Edit the Purchase Lists Endpoint to return linked lists with the user too](https://github.com/gumberss/FinanceControlinator/issues/124)
+
 	- How does migrations work on Datomic?
 
 #### Nonfunctional requirements
