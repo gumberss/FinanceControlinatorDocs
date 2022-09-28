@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
+            "file": "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
             "mode": "source",
             "source": true
           }
@@ -29,7 +29,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
+                "file": "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -66,7 +66,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
+                "file": "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
                 "mode": "preview",
                 "source": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
+                "file": "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,11 +150,11 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Purchase Listinator/Init Purchase/v1/Init purchase.md",
     "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
     "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
     "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
-    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Purchase Listinator/For the future.md",
     "Features/Purchase Listinator/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/Purchase Listinator.md",

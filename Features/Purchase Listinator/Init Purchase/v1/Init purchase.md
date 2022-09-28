@@ -5,19 +5,27 @@
 
 
 ### Client Side
-- [ ] Create the new screen
-- [ ] Edit the button item in the management list screen 
-- [ ] Redirect to this screen when the button is clicked in the list management screen - Consider [transition](https://docs.flutter.dev/cookbook/animation/page-route-animation)
-- [ ] All the three fields 
-- [ ] Send the data to the server side when next is clicked
+- [ ] [Create the new screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/106)
+- [ ] [Edit the next screen button in the management list screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/107)
+
+- [ ] [Create the fields](https://github.com/gumberss/FinanceControlinatorMobile/issues/108)
+- [ ] [Action button clicked](https://github.com/gumberss/FinanceControlinatorMobile/issues/109)
+	- [ ] Send the data to the server side when next is clicked
+	- [ ] Redirect to this screen when the button is clicked in the list management screen - Consider [transition](https://docs.flutter.dev/cookbook/animation/page-route-animation)
+- [ ] [[Lists View Tasks]] - [Change Purchase list item to display the in-progress icon](https://github.com/gumberss/FinanceControlinatorMobile/issues/110)
 - [ ] Smooth transition
 
 ### Server Side
+- [ ] [Model the new purchase entity](https://github.com/gumberss/PurchaseListinator/issues/31)
+	-  Create a new "purchase" model to keep this data in the database and the business rules 
+	- This new entity can have a status "completed" to make sure the user didn't give up in the middle of the process
+		- Status could be something like initiated and completed
+		- One list can (and will) have many purchases
+- [ ] [Endpoint to initialize a purchase](https://github.com/gumberss/PurchaseListinator/issues/32)
 - [ ] Edit the list in-progress (or other name) to make sure anyone else can see that somebody is buying the items in the list
-- [ ] Create a new "purchase" model to keep this data in the database and the business rules 
-- [ ] This new entity should have a status "completed" to make sure the user didn't give up in the middle of the process
-	- Status could be something like initiated and completed
-- [ ] One list can (and will) have many purchases
+	- What about link the purchase entity with the list and show the icon when the list has a purchase with status in-progress?
+
+
 
 
 
