@@ -1,7 +1,7 @@
 #Done 23/09/22
 
 ## Context
-In [this pull request](https://github.com/gumberss/PurchaseListinator/pull/1) I change the way I make the relationship between categories, items and list, because I didn't know how to get the list with categories and items correctly when the entities references were item→category-→list, so I make [in this way](https://github.com/gumberss/PurchaseListinator/pull/18/files#diff-974527977f9a720ad0c304f86b344ce42e8c3eb746bf096f3c44f607a5d155e6R90) list→categories→items.
+In [this pull request](https://github.com/gumberss/PurchaseListinator/pull/18) I change the way I make the relationship between categories, items and list, because I didn't know how to get the list with categories and items correctly when the entities references were item→category-→list, so I make [in this way](https://github.com/gumberss/PurchaseListinator/pull/18/files#diff-974527977f9a720ad0c304f86b344ce42e8c3eb746bf096f3c44f607a5d155e6R90) list→categories→items.
 
 It's working, and I could go in this way, once I managed to reorder the [categories](https://github.com/gumberss/PurchaseListinator/pull/19) and [items](https://github.com/gumberss/PurchaseListinator/pull/20).
 
