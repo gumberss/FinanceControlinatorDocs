@@ -13,13 +13,13 @@
 	- [ ] Send the data to the server side when next is clicked
 	- [ ] Redirect to this screen when the button is clicked in the list management screen - Consider [transition](https://docs.flutter.dev/cookbook/animation/page-route-animation)
 - [ ] [[Lists View Tasks]] - [Change Purchase list item to display the in-progress icon](https://github.com/gumberss/FinanceControlinatorMobile/issues/110)
-- [ ] Smooth transition
+- [ ] [Smooth transition](https://github.com/gumberss/FinanceControlinatorMobile/issues/111)
 - [ ] Fill the place input with the near place of the user ([rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382856601&cot=14))
 - [ ] Fill the type with the last type in this place
 - [ ] Fill the title with [this rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382104088&cot=14)
 
 ### Server Side
-- [ ] [Model the new purchase entity](https://github.com/gumberss/PurchaseListinator/issues/31)
+- [ ] [Model the shopping entity](https://github.com/gumberss/PurchaseListinator/issues/31)
 	-  Create a new "purchase" model to keep this data in the database and the business rules 
 	- This new entity can have a status "completed" to make sure the user didn't give up in the middle of the process
 		- Status could be something like initiated and completed
