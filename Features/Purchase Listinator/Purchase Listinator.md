@@ -1,4 +1,4 @@
-Status: #Discovery #InProgress  
+Status: #InProgress  
 Type: #Feature
 From: #MarketHandler
 
