@@ -6,11 +6,11 @@
       {
         "id": "3e022a2c426616ef",
         "type": "leaf",
-        "dimension": 41.410256410256416,
+        "dimension": 58.91025641025641,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
+            "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
             "mode": "source",
             "source": true
           }
@@ -20,16 +20,16 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 58.58974358974359,
+        "dimension": 41.08974358974359,
         "children": [
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
-            "dimension": 35.47738693467337,
+            "dimension": 44.52261306532663,
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -62,11 +62,11 @@
           {
             "id": "c92e9459829740fc",
             "type": "leaf",
-            "dimension": 64.52261306532662,
+            "dimension": 55.47738693467337,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
                 "mode": "preview",
                 "source": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,15 +150,15 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
     "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
-    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
-    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
-    "Features/Purchase Listinator/Init Purchase/v2/Init purchase v2.md",
-    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Purchase Listinator/For the future.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/Purchase Listinator.md",
-    "Features/Purchase Listinator/Purchase Listinator Architecture.md"
+    "Features/Travel Management/Travel Management.md",
+    "Features/Purchase Listinator/For the future/For the future.md",
+    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
+    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md"
   ]
 }
