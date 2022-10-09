@@ -1,0 +1,2 @@
+- https://redis.com/redis-enterprise-cloud/pricing/
+- https://www.mongodb.com/pricing
