@@ -24,7 +24,7 @@
 - [x] [Edit the next screen button in the management list screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/107)
 - [x] [Create the fields](https://github.com/gumberss/FinanceControlinatorMobile/issues/108)
 - [ ] [Action button clicked](https://github.com/gumberss/FinanceControlinatorMobile/issues/109)
-	- [ ] Send the data to the server side when next is clicked
+	- [x] Send the data to the server side when next is clicked
 
 
 #### Server Side
@@ -46,12 +46,13 @@
 ### Fill shopping initiation fields with previous data if it exists  ^17d6fa
 
 ### Client Side
+- [ ] [Request and fill initial shopping data on screen](https://github.com/gumberss/PurchaseListinator/issues/44)
 - [ ] Fill the place input with the near place of the user ([rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382856601&cot=14))
 - [ ] Fill the type with the last type in this place
 - [ ] Fill the title with [this rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382104088&cot=14)
 
 ### Server Side
-- [ ] Retrieve the init purchase data 
+- [ ] [Retrieve the init purchase data](https://github.com/gumberss/PurchaseListinator/issues/43)
 	- Find place by latitude and longitude
 	- Find type by the place
 	- Build the title with place, type and date
@@ -70,6 +71,9 @@
 ### Cancel Shopping ^aad8b1
 
 #### Client Side
+- [ ] Create a button to enable the customer to cancel a shopping
+	- [ ] Create a confirm dialog
+	- [ ] Back to build list screen
 
 #### Server side
 - [ ] should make the customers able to cancel a shopping

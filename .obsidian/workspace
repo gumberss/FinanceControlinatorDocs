@@ -25,7 +25,7 @@
           {
             "id": "b385d0f386049b02",
             "type": "leaf",
-            "dimension": 44.52261306532663,
+            "dimension": 25.92964824120603,
             "state": {
               "type": "localgraph",
               "state": {
@@ -62,7 +62,7 @@
           {
             "id": "c92e9459829740fc",
             "type": "leaf",
-            "dimension": 55.47738693467337,
+            "dimension": 74.07035175879398,
             "state": {
               "type": "markdown",
               "state": {
@@ -148,7 +148,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3e022a2c426616ef",
+  "active": "b385d0f386049b02",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/Purchase Listinator.md",
