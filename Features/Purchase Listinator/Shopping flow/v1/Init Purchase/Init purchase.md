@@ -9,8 +9,6 @@
 - [x] [[#^f579c5 | Find and open an active shopping]]
 - [ ] [[#^17d6fa | Fill shopping initiation fields with previous data if it exists ]] 
 - [ ] [[#^669624| Make visible the list is in shopping process]]
-- [ ] [[#^aad8b1| Cancel shopping]]
-
 
 
 ### Initialize a shopping Tasks ^0878fd
@@ -46,13 +44,13 @@
 ### Fill shopping initiation fields with previous data if it exists  ^17d6fa
 
 ### Client Side
-- [ ] [Request and fill initial shopping data on screen](https://github.com/gumberss/PurchaseListinator/issues/44)
-- [ ] Fill the place input with the near place of the user ([rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382856601&cot=14))
-- [ ] Fill the type with the last type in this place
-- [ ] Fill the title with [this rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382104088&cot=14)
+- [x] [Request and fill initial shopping data on screen](https://github.com/gumberss/PurchaseListinator/issues/44)
+- [x] Fill the place input with the near place of the user ([rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382856601&cot=14))
+- [x] Fill the type with the last type in this place
+- [x] Fill the title with [this rule](https://miro.com/app/board/o9J_l7bZIsM=/?moveToWidget=3458764527382104088&cot=14)
 
 ### Server Side
-- [ ] [Retrieve the init purchase data](https://github.com/gumberss/PurchaseListinator/issues/43)
+- [x] [Retrieve the init purchase data](https://github.com/gumberss/PurchaseListinator/issues/43)
 	- Find place by latitude and longitude
 	- Find type by the place
 	- Build the title with place, type and date
@@ -66,18 +64,6 @@
 
 - [ ] Edit the list in-progress (or other name) to make sure anyone else can see that somebody is buying the items in the list
 	- What about link the purchase entity with the list and show the icon when the list has a purchase with status in-progress?
-
-
-### Cancel Shopping ^aad8b1
-
-#### Client Side
-- [ ] Create a button to enable the customer to cancel a shopping
-	- [ ] Create a confirm dialog
-	- [ ] Back to build list screen
-
-#### Server side
-- [ ] should make the customers able to cancel a shopping
-
 
 
 
