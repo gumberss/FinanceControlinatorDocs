@@ -5,12 +5,12 @@
 
 
 ### Client Side
-- [ ] Build Categories
-- [ ] Build Items
-	- [ ] Build the check Button
+- [x] [Build Categories](https://github.com/gumberss/FinanceControlinatorMobile/issues/122)
+- [ ] [Build Items](https://github.com/gumberss/FinanceControlinatorMobile/issues/123)
+	- [ ] [Build the check Button](https://github.com/gumberss/FinanceControlinatorMobile/issues/124)
 - [ ] Request items and categories from back-end
-- [ ] Reorder items
-- [ ] Reorder Categories
+- [x] [Reorder items](https://github.com/gumberss/FinanceControlinatorMobile/issues/126)
+- [x] [Reorder Categories](https://github.com/gumberss/FinanceControlinatorMobile/issues/125)
 
 
 - [ ] Update the list with the item reordered
@@ -21,8 +21,8 @@
 	- [ ] Refresh the list if something goes wrong on the server side
 - [ ] Send event to the server-side when a category is reordered
 
-- [ ] Build the Item detail dialog
-- [ ] 
+- [ ] [Build the Item detail dialog](https://github.com/gumberss/FinanceControlinatorMobile/issues/127)
+- [ ] Set color in amount to buy (green if 0, blue if negative and orange if positive)
 
 
 
@@ -33,3 +33,8 @@
 
 
 ### Server Side
+
+- [ ] Endpoint to receive events
+	- [x] Receive Reorder category events
+	- [x] Receive Reorder item events
+	- [ ] Receive Item changed events

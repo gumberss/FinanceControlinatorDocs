@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -124,7 +124,7 @@
                 "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,17 +171,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b385d0f386049b02",
+  "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
-    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/Purchase Listinator.md",
-    "Features/Purchase Listinator/Purchase Listinator Plan.md",
-    "Features/Purchase Listinator/Shopping flow/Decisions/Cart decision matrix.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Travel Management/Travel Management.md"
+    "Features/Invoices/v1/Invoices Architecture.md",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Features/Identity/v1/SignIn.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
+    "Features/Purchase Listinator/Purchase Listinator.md"
   ]
 }
