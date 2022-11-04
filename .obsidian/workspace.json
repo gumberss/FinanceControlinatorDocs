@@ -168,18 +168,15 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Invoices/v1/Invoices Architecture.md",
     "Customer Docs/Authenticate/SignIn.md",
     "Features/Identity/v1/SignIn.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/Purchase Listinator.md"
