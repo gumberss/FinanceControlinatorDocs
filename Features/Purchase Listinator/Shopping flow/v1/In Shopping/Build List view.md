@@ -22,7 +22,7 @@
 - [x] Send event to the server-side when a category is reordered
 
 - [x] [Build the Item detail dialog](https://github.com/gumberss/FinanceControlinatorMobile/issues/127)
-- [ ] Set color in amount to buy (green if 0, blue if negative and orange if positive)
+- [ ] [Set color in amount to buy (green if 0, blue if negative and orange if positive)](https://github.com/gumberss/FinanceControlinatorMobile/issues/130)
 
 
 
