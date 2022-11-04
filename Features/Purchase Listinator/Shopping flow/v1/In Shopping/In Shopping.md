@@ -6,5 +6,6 @@
 
 ## Features
 
+- [ ] [[Build List view]]
 - [ ] [[Cancel Shopping]]
 - [ ] 

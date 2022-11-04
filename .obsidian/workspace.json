@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "33a396b36f7f7224",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f94b9c7ee2102b5",
+        "type": "tabs",
+        "dimension": 58.91025641025641,
+        "children": [
+          {
+            "id": "3e022a2c426616ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "74f99f75a7b0b58a"
+          }
+        ]
+      },
+      {
+        "id": "79aea5b91f135770",
+        "type": "split",
+        "dimension": 41.08974358974359,
+        "children": [
+          {
+            "id": "7f2a4988a964e13b",
+            "type": "tabs",
+            "dimension": 41.181165203511576,
+            "children": [
+              {
+                "id": "b385d0f386049b02",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 2,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": false,
+                      "centerStrength": 0.367521367521368,
+                      "repelStrength": 10.2564102564103,
+                      "linkStrength": 1,
+                      "linkDistance": 155,
+                      "scale": 0.3628873693012123,
+                      "close": false
+                    }
+                  }
+                },
+                "group": "74f99f75a7b0b58a"
+              }
+            ]
+          },
+          {
+            "id": "423a8715c8c0fc7f",
+            "type": "tabs",
+            "dimension": 58.818834796488424,
+            "children": [
+              {
+                "id": "c92e9459829740fc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                },
+                "group": "74f99f75a7b0b58a"
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "78e77df9868e67d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b7923b6b0428bad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68fa501b13c09f03",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "43de161d36494ea9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "https://github.com/gumberss/PurchaseListinator/issues/38",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "39da674385d30033",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6a5858232dcef0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d238cec8393c245",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "technical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3e022a2c426616ef",
+  "lastOpenFiles": [
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
+    "Features/Invoices/v1/Invoices Architecture.md",
+    "Customer Docs/Authenticate/SignIn.md",
+    "Features/Identity/v1/SignIn.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
+    "Features/Purchase Listinator/Purchase Listinator.md"
+  ]
+}
