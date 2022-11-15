@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -121,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "https://github.com/gumberss/PurchaseListinator/issues/38",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,6 +171,7 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
@@ -178,7 +179,6 @@
     "Features/Invoices/v1/Invoices Architecture.md",
     "Customer Docs/Authenticate/SignIn.md",
     "Features/Identity/v1/SignIn.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Purchase Listinator Architecture.md",
     "Features/Purchase Listinator/Purchase Listinator.md"
   ]
