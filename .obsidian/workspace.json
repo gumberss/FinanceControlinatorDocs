@@ -16,7 +16,7 @@
               "state": {
                 "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             },
             "group": "74f99f75a7b0b58a"
@@ -83,8 +83,8 @@
                   "type": "markdown",
                   "state": {
                     "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
-                    "mode": "source",
-                    "source": false
+                    "mode": "preview",
+                    "source": true
                   }
                 },
                 "group": "74f99f75a7b0b58a"
@@ -168,7 +168,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3e022a2c426616ef",
+  "active": "c92e9459829740fc",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",

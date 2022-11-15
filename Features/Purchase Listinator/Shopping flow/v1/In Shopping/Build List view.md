@@ -35,15 +35,16 @@
 
 ### Server Side
 
-- [x] Endpoint to receive events
-	- [x] [Receive Reorder category events](https://github.com/gumberss/PurchaseListinator/issues/52)
-	- [x] [Receive Reorder item events](https://github.com/gumberss/PurchaseListinator/issues/53)
-	- [x] [Receive Item changed events](https://github.com/gumberss/PurchaseListinator/issues/54)
+#### Endpoint to receive events
+- [x] [Receive Reorder category events](https://github.com/gumberss/PurchaseListinator/issues/52)
+- [x] [Receive Reorder item events](https://github.com/gumberss/PurchaseListinator/issues/53)
+- [x] [Receive Item changed events](https://github.com/gumberss/PurchaseListinator/issues/54)
 
-- [ ] Make cart aware of changes made in the purchase list
-	- [ ] [Configure Rabbitmq](https://github.com/gumberss/PurchaseListinator/issues/61)
-	- [ ] [Publish events when purchase list is changed](https://github.com/gumberss/PurchaseListinator/issues/62)
-	- [ ] [Listen purchase list changed events](https://github.com/gumberss/PurchaseListinator/issues/63)
-	- [ ] [Add purchase list events in the cart](https://github.com/gumberss/PurchaseListinator/issues/65)
-	- [ ] [Teach the cart how to deal with purchase list events](https://github.com/gumberss/PurchaseListinator/issues/64)
-	- [ ] [Get the purchase list at the moment of the shopping was initiated (as-of)](https://github.com/gumberss/PurchaseListinator/issues/66)
+#### Make cart aware of changes made in the purchase list
+
+- [ ] [Configure Rabbitmq](https://github.com/gumberss/PurchaseListinator/issues/61)
+- [ ] [Publish events when purchase list is changed](https://github.com/gumberss/PurchaseListinator/issues/62)
+- [ ] [Listen purchase list changed events](https://github.com/gumberss/PurchaseListinator/issues/63)
+- [ ] [Add purchase list events in the cart](https://github.com/gumberss/PurchaseListinator/issues/65)
+- [ ] [Teach the cart how to deal with purchase list events](https://github.com/gumberss/PurchaseListinator/issues/64)
+- [ ] [Get the purchase list at the moment of the shopping was initiated (as-of)](https://github.com/gumberss/PurchaseListinator/issues/66)
