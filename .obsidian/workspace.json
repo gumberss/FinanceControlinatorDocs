@@ -16,7 +16,7 @@
               "state": {
                 "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             },
             "group": "74f99f75a7b0b58a"
@@ -83,8 +83,8 @@
                   "type": "markdown",
                   "state": {
                     "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
-                    "mode": "preview",
-                    "source": true
+                    "mode": "source",
+                    "source": false
                   }
                 },
                 "group": "74f99f75a7b0b58a"
@@ -130,8 +130,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,9 +170,9 @@
   },
   "active": "3e022a2c426616ef",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Invoices/v1/Invoices Architecture.md",
