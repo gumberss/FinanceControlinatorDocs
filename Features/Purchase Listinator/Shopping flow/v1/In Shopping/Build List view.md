@@ -27,8 +27,8 @@
 
 
 
-- [ ] Update the list when an item is added to the cart
-	- [ ] Put the items with 0 items at the end of the list
+- [x] Update the list when an item is added to the cart
+- [ ] Put the items with 0 items at the end of the list
 - [x] Send event to the server-side when an item is added to the cart (with amount and price)
 	- [x] Refresh the list if something goes wrong on the server side
 
@@ -42,9 +42,9 @@
 
 #### Make cart aware of changes made in the purchase list
 
-- [ ] [Configure Rabbitmq](https://github.com/gumberss/PurchaseListinator/issues/61)
-- [ ] [Publish events when purchase list is changed](https://github.com/gumberss/PurchaseListinator/issues/62)
-- [ ] [Listen purchase list changed events](https://github.com/gumberss/PurchaseListinator/issues/63)
-- [ ] [Add purchase list events in the cart](https://github.com/gumberss/PurchaseListinator/issues/65)
-- [ ] [Teach the cart how to deal with purchase list events](https://github.com/gumberss/PurchaseListinator/issues/64)
-- [ ] [Get the purchase list at the moment of the shopping was initiated (as-of)](https://github.com/gumberss/PurchaseListinator/issues/66)
+- [x] [Configure Rabbitmq](https://github.com/gumberss/PurchaseListinator/issues/61)
+- [x] [Publish events when purchase list is changed](https://github.com/gumberss/PurchaseListinator/issues/62)
+- [x] [Listen purchase list changed events](https://github.com/gumberss/PurchaseListinator/issues/63)
+- [x] [Add purchase list events in the cart](https://github.com/gumberss/PurchaseListinator/issues/65)
+- [x] [Teach the cart how to deal with purchase list events](https://github.com/gumberss/PurchaseListinator/issues/64)
+- [x] [Get the purchase list at the moment of the shopping was initiated (as-of)](https://github.com/gumberss/PurchaseListinator/issues/66)
