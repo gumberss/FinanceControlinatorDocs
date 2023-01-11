@@ -63,7 +63,7 @@
                       "linkStrength": 1,
                       "linkDistance": 155,
                       "scale": 0.3628873693012123,
-                      "close": false
+                      "close": true
                     }
                   }
                 },
@@ -168,7 +168,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c92e9459829740fc",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "68fa501b13c09f03",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
