@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 58.91025641025641,
+        "dimension": 62.43654822335024,
         "children": [
           {
             "id": "3e022a2c426616ef",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+                "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
                 "mode": "source",
                 "source": true
               }
@@ -26,7 +26,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 41.08974358974359,
+        "dimension": 37.56345177664975,
         "children": [
           {
             "id": "7f2a4988a964e13b",
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
+                "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,15 +179,15 @@
   },
   "active": "68fa501b13c09f03",
   "lastOpenFiles": [
+    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+    "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
+    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
-    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Invoices/v1/Invoices Architecture.md",
-    "Customer Docs/Authenticate/SignIn.md",
-    "Features/Identity/v1/SignIn.md",
-    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/Purchase Listinator.md"
+    "Features/Invoices/v1/Invoices Architecture.md"
   ]
 }
