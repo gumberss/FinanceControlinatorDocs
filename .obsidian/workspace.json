@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+                "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+                "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,17 +177,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "68fa501b13c09f03",
+  "active": "3e022a2c426616ef",
   "lastOpenFiles": [
+    "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
+    "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
-    "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
     "Features/Cloud/When Cloud/Starting Cloud.md",
     "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
-    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
-    "Features/Invoices/v1/Invoices Architecture.md"
+    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md"
   ]
 }
