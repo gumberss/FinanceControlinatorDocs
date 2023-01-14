@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 62.43654822335024,
+        "dimension": 49.619289340101524,
         "children": [
           {
             "id": "3e022a2c426616ef",
@@ -26,7 +26,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 37.56345177664975,
+        "dimension": 50.380710659898476,
         "children": [
           {
             "id": "7f2a4988a964e13b",
@@ -179,13 +179,13 @@
   },
   "active": "68fa501b13c09f03",
   "lastOpenFiles": [
-    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/Shopping finished flow.md",
+    "Features/Cloud/When Cloud/Starting Cloud.md",
     "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
     "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
     "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
     "Features/Invoices/v1/Invoices Architecture.md"
