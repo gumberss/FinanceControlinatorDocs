@@ -14,5 +14,5 @@
 - [x] [Create Shopping Summary screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/140)
 - [x] [When the finish shopping button is clicked, make a post to the server side](https://github.com/gumberss/FinanceControlinatorMobile/issues/141)
 - [ ] Loading while the request is being processed
-- [ ] [When the shopping is finished (return request status 200), redirect to the purchase list screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/143)
+- [x] [When the shopping is finished (return request status 200), redirect to the purchase list screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/143)
 - [ ] [Refresh purchase list when redirected (to get the changes)](https://github.com/gumberss/FinanceControlinatorMobile/issues/142)
