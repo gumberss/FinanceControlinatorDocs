@@ -33,7 +33,7 @@ The application today can be used for only one person (me :D), but in the real w
 3. Think which architecture should be followed
 	- [[Identity Architecture]]
 	- Do not create #Roles and #Polices for now
-5. [[Identity#^3d60bc|Understand how to authorize in other microservices]]
+5. [[Features/Identity/v1/Identity#^3d60bc|Understand how to authorize in other microservices]]
 7. [[Identity Architecture#Steps|Create architecure steps]]
 15. Be happy
 

@@ -2,5 +2,9 @@
   "legacyEditor": false,
   "livePreview": true,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheckDictionary": [
+    "PurchaseListinator",
+    "FinanceControlinator"
+  ]
 }

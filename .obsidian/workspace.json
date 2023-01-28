@@ -9,12 +9,12 @@
         "dimension": 49.619289340101524,
         "children": [
           {
-            "id": "3e022a2c426616ef",
+            "id": "62a89f7a0fb7c860",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
+                "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
+                    "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
+                    "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
+                "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,17 +177,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3e022a2c426616ef",
+  "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
-    "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
-    "Features/Cloud/When Cloud/Starting Cloud.md",
-    "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/In Shopping.md",
-    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
+    "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Cancel Shopping.md",
-    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md"
+    "Features/Purchase Listinator/Purchase Listinator Plan.md",
+    "Features/Purchase Listinator/Purchase Listinator.md",
+    "Features/Purchase Listinator/For the future/For the future.md",
+    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
+    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
+    "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md"
   ]
 }
