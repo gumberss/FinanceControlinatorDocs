@@ -1,0 +1,8 @@
+- Order items and categories by a model prediction 
+	- Understand the pattern of which order to get the items could reduce purchase time
+- Auto increment items inside the list based in a schedule created by the customer
+- Centralize the creation of the items, and just add the items in the lists
+	- It could improve the item control, since can have many lists with the same item
+	- The customer doesn't need to provide the price if he is buying thesame item in other list
+	- We can have a different purchase place with different item values
+- Rate limiter

@@ -14,9 +14,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
+                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             },
             "group": "74f99f75a7b0b58a"
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
+                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,9 +82,9 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
-                    "mode": "preview",
-                    "source": true
+                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+                    "mode": "source",
+                    "source": false
                   }
                 },
                 "group": "74f99f75a7b0b58a"
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
+                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,15 +179,16 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
-    "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
-    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Features/Purchase Listinator/Purchase Listinator Plan.md",
-    "Features/Purchase Listinator/Purchase Listinator.md",
+    "Features/Purchase Listinator/RFCs/Ideas.md",
+    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Untitled.canvas",
+    "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/For the future/For the future.md",
-    "Features/Purchase Listinator/Shopping flow/v1/Init Purchase/Init purchase.md",
-    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
-    "Features/Purchase Listinator/Shopping flow/v1/Shopping flow architecture.md"
+    "Technical Docs/New Microserivce/New Microservice.md",
+    "Features/Identity/v1/Identity Architecture.md",
+    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
+    "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md"
   ]
 }
