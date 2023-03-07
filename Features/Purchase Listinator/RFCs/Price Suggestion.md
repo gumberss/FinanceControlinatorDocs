@@ -4,9 +4,9 @@ One of these frictions is the price that the customer needs to add every time, e
 
 As was mentioned before, the Purchase Listinator's main purpose is to help the customers register theirs purchases in the right way, and reducing this friction can make the customer registration more assertive. The idea is to reduce the friction as possible, because the bigger the friction, the smaller the customer finance control precision, because the customer will fill in the wrong way or just don't fill it.
 
-Accordingly, this RFC aims to get the item price appropriately only when necessary, but always enabling the customer to change the price when he wants. Also, when the customer needs to change the price, the app should provide an easy way to do it, well-defined, with a good UX, reducing the friction of the need to always provide the item price. This RFC doesn't aim to eliminate the friction, but reduce it, making it easy to the customer, to provide the correct items prices and consequently providing a better match to the purchase.
+Accordingly, this RFC aims to get the item price appropriately and only when necessary, but always enabling the customer to change the price when he wants. Also, when the customer needs to change the price, the app should provide an easy way to do it, well-defined, with a good UX, reducing the friction of the need to always provide the item price. This RFC doesn't aim to eliminate the friction, but reduce it, making it easy to the customer, to provide the correct items prices and consequently providing a better match to the purchase.
 
-The first time the item is being purchasing in the list, the customer will still need to provide the item price, but once the item have a price tied, the system can suggest this price and  provide an easy way to the customer to change the price according to the needs.
+The first time the item is being purchasing in the list, the customer will still need to provide the item price, but once the item have a price tied, the system can suggest this price and provide an easy way to the customer to change the price according to the needs.
 
 
 ___
