@@ -14,27 +14,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/RFCs/Ideas.md",
+                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                 "mode": "source",
                 "source": false
               }
             },
             "group": "74f99f75a7b0b58a"
-          },
-          {
-            "id": "31c4884e7be60071",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "79aea5b91f135770",
@@ -52,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/RFCs/Ideas.md",
+                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -95,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/RFCs/Ideas.md",
+                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                     "mode": "source",
                     "source": false
                   }
@@ -190,10 +177,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "31c4884e7be60071",
+  "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
     "Features/Purchase Listinator/RFCs/Ideas.md",
     "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Untitled.canvas",
     "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/For the future/For the future.md",
     "Technical Docs/New Microserivce/New Microservice.md",
