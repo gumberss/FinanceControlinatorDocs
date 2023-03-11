@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 49.619289340101524,
+        "dimension": 51.07868020304569,
         "children": [
           {
             "id": "62a89f7a0fb7c860",
@@ -16,7 +16,7 @@
               "state": {
                 "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             },
             "group": "74f99f75a7b0b58a"
@@ -26,7 +26,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 50.380710659898476,
+        "dimension": 48.921319796954315,
         "children": [
           {
             "id": "7f2a4988a964e13b",
@@ -121,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "img",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -130,7 +130,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -179,8 +180,9 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/RFCs/Ideas.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Features/Purchase Listinator/RFCs/Ideas.md",
     "Untitled.canvas",
     "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/For the future/For the future.md",
