@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 51.07868020304569,
+        "dimension": 51.0786802030457,
         "children": [
           {
             "id": "62a89f7a0fb7c860",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+                "file": "Features/Purchase Listinator/RFCs/Shared Lists.md",
                 "mode": "source",
                 "source": true
               }
@@ -26,12 +26,12 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 48.921319796954315,
+        "dimension": 48.9213197969543,
         "children": [
           {
             "id": "7f2a4988a964e13b",
             "type": "tabs",
-            "dimension": 41.181165203511576,
+            "dimension": 33.07692307692307,
             "children": [
               {
                 "id": "b385d0f386049b02",
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+                    "file": "Features/Purchase Listinator/RFCs/Shared Lists.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -74,7 +74,7 @@
           {
             "id": "423a8715c8c0fc7f",
             "type": "tabs",
-            "dimension": 58.818834796488424,
+            "dimension": 66.92307692307692,
             "children": [
               {
                 "id": "c92e9459829740fc",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+                    "file": "Features/Purchase Listinator/RFCs/Shared Lists.md",
                     "mode": "source",
                     "source": false
                   }
@@ -121,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "img",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -129,9 +129,16 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "f0384808b3254589",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -151,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+                "file": "Features/Purchase Listinator/RFCs/Shared Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,9 +187,10 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Features/Purchase Listinator/RFCs/Shared Lists.md",
     "Features/Purchase Listinator/RFCs/Ideas.md",
+    "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Untitled.canvas",
     "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md",
     "Features/Purchase Listinator/For the future/For the future.md",

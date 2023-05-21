@@ -6,3 +6,5 @@
 	- The customer doesn't need to provide the price if he is buying thesame item in other list
 	- We can have a different purchase place with different item values
 - Rate limiter
+- Improve security
+	- JWT
