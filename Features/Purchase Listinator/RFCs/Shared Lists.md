@@ -42,6 +42,7 @@ Who can finish the shopping?
 Who is the owner of the expenses? 
 - The user that started the list
 - Should enable who is going to finish the shopping to select the person who is going to pay?
+- Should we create a screen of opened shopping, and let the customers open many shopping for each purchase list?
 
 
 ### For the future 
