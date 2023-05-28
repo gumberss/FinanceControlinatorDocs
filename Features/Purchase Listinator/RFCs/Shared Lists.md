@@ -39,7 +39,7 @@ Basically, we have three flow scenarios:
 	- Provide a way to select who will pay the purchases for each shopping
 	- This is an interesting scenario, because each shopping should have its own cart, because they may be shopping in different market as example. But if one people added some item in the cart, the system should provide this visibility to the other shopping too, avoiding many customers buy the same items without realizing it.
 
-The system should provide ways to deal with all of these scenarios, and it will impact many parts of the architecture, once the actual architecture support only one active shopping per purchase list. And not only it, but the system should also provide separate shopping carts that reflect one another at the same time
+The system should provide ways to deal with all of these scenarios, and it will impact many parts of the architecture, once the actual architecture support only one active shopping per purchase list. And not only it, but the system should also provide separate shopping carts that reflect one another at the same time some of the events.
 
 #### Multi Shopping Screen
 
