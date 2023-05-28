@@ -20,8 +20,19 @@
               }
             },
             "group": "74f99f75a7b0b58a"
+          },
+          {
+            "id": "b1785af2b5036e93",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.4"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "79aea5b91f135770",
@@ -185,7 +196,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "62a89f7a0fb7c860",
+  "active": "b1785af2b5036e93",
   "lastOpenFiles": [
     "Features/Purchase Listinator/RFCs/Price Suggestion.md",
     "Features/Purchase Listinator/RFCs/Shared Lists.md",

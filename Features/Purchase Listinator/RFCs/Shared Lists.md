@@ -16,14 +16,32 @@ In this case, the purpose of this RFC is the implementation of a shared lists fe
 - Synchronization and Real-Time Updates: With shared lists, all participants can see real-time updates to the list. If someone adds an item or marks an item as purchased, the changes are instantly reflected for all customers. This synchronization ensures that everyone is up-to-date with the latest changes, reducing confusion and ensuring efficient coordination.
 - Wishlist Sharing: Apart from practical shopping needs, shared lists can also enable customers to share their wishlists with others. This can be particularly useful for events like birthdays or holidays, where individuals can share their desired items, making it easier for others to choose suitable gifts.
 
+### Features
+- To make possible to share the lists with other customer, the system should provide a way to one customer know an identifier from the other one, ensuring the list will be shared only with they want. There are many ways to do it: ^804cd5
+	- QR Code
+		- One app generate a QR Code and the other one scan it and share the list with the customer that provides the QR Code
+	- Username 
+		- Generating a unique username and providing a way to the customer that want to share the list write the username he wants to share it.
+	- Random key
+		- One customer generate a random key and provide to the other customer that share the list with the owner of this unique key
+	- Shared Link
+		- The owner of the list generate a shared link and share it with the other customer, then the other customer add the list based to the shared link he received
 
+### High-level Architecture
 
-
+### Points of Changes
+- Screen/popup to the customer provide the username
+- Screen/popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
+- Create a shared list table, providing a way to know with whom the lists are shared
+- Change the queries to enable the list be accessed to the customers it was shared
+	- Purchase lists view (main purchase list screen)
+	- 
 ### Open questions
+How to link the user with the list?
 Who can finish the shopping?
 Who is the owner of the expenses? 
 - The user that started the list
-- Should enable who is to finish the shopping to select the person who is going to pay?
+- Should enable who is going to finish the shopping to select the person who is going to pay?
 
 
 ### For the future 
