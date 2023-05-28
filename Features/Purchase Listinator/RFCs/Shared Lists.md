@@ -28,6 +28,23 @@ In this case, the purpose of this RFC is the implementation of a shared lists fe
 		- The owner of the list generate a shared link and share it with the other customer, then the other customer add the list based to the shared link he received
 
 ### High-level Architecture
+There are many ways to interact with the purchase lists and shopping once they are shared, and it can change drastically not only the architecture, but how the customers will interact with it. As an example, once the list is shared, it means that many customers can start a shopping, that is, we need to provide a way to select who is going to pay the purchases. But not only it, thinking a shared list between family, this list can have multiple shopping happening at the same time, each one in a different place. And even more so, the entire family can shop in the same place, it means multiple interactions at the same shopping.
+
+Basically, we have three flow scenarios:
+- One shopping with one person (as it is today)
+	- The purchase payer will be the person who is shopping
+- One shopping with multiple people interactions 
+	- Provide a way to select who will pay the purchases
+- Many shopping with one or multiple people interactions
+	- Provide a way to select who will pay the purchases for each shopping
+	- This is an interesting scenario, because each shopping should have its own cart, because they may be shopping in different market as example. But if one people added some item in the cart, the system should provide this visibility to the other shopping too, avoiding many customers buy the same items without realizing it.
+
+The system should provide ways to deal with all of these scenarios, and it will impact many parts of the architecture, once the actual architecture support only one active shopping per purchase list. And not only it, but the system should also provide separate shopping carts that reflect one another at the same time some of the events.
+
+#### Multi Shopping Screen
+
+#### Shopping Cart
+At the moment of this RFC, the shopping cart is built on top of Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id.
 
 ### Points of Changes
 - Screen/popup to the customer provide the username
