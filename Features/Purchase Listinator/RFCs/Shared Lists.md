@@ -41,18 +41,27 @@ Basically, we have three flow scenarios:
 
 The system should provide ways to deal with all of these scenarios, and it will impact many parts of the architecture, once the actual architecture support only one active shopping per purchase list. And not only it, but the system should also provide separate shopping carts that reflect one another at the same time some of the events.
 
+
 #### Multi Shopping Screen
 
 #### Shopping Cart
-At the moment of this RFC, the shopping cart is built on top of Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id.
+At the moment of this RFC, the shopping cart is built on top of #Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id. Each shopping has a list of events inside of it.
+
+Thinking on the new architecture, some of the events will need to be shared between the carts, avoiding misinformation, like items added in the cart, if one shopping has the item in the cart, the system should prevent another customer in another shopping add this item in the cart, unless he wants anyway.
+In the same way, some events won't be shared because they aren't in the same context. Like order items, categories, and item price changes, because those events are particular for each place and may change from one place to another.
+
+Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. ^76cad3
 
 ### Points of Changes
+These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
 - Screen/popup to the customer provide the username
 - Screen/popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
-- Create a shared list table, providing a way to know with whom the lists are shared
+- Create a shared list table in the database, providing a way to know with whom the lists are shared 
 - Change the queries to enable the list be accessed to the customers it was shared
 	- Purchase lists view (main purchase list screen)
-	- 
+- Filter events by shopping (some events should be shared between shopping, but some events not)
+- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
+- Found a way and fix the multi shopping missing events [[#^76cad3]]
 ### Open questions
 How to link the user with the list?
 Who can finish the shopping?
