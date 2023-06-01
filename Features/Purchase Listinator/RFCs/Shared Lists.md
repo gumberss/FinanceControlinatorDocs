@@ -27,7 +27,7 @@ In this case, the purpose of this RFC is the implementation of a shared lists fe
 	- Shared Link
 		- The owner of the list generate a shared link and share it with the other customer, then the other customer add the list based to the shared link he received
 
-### High-level Architecture
+### The Purposed Solution
 There are many ways to interact with the purchase lists and shopping once they are shared, and it can change drastically not only the architecture, but how the customers will interact with it. As an example, once the list is shared, it means that many customers can start a shopping, that is, we need to provide a way to select who is going to pay the purchases. But not only it, thinking a shared list between family, this list can have multiple shopping happening at the same time, each one in a different place. And even more so, the entire family can shop in the same place, it means multiple interactions at the same shopping.
 
 Basically, we have three flow scenarios:
@@ -52,6 +52,19 @@ In the same way, some events won't be shared because they aren't in the same con
 
 Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. ^76cad3
 
+#### High-level Architecture
+
+The shopping service has the responsibility to handle the cart and the shopping lifecycle, and it has being working well due to the simplicity of the cart that just hold the events of the shopping. At the moment of this RFC, the cart is as simple as a Redis key value that has to be updated every time a new event comes. 
+
+Once the shared list is introduced in the Purchase Listinator, one list will be able to have more than only one active shopping, and it introduces a new challenge to be solved, the interaction between actives shopping. Purchase Lists are a way to provide a way to customers to manage in a controlled way the things they need to buy, and the system provides the way to the customers to inform how many units of the items they want to buy. In this way, if one active shopping already has some item inside the cart, the system has to provide this visibility to the other cart, avoiding the item being bought twice.
+
+Therefore, it'll be needed to change how the shopping and the cart interact with each other, decoupling the cart from the shopping, that won't be directly tied with one shopping and also giving freedom to the cart to manage itself, letting it manage its lifecycle reactive by the message broker events and posts to the API.
+
+Following the approach, the shopping module will be responsible to build the shopping state based on a list and a vector of events. Also, providing the shopping state to the client side, allowing them to know how much shopping are active and their details if needed. 
+
+The cart module, on the other hand, will be responsible to hold the state of the purchase list at the moment of the first shopping was created and all the events produced by this shopping or the others shopping that are active. Moreover, this module will be responsible to filter the events for each shopping, once they will be stored by the purchase list. And last but not least, it will take the responsibility of the already mentioned purchase list cart lifecycle, creating the cart when it is not created already, and finishing the lifecycle when the last active shopping is finished.
+
+
 ### Points of Changes
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
 - Screen/popup to the customer provide the username
@@ -62,6 +75,7 @@ These topics may not show the complexity and details of the changes, but present
 - Filter events by shopping (some events should be shared between shopping, but some events not)
 - When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
 - Found a way and fix the multi shopping missing events [[#^76cad3]]
+
 ### Open questions
 How to link the user with the list?
 Who can finish the shopping?
