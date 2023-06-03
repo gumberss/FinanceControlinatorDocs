@@ -52,6 +52,11 @@ In the same way, some events won't be shared because they aren't in the same con
 Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. 
 
 #### Cart Changes Notification
+Once the shopping can be shared with many customers at the same time, another important feature is the notification system, this feature provides the real-time notification to the customers, avoiding them to stay with the old state of the shopping for a long time. To provide this feature to the customers, some challenges should be solved, such as the complexity of the mobile app to react based on the server events, as well as define who should be notified based on the event produced.
+
+With the ability to share shopping sessions among multiple customers, a crucial feature to consider is the notification system. This feature ensures real-time updates for customers, preventing them from being unaware of the latest changes in the shopping session. However, implementing this feature comes with its own set of challenges. The mobile app needs to effectively react to server notifications, however, the ultimate responsibility for determining when notifications should be sent lies with the notification module, which plays a crucial role in identifying the appropriate recipients based on the event produced. Overcoming these challenges is essential to provide a seamless and up-to-date shopping experience for all customers involved.
+
+
 
 #### High-level Architecture
 
