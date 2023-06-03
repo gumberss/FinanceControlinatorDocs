@@ -16,36 +16,32 @@ Therefore, the purpose of this RFC is to propose the implementation of a shared 
 - Synchronization and Real-Time Updates: With shared lists, all participants can see real-time updates to the list. If someone adds an item or marks an item as purchased, the changes are instantly reflected for all customers. This synchronization ensures that everyone is up-to-date with the latest changes, reducing confusion and ensuring efficient coordination.
 - Wishlist Sharing: Apart from practical shopping needs, shared lists can also enable customers to share their wishlists with others. This can be particularly useful for events like birthdays or holidays, where individuals can share their desired items, making it easier for others to choose suitable gifts.
 
-### Features
+### The Purposed Solutions
+
+Sharing purchase lists introduces various ways for customers to interact with the lists and significantly impacts both the architecture and customer interactions. For instance, when a list is shared, multiple customers can initiate separate shopping sessions, necessitating a method to designate the purchaser. Moreover, in the case of a shared list within a family, there can be simultaneous shopping sessions occurring in different locations. Additionally, the entire family may shop together in a single location, leading to multiple interactions within the same shopping session
+
+In essence, there are three flow scenarios to consider:
+- Single shopping with one person (existing behavior):
+    - The person who is shopping will be responsible for the purchases.
+- Single shopping with multiple people interactions:
+    - A mechanism will be provided to determine the purchaser.
+- Multiple shopping sessions with one or multiple people interactions:
+    - A way to designate the purchaser for each shopping session will be available.
+    - This scenario is particularly interesting as each shopping session may require its own cart. For instance, customers may be shopping at different markets. However, if one person adds an item to their cart, the system should ensure visibility of that item to other shopping sessions, preventing multiple customers from inadvertently purchasing the same items.
+
+The system needs to incorporate mechanisms to handle all of these scenarios, which will have a significant impact on various aspects of the architecture. Currently, the architecture only supports one active shopping session per purchase list. Additionally, the system should facilitate separate shopping carts that can reflect each other in real-time, ensuring synchronization of events across multiple shopping sessions.
 
 #### Customer identification
-- To make possible to share the lists with other customer, the system should provide a way to one customer know an identifier from the other one, ensuring the list will be shared only with they want. There are many ways to do it: ^804cd5
-	- QR Code
-		- One app generate a QR Code and the other one scan it and share the list with the customer that provides the QR Code
-	- Username 
-		- Generating a unique username and providing a way to the customer that want to share the list write the username he wants to share it.
-	- Random key
-		- One customer generate a random key and provide to the other customer that share the list with the owner of this unique key
-	- Shared Link
-		- The owner of the list generate a shared link and share it with the other customer, then the other customer add the list based to the shared link he received
 
-### The Purposed Solution
-
-There are many ways to interact with the purchase lists and shopping once they are shared, and it can change drastically not only the architecture, but how the customers will interact with it. As an example, once the list is shared, it means that many customers can start a shopping, that is, we need to provide a way to select who is going to pay the purchases. But not only it, thinking a shared list between family, this list can have multiple shopping happening at the same time, each one in a different place. And even more so, the entire family can shop in the same place, it means multiple interactions at the same shopping.
-
-Basically, we have three flow scenarios:
-- One shopping with one person (as it is today)
-	- The purchase payer will be the person who is shopping
-- One shopping with multiple people interactions 
-	- Provide a way to select who will pay the purchases
-- Many shopping with one or multiple people interactions
-	- Provide a way to select who will pay the purchases for each shopping
-	- This is an interesting scenario, because each shopping should have its own cart, because they may be shopping in different market as example. But if one people added some item in the cart, the system should provide this visibility to the other shopping too, avoiding many customers buy the same items without realizing it.
-
-The system should provide ways to deal with all of these scenarios, and it will impact many parts of the architecture, once the actual architecture support only one active shopping per purchase list. And not only it, but the system should also provide separate shopping carts that reflect one another at the same time some of the events.
-
+To enable the sharing of lists with other customers, the system should provide a method for one customer to obtain an identifier from another customer, ensuring that the list is shared only with the intended recipient. There are several approaches to achieve this: ^804cd5
+- QR Code: One customer generates a QR Code, which can be scanned by the other customer to initiate list sharing.
+- Username: A unique username is generated, allowing customers to specify the desired username when sharing the list.
+- Random key: One customer generates a random key and shares it with the intended recipient, who can use the key to access the shared list.
+- Shared Link: The list owner generates a shared link and shares it with the other customer. The recipient can then add the list based on the shared link received.
 
 #### Multi Shopping Screen
+
+To enhance the customer experience and enable them to track the number of active shopping sessions, the system can implement the following flow: When a customer clicks the "Start Shopping" button on the purchase list screen, they will be redirected to the active shopping screen. This screen will display all the currently active sessions, allowing the customer to choose between starting a new shopping session in parallel or joining an existing session with another customer. This empowers the customer to easily manage and participate in multiple shopping sessions, promoting collaboration and flexibility in their shopping activities.
 
 #### Shopping Cart
 At the moment of this RFC, the shopping cart is built on top of #Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id. Each shopping has a list of events inside of it.
