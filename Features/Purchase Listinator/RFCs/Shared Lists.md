@@ -49,7 +49,9 @@ At the moment of this RFC, the shopping cart is built on top of #Redis, which is
 Thinking on the new architecture, some of the events will need to be shared between the carts, avoiding misinformation, like items added in the cart, if one shopping has the item in the cart, the system should prevent another customer in another shopping add this item in the cart, unless he wants anyway.
 In the same way, some events won't be shared because they aren't in the same context. Like order items, categories, and item price changes, because those events are particular for each place and may change from one place to another.
 
-Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. ^76cad3
+Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. 
+
+#### Cart Changes Notification
 
 #### High-level Architecture
 
@@ -80,14 +82,26 @@ Finishing shopping sessions
 
 ### Points of Changes
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
-- Screen/popup to the customer provide the username
-- Screen/popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
-- Create a shared list table in the database, providing a way to know with whom the lists are shared 
-- Change the queries to enable the list be accessed to the customers it was shared
-	- Purchase lists view (main purchase list screen)
-- Filter events by shopping (some events should be shared between shopping, but some events not)
-- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
-- Found a way and fix the multi shopping missing events [[#^76cad3]]
+- List share
+	- Screen to the customer provide the username
+	- Popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
+	- Create a shared list table in the database, providing a way to know with whom the lists are shared 
+	- Publish to the HTTP endpoint the share list request
+	- Change the queries to enable the list be accessed to the customers it was shared
+		- Purchase lists view (main purchase list screen)
+- Shared Cart:
+	- Create the new shopping cart module
+	- Create an endpoint to start a new shopping cart based on a shopping
+	- Migrate the shopping events endpoints to the shopping cart module
+	- Request the purchase list to the purchase list module when a new shopping is created and there wasn't another activated
+	- Retain the purchase list state on Redis based on the moment of the first active shopping was created
+	- Retain the shopping cart events received by request on Redis
+	- Move the purchase list events handlers to shopping cart module to make it able to know events produced by the purchase list events
+	- Make the shopping module request the cart to the shopping cart event
+	- Filter events by shopping (some events should be shared between shopping, but some events not)
+- Shared Shopping
+	- Screen to allow all the customers see all the active shopping
+	- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
 
 ### Open questions
 How to link the user with the list?
@@ -102,3 +116,4 @@ Who is the owner of the expenses?
 #for-the-future
 - Communication and commenting: Shared lists can encourage social engagement among users. Participants can be able to discuss items, leave comments, or suggest alternatives within the shared list. This fosters communication, facilitates decision-making, and allows for a more interactive shopping experience. 
 - Personalized Recommendations: Shared lists provide an opportunity to enhance the shopping experience by incorporating personalized recommendations. Based on the shared lists and individual preferences, the system can suggest relevant products, discounts, or complementary items. This helps users discover new products and make informed decisions while shopping.
+- Shared Expenses Allow the customers to share the shopping costs when it is being finished
