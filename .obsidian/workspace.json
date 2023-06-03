@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 51.0786802030457,
+        "dimension": 50.317258883248726,
         "children": [
           {
             "id": "62a89f7a0fb7c860",
@@ -26,7 +26,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 48.9213197969543,
+        "dimension": 49.68274111675127,
         "children": [
           {
             "id": "7f2a4988a964e13b",
@@ -187,7 +187,18 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
+    "Features/Invoices/v1/Invoices.md",
+    "Features/Purchase Listinator/RFCs/Shared Lists.md",
+    "Pasted image 20230603090306.png",
+    "Features/Invoices/v1/Screens.md",
     "Features/Travel Management/Travel Management.md",
+    "Features/Purchase Listinator/Purchase Listinator Plan.md",
+    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
+    "Features/Purchase Listinator/Purchase Listinator.md",
+    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
+    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Features/Purchase Listinator/RFCs/Ideas.md",
+    "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
     "Technical Debts/Invoice Item installment Count.md",
     "Technical Debts/Db Context Commit.md",
     "Technical Debts/DateTime.Now.md",
@@ -195,9 +206,6 @@
     "Technical Docs/New Microserivce/New Microservice.md",
     "Technical Docs/Tests/Mutation Tests.md",
     "Technical Docs/Tests/Integration tests.md",
-    "Features/Purchase Listinator/RFCs/Shared Lists.md",
-    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
-    "Features/Purchase Listinator/RFCs/Ideas.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Untitled.canvas",
@@ -205,7 +213,6 @@
     "Features/Purchase Listinator/For the future/For the future.md",
     "Features/Identity/v1/Identity Architecture.md",
     "Features/Cloud/When Cloud/Starting Cloud.md",
-    "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md"
   ]
 }

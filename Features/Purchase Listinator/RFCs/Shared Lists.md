@@ -4,9 +4,9 @@ Type: #Feature
 
 ### Introduction
 
-At the moment this RFC is being created, each customer can have their own purchase lists and can make their shopping alone or in a shared account with some other person, which is not the ideal thing to do. One of the benefits of having a digital purchase list is the ability of more than one person making changes on it at the same time, enabling not only the collaborative shopping experience, but really take advantage of real-time updates and synchronization. Both these benefits together make the shopping experience much better when the customer is shopping with friends, family or colleagues.
+At the time of creating this RFC, each customer has the option to have their own purchase lists and can shop individually or in a shared account with others. However, this approach is not ideal. One of the key advantages of having a digital purchase list is the ability for multiple people to make changes simultaneously, enabling a collaborative shopping experience and taking full advantage of real-time updates and synchronization. By combining these benefits, the shopping experience becomes significantly enhanced when customers shop with friends, family, or colleagues.
 
-In this case, the purpose of this RFC is the implementation of a shared lists feature within purchase listinator. The shared lists feature will enable the customers to collaborate with others while creating and managing their shopping lists in real time. This document outlines the benefits, requirements, and implementation details of this proposed feature.
+Therefore, the purpose of this RFC is to propose the implementation of a shared lists feature within Purchase Listinator. The shared lists feature will allow customers to collaborate with others in real time while creating and managing their shopping lists. This document presents the benefits, requirements, and implementation details of this proposed feature.
 
 ### Benefits
 
@@ -17,6 +17,8 @@ In this case, the purpose of this RFC is the implementation of a shared lists fe
 - Wishlist Sharing: Apart from practical shopping needs, shared lists can also enable customers to share their wishlists with others. This can be particularly useful for events like birthdays or holidays, where individuals can share their desired items, making it easier for others to choose suitable gifts.
 
 ### Features
+
+#### Customer identification
 - To make possible to share the lists with other customer, the system should provide a way to one customer know an identifier from the other one, ensuring the list will be shared only with they want. There are many ways to do it: ^804cd5
 	- QR Code
 		- One app generate a QR Code and the other one scan it and share the list with the customer that provides the QR Code
@@ -28,6 +30,7 @@ In this case, the purpose of this RFC is the implementation of a shared lists fe
 		- The owner of the list generate a shared link and share it with the other customer, then the other customer add the list based to the shared link he received
 
 ### The Purposed Solution
+
 There are many ways to interact with the purchase lists and shopping once they are shared, and it can change drastically not only the architecture, but how the customers will interact with it. As an example, once the list is shared, it means that many customers can start a shopping, that is, we need to provide a way to select who is going to pay the purchases. But not only it, thinking a shared list between family, this list can have multiple shopping happening at the same time, each one in a different place. And even more so, the entire family can shop in the same place, it means multiple interactions at the same shopping.
 
 Basically, we have three flow scenarios:
@@ -54,16 +57,30 @@ Another important change will be in the way of how the shopping events are built
 
 #### High-level Architecture
 
-The shopping service has the responsibility to handle the cart and the shopping lifecycle, and it has being working well due to the simplicity of the cart that just hold the events of the shopping. At the moment of this RFC, the cart is as simple as a Redis key value that has to be updated every time a new event comes. 
+The shopping service is currently responsible for managing the cart and the shopping lifecycle, and it has been functioning well due to the simplicity of the cart structure, which primarily holds shopping events. As of this RFC, the cart is as straightforward as a Redis key-value pair that requires updating whenever a new event occurs.
 
-Once the shared list is introduced in the Purchase Listinator, one list will be able to have more than only one active shopping, and it introduces a new challenge to be solved, the interaction between actives shopping. Purchase Lists are a way to provide a way to customers to manage in a controlled way the things they need to buy, and the system provides the way to the customers to inform how many units of the items they want to buy. In this way, if one active shopping already has some item inside the cart, the system has to provide this visibility to the other cart, avoiding the item being bought twice.
+However, with the introduction of shared lists in Purchase Listinator, a single list will be able to accommodate multiple active shopping sessions, presenting a new challenge: the interaction between these active shoppings. Purchase Lists serve as a controlled means for customers to manage the items they need to buy, and the system allows customers to specify the quantity of each item they want to purchase. Consequently, if one active shopping already includes certain items in the cart, the system must provide visibility of these items to other carts, ensuring they are not inadvertently purchased twice.
 
-Therefore, it'll be needed to change how the shopping and the cart interact with each other, decoupling the cart from the shopping, that won't be directly tied with one shopping and also giving freedom to the cart to manage itself, letting it manage its lifecycle reactive by the message broker events and posts to the API.
+Therefore, it will be necessary to redefine the interaction between shopping and the cart, decoupling them from each other. This means that the cart will no longer be directly associated with a specific shopping session. Instead, the cart will have the freedom to manage itself and react to events from the message broker, and received by the API.
 
-Following the approach, the shopping module will be responsible to build the shopping state based on a list and a vector of events. Also, providing the shopping state to the client side, allowing them to know how much shopping are active and their details if needed. 
+In line with this approach, the shopping module will take on the responsibility of constructing the shopping state based on a list and a vector of events. It will also be responsible for providing the shopping state to the client side, enabling them to be aware of the active shopping sessions and their details, if required.
 
-The cart module, on the other hand, will be responsible to hold the state of the purchase list at the moment of the first shopping was created and all the events produced by this shopping or the others shopping that are active. Moreover, this module will be responsible to filter the events for each shopping, once they will be stored by the purchase list. And last but not least, it will take the responsibility of the already mentioned purchase list cart lifecycle, creating the cart when it is not created already, and finishing the lifecycle when the last active shopping is finished.
+On the other hand, the cart module will assume the responsibility of retaining the state of the purchase list from the moment the first shopping session was created. It will also store all the events generated by this particular shopping session and any other future active shopping sessions. Furthermore, this module will filter the events for each shopping session, as they will be associated with the purchase list. Lastly, the cart module will manage the lifecycle of the purchase list cart, including its creation if it doesn't already exist, as well as concluding the lifecycle when the last active shopping session is completed.
 
+With the proposed enhancements to the system, it becomes essential to visualize the underlying architecture to gain a better understanding of its components and their interactions. For this purpose, the C4 model below was designed.
+
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/dbe5fad4-4e65-415e-b4d5-fd9d3ffb4a46"/>
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/6cdb732e-2faf-4de0-ace7-f419c8290571"/>
+
+The C4 model provides a structured overview of the system architecture, as depicted in the C4 model diagram. This diagram illustrates the separation of concerns and the relationships between the Purchase List, Shopping and Cart Modules.
+
+To complement the C4 model, a detailed flow chart has been created to visualize the sequential steps and decision points within the system. The first flow chart captures the user journey, from initiating the first shopping session to the moment that are two activated sessions. On the other hand, the second flow chart presents the close of these two sessions and the end of the shopping cart lifecycle. Those flow together provide a granular view of the system's functionality and user interactions, complementing the high-level perspective offered by the C4 mode.
+
+Start shopping and send events
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/aee5a2cc-e596-49c2-a41e-197e39ec506c"/>
+
+Finishing shopping sessions
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/bc000d9d-c06c-4f07-aead-b12e3e684a91"/>
 
 ### Points of Changes
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
