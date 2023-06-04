@@ -73,8 +73,10 @@ On the other hand, the cart module will assume the responsibility of retaining t
 
 With the proposed enhancements to the system, it becomes essential to visualize the underlying architecture to gain a better understanding of its components and their interactions. For this purpose, the C4 model below was designed.
 
-<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/dbe5fad4-4e65-415e-b4d5-fd9d3ffb4a46"/>
-<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/6cdb732e-2faf-4de0-ace7-f419c8290571"/>
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/163664b1-10a9-4b58-979e-d42a68efb66d"/>
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/42d50000-c135-40fd-ba42-872679aea63b"/>
+<img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/4ff10be5-e846-41f9-bdeb-af2c0ba81688"/>
+
 
 The C4 model provides a structured overview of the system architecture, as depicted in the C4 model diagram. This diagram illustrates the separation of concerns and the relationships between the Purchase List, Shopping and Cart Modules.
 
@@ -85,6 +87,7 @@ Start shopping and send events
 
 Finishing shopping sessions
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/bc000d9d-c06c-4f07-aead-b12e3e684a91"/>
+
 
 ### Points of Changes
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
