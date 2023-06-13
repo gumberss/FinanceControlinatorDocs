@@ -39,17 +39,24 @@ To enable the sharing of lists with other customers, the system should provide a
 - Random key: One customer generates a random key and shares it with the intended recipient, who can use the key to access the shared list.
 - Shared Link: The list owner generates a shared link and shares it with the other customer. The recipient can then add the list based on the shared link received.
 
+After choosing the identification method and the customer sharing the list, the server needs to handle and store this information. The list will remain linked to the owner, but the server should maintain a table with other customers who have access to the list. This allows them to access, modify, and create shopping sessions while maintaining the owner's control.
+
 #### Multi Shopping Screen
 
 To enhance the customer experience and enable them to track the number of active shopping sessions, the system can implement the following flow: When a customer clicks the "Start Shopping" button on the purchase list screen, they will be redirected to the active shopping screen. This screen will display all the currently active sessions, allowing the customer to choose between starting a new shopping session in parallel or joining an existing session with another customer. This empowers the customer to easily manage and participate in multiple shopping sessions, promoting collaboration and flexibility in their shopping activities.
 
 #### Shopping Cart
+
 At the moment of this RFC, the shopping cart is built on top of #Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id. Each shopping has a list of events inside of it.
 
 Thinking on the new architecture, some of the events will need to be shared between the carts, avoiding misinformation, like items added in the cart, if one shopping has the item in the cart, the system should prevent another customer in another shopping add this item in the cart, unless he wants anyway.
 In the same way, some events won't be shared because they aren't in the same context. Like order items, categories, and item price changes, because those events are particular for each place and may change from one place to another.
 
 Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. 
+
+Below is a simplified flow chart outlining the behavior of the cart module. It provides a high-level overview of how the module should operate and handle its actions and events.
+
+<img src="https://github.com/gumberss/PurchaseListinator/assets/38296002/da1dece2-4a09-4422-9873-a80226f44328"/>
 
 #### Cart Changes Notification
 
@@ -90,6 +97,7 @@ Finishing shopping sessions
 
 
 ### Points of Changes
+
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
 - List share
 	- Screen to the customer provide the username
@@ -114,6 +122,7 @@ These topics may not show the complexity and details of the changes, but present
 	- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
 
 ### Open questions
+
 How to link the user with the list?
 Who can finish the shopping?
 Who is the owner of the expenses? 
@@ -121,9 +130,10 @@ Who is the owner of the expenses?
 - Should enable who is going to finish the shopping to select the person who is going to pay?
 - Should we create a screen of opened shopping, and let the customers open many shopping for each purchase list?
 
-
 ### For the future 
+
 #for-the-future
 - Communication and commenting: Shared lists can encourage social engagement among users. Participants can be able to discuss items, leave comments, or suggest alternatives within the shared list. This fosters communication, facilitates decision-making, and allows for a more interactive shopping experience. 
 - Personalized Recommendations: Shared lists provide an opportunity to enhance the shopping experience by incorporating personalized recommendations. Based on the shared lists and individual preferences, the system can suggest relevant products, discounts, or complementary items. This helps users discover new products and make informed decisions while shopping.
-- Shared Expenses Allow the customers to share the shopping costs when it is being finished
+- Shared Expenses: Allow the customers to share the shopping costs when it is being finished
+- Access control and permissions: Implementing access control and permissions to manage item addition, shopping, list sharing, deletion, and other actions
