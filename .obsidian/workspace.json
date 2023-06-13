@@ -6,7 +6,7 @@
       {
         "id": "7f94b9c7ee2102b5",
         "type": "tabs",
-        "dimension": 50.317258883248726,
+        "dimension": 50.6979695431472,
         "children": [
           {
             "id": "62a89f7a0fb7c860",
@@ -26,7 +26,7 @@
       {
         "id": "79aea5b91f135770",
         "type": "split",
-        "dimension": 49.68274111675127,
+        "dimension": 49.30203045685279,
         "children": [
           {
             "id": "7f2a4988a964e13b",
@@ -185,7 +185,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "62a89f7a0fb7c860",
+  "active": "68fa501b13c09f03",
   "lastOpenFiles": [
     "Features/Invoices/v1/Invoices.md",
     "Features/Purchase Listinator/RFCs/Shared Lists.md",
