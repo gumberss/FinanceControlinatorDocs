@@ -1,6 +1,5 @@
-Status: #Discovery 
+Status: #Planning  
 Type: #Feature 
-
 
 ### Introduction
 
@@ -84,7 +83,6 @@ With the proposed enhancements to the system, it becomes essential to visualize 
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/42d50000-c135-40fd-ba42-872679aea63b"/>
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/4ff10be5-e846-41f9-bdeb-af2c0ba81688"/>
 
-
 The C4 model provides a structured overview of the system architecture, as depicted in the C4 model diagram. This diagram illustrates the separation of concerns and the relationships between the Purchase List, Shopping and Cart Modules.
 
 To complement the C4 model, a detailed flow chart has been created to visualize the sequential steps and decision points within the system. The first flow chart captures the user journey, from initiating the first shopping session to the moment that are two activated sessions. On the other hand, the second flow chart presents the close of these two sessions and the end of the shopping cart lifecycle. Those flow together provide a granular view of the system's functionality and user interactions, complementing the high-level perspective offered by the C4 mode.
@@ -95,12 +93,11 @@ Start shopping and send events
 Finishing shopping sessions
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/bc000d9d-c06c-4f07-aead-b12e3e684a91"/>
 
-
 ### Points of Changes
 
 These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
 - List share
-	- Screen to the customer provide the username
+	- Screen to the customer provide the username or a screen that present a QR code
 	- Popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
 	- Create a shared list table in the database, providing a way to know with whom the lists are shared 
 	- Publish to the HTTP endpoint the share list request
