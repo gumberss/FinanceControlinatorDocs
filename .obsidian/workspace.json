@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+                "file": "Features/Purchase Listinator/Purchase Listinator.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+                    "file": "Features/Purchase Listinator/Purchase Listinator.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+                    "file": "Features/Purchase Listinator/Purchase Listinator.md",
                     "mode": "source",
                     "source": false
                   }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+                "file": "Features/Purchase Listinator/Purchase Listinator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,8 +187,10 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
+    "Features/Purchase Listinator/Purchase Listinator.md",
     "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+    "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/Decisions/Cart decision matrix.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
@@ -202,9 +204,7 @@
     "Features/Travel Management/Travel Management.md",
     "Features/Purchase Listinator/Purchase Listinator Plan.md",
     "Features/Purchase Listinator/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/Purchase Listinator.md",
     "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
-    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
     "Features/Purchase Listinator/RFCs/Ideas.md",
     "Technical Debts/Invoice Item installment Count.md",
     "Technical Debts/Db Context Commit.md",
