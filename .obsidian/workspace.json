@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,7 +82,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                     "mode": "source",
                     "source": false
                   }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
-    "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+    "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
     "Features/Purchase Listinator/Purchase Listinator.md",
     "Features/Purchase Listinator/RFCs/Price Suggestion.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
