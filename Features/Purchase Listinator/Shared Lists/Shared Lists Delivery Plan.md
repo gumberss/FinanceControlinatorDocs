@@ -34,4 +34,37 @@ This feature revolves around granting customers the capability to share their li
 
 
 
-## Shared Shopping Epic
+## Shopping Cart Revamp Epic
+
+- [ ] Create the Shopping Cart module
+- [ ] Create the Redis instance for the new module
+- [ ] Create the Shopping Cart module Read.me 
+- [ ] Create the Integration with Purchase List
+	- [ ] Create the Purchase List Endpoint (request by a specific date)
+	- [ ] Create the Purchase List request
+	- [ ] Save the list on Redis
+	- [ ] Make the Shopping Cart module Listen the Purchase List events
+	- [ ] Save the Purchase List events on Redis
+- [ ] Create the endpoint to receive events directly from the customer
+- [ ] Create the integration with Shopping 
+	- [ ] Make the Shopping module send these events to the Shopping Cart module (while in test - shadow) 
+	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated (shadow)
+	- [ ] Make the Shopping module close a shopping cart when a shopping is finished
+	- [ ] Create a log monitoring to check if the Shopping Cart events and list produce the same results as the Original Shopping events and list (compare original with the shadow) 
+		- When the result is the same in both shopping, we should wait for a period (like days) and just ignore the original shopping and use the new shopping (shopping module + shopping cart module), because all the shopping sessions will be created in both places (shopping module and shopping cart module)
+- [ ] Remove the old shopping cart
+	- [ ] Remove Old Redis instance
+	- [ ] Remove Old Redis instance
+	- [ ] Remove the Cart Events Saved on Shopping Module
+
+
+Should the Shopping Cart Module publish the shopping session closed with all the events, or the shopping module should publish the shopping closed with all the shopping cart events? (or even other idea?)
+
+## Shared Shopping Epic 
+
+
+
+	- [ ] 
+- [ ] Create the Active Shopping Screen, enabling the customers to see the active shopping
+
+## Notifications
