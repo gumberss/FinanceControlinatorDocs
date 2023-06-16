@@ -93,39 +93,9 @@ Start shopping and send events
 Finishing shopping sessions
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/bc000d9d-c06c-4f07-aead-b12e3e684a91"/>
 
-### Points of Changes
+### Shared List Delivery Plan
 
-These topics may not show the complexity and details of the changes, but present an overview of how much changes need to be done
-- List share
-	- Screen to the customer provide the username or a screen that present a QR code
-	- Popup to share the list with the other customer (based on the chosen option mentioned before [[#^804cd5]])
-	- Create a shared list table in the database, providing a way to know with whom the lists are shared 
-	- Publish to the HTTP endpoint the share list request
-	- Change the queries to enable the list be accessed to the customers it was shared
-		- Purchase lists view (main purchase list screen)
-- Shared Cart:
-	- Create the new shopping cart module
-	- Create an endpoint to start a new shopping cart based on a shopping
-	- Migrate the shopping events endpoints to the shopping cart module
-	- Request the purchase list to the purchase list module when a new shopping is created and there wasn't another activated
-	- Retain the purchase list state on Redis based on the moment of the first active shopping was created
-	- Retain the shopping cart events received by request on Redis
-	- Move the purchase list events handlers to shopping cart module to make it able to know events produced by the purchase list events
-	- Make the shopping module request the cart to the shopping cart event
-	- Filter events by shopping (some events should be shared between shopping, but some events not)
-	- Events that change the amount of items shouldn't change the price of others shopping sessions, but the shopping session it belongs.
-- Shared Shopping
-	- Screen to allow all the customers see all the active shopping
-	- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense.
-
-### Open questions
-
-How to link the user with the list?
-Who can finish the shopping?
-Who is the owner of the expenses? 
-- The user that started the list
-- Should enable who is going to finish the shopping to select the person who is going to pay?
-- Should we create a screen of opened shopping, and let the customers open many shopping for each purchase list?
+Details about the delivery plan are in the [[Shared Lists Delivery Plan]]
 
 ### For the future 
 
