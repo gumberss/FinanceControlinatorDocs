@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Features/Purchase Listinator/Purchase Listinator.md",
+                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                 "mode": "source",
                 "source": true
               }
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Features/Purchase Listinator/Purchase Listinator.md",
+                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -82,14 +82,27 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Features/Purchase Listinator/Purchase Listinator.md",
+                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                     "mode": "source",
                     "source": false
                   }
                 },
                 "group": "74f99f75a7b0b58a"
+              },
+              {
+                "id": "2df88e46a0430eb8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal"
@@ -158,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/Purchase Listinator/Purchase Listinator.md",
+                "file": "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,10 +200,11 @@
   },
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
-    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
-    "Features/Purchase Listinator/Purchase Listinator.md",
     "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
-    "Features/Purchase Listinator/Shared Lists/Shared Lists Tasks.md",
+    "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
+    "Features/Purchase Listinator/Shared Lists/Shared Lists ADR.md",
+    "Features/Purchase Listinator/Purchase Listinator.md",
+    "Features/Purchase Listinator/RFCs/Price Suggestion.md",
     "Features/Purchase Listinator/Shopping flow/v1/In Shopping/Build List view.md",
     "Features/Purchase Listinator/Shopping flow/Decisions/Cart decision matrix.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
@@ -214,7 +228,6 @@
     "Technical Docs/Tests/Mutation Tests.md",
     "Technical Docs/Tests/Integration tests.md",
     "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
-    "Untitled.canvas",
-    "Features/Purchase Listinator/For the future/Purchase Listinator Cart.md"
+    "Untitled.canvas"
   ]
 }
