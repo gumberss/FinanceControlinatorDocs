@@ -7,6 +7,8 @@ The shared lists have two big epics separated in many features and tasks. The sh
 
 ## Epic - Shared Lists 
 
+This epic aims to provide the ability to share the Purchase Lists with other customers
+
 ### Feature - User Identification 
 
 This feature focuses on empowering customers with the ability to select a personalized nickname for themselves
@@ -34,7 +36,11 @@ This feature revolves around granting customers the capability to share their li
 
 ## Epic - Shopping Cart Revamp 
 
+This epic focuses on reorganizing the Shopping module into two distinct modules: the Shopping module and the Shopping Cart module. The primary goal is to improve code organization and promote a clear segregation of responsibilities and domains. By separating the Shopping Cart functionality into its own module, it gains the ability to evolve independently with minimal direct dependencies on other modules. This restructuring aims to enhance maintainability, scalability, and facilitate future development and enhancements to the Shopping and Shopping Cart modules.
+
 ### Feature - Shopping Cart Module Creation
+
+This feature encompasses the creation of the new Shopping Cart module and its parallel execution alongside the existing Shopping Cart implementation. The focus is initially on building the new module while preserving the functionality of the current cart. By adopting this approach, we ensure a seamless integration of the new Shopping Cart module while maintaining continuity in the current system's functionality.
 
 - [ ] Create the Shopping Cart module
 - [ ] Create the Redis instance for the new module
@@ -60,6 +66,8 @@ This feature revolves around granting customers the capability to share their li
 - [ ] Send the shopping cart session closed event
 
 ### Feature - Switch Shopping Cart 
+
+This epic focuses on transitioning from the old version of the Shopping Cart to the new Shopping Cart module. It entails thorough validation of the new module's consistent results through logging and monitoring. Once the reliability is established, the system can confidently rely on the integration events from the Shopping Cart Module. Finally, the goal is to eliminate all dependencies on the old Shopping Cart, enabling a seamless transition to the improved module.
 
 - [ ] Create a log monitoring to check if the Shopping Cart events and list produce the same results as the Original Shopping events and list (compare original with the shadow) 
 		- When the result is the same in both shopping, we should wait for a period (like days) and just ignore the original shopping and use the new shopping (shopping module + shopping cart module), because all the shopping sessions will be created in both places (shopping module and shopping cart module)
@@ -94,3 +102,5 @@ Who is the owner of the expenses?
 - When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense?
 
 ## Notifications
+
+It can be planned in the future, with more context of the things that were done before
