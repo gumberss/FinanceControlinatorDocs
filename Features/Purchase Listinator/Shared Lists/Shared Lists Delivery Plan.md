@@ -103,4 +103,4 @@ Who is the owner of the expenses?
 
 ## Notifications
 
-It can e planned in the future, with more context of the things that were done before
+It can be planned in the future, with more context of the things that were done before
