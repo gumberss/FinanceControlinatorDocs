@@ -1,5 +1,5 @@
 ## What we have so far
-To each language the system support, each microservice have a class that inherit the ILocalization interface with all the interfaçe properties and methods overloaded with the transaltion to that language
+To each language the system support, each microservice have a class that inherit the ILocalization interface with all the interface properties and methods overloaded with the transaltion to that language
 
 
 

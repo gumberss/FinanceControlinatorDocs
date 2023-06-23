@@ -101,8 +101,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal"
@@ -201,6 +200,22 @@
   "active": "62a89f7a0fb7c860",
   "lastOpenFiles": [
     "Features/Purchase Listinator/Shared Lists/Shared Lists RFC.md",
+    "Technical Debts/Db Context Commit.md",
+    "Technical Debts/DateTime.Now.md",
+    "Features/Travel Management/Travel Management.md",
+    "Features/Cloud/When Cloud/Starting Cloud.md",
+    "Features/Gateway/v1/Change to Ocelot.md",
+    "Features/i18n/v1/Client side i18n.md",
+    "Features/i18n/v1/Change localization clases to json.md",
+    "Features/Identity/v1/SignUp.md",
+    "Features/Identity/v1/SignIn.md",
+    "Features/Identity/v1/Identity Architecture.md",
+    "Features/Identity/v1/Identity.md",
+    "Features/Invoices/v1/Screens.md",
+    "Features/Invoices/v1/Invoices.md",
+    "Features/Invoices/v1/Invoices Architecture.md",
+    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
+    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
     "Features/Purchase Listinator/Shared Lists/Shared Lists Delivery Plan.md",
     "Features/Purchase Listinator/Shared Lists/Shared Lists ADR.md",
     "Features/Purchase Listinator/Purchase Listinator.md",
@@ -209,25 +224,9 @@
     "Features/Purchase Listinator/Shopping flow/Decisions/Cart decision matrix.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/1 - Shopping finished.md",
     "Features/Purchase Listinator/Shopping finished flow/v1/2 - Shopping finished tasks.md",
-    "Features/Purchase Listinator/ListManagement/v1/Tasks/List management Tasks.md",
     "Features/Purchase Listinator/Multi Customers/Multi Customers.md",
     "Features/Purchase Listinator/Shared Lists",
-    "Features/Invoices/v1/Invoices.md",
     "Pasted image 20230603090306.png",
-    "Features/Invoices/v1/Screens.md",
-    "Features/Travel Management/Travel Management.md",
-    "Features/Purchase Listinator/Purchase Listinator Plan.md",
-    "Features/Purchase Listinator/Purchase Listinator Architecture.md",
-    "Features/Purchase Listinator/Users Management/v1/User Management Tasks.md",
-    "Features/Purchase Listinator/RFCs/Ideas.md",
-    "Technical Debts/Invoice Item installment Count.md",
-    "Technical Debts/Db Context Commit.md",
-    "Technical Debts/DateTime.Now.md",
-    "Technical Docs/Migrations/Net 5.0 to net 6.0.md",
-    "Technical Docs/New Microserivce/New Microservice.md",
-    "Technical Docs/Tests/Mutation Tests.md",
-    "Technical Docs/Tests/Integration tests.md",
-    "Features/Purchase Listinator/List View/v1/Lists View Tasks.md",
     "Untitled.canvas"
   ]
 }
