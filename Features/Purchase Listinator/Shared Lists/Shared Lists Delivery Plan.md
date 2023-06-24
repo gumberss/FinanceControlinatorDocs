@@ -29,8 +29,8 @@ This feature revolves around granting customers the capability to share their li
 - [x] [Create the list shared table (Link customer with lists)](https://github.com/gumberss/PurchaseListinator/issues/139)
 - [x] [Create the endpoint to handle the list share requests](https://github.com/gumberss/PurchaseListinator/issues/140)
 - [x] [Create the endpoint's tests ](https://github.com/gumberss/PurchaseListinator/issues/141)
-- [ ] [Handle the server responses](https://github.com/gumberss/FinanceControlinatorMobile/issues/169)
-- [ ] [Modify the Purchase List Screen query](https://github.com/gumberss/PurchaseListinator/issues/142) to include the presentation of shared lists, allowing customers to view and access the lists that have been shared with them
+- [x] [Handle the server responses](https://github.com/gumberss/FinanceControlinatorMobile/issues/169)
+- [x] [Modify the Purchase List Screen query](https://github.com/gumberss/PurchaseListinator/issues/142) to include the presentation of shared lists, allowing customers to view and access the lists that have been shared with them
 - [ ] Spike - Analyze if there are other queries that should be changed, making all the customers able to manage the list
 
 ## Epic - Shopping Cart Revamp 
