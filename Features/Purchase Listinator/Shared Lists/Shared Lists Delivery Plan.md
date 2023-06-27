@@ -31,7 +31,12 @@ This feature revolves around granting customers the capability to share their li
 - [x] [Create the endpoint's tests ](https://github.com/gumberss/PurchaseListinator/issues/141)
 - [x] [Handle the server responses](https://github.com/gumberss/FinanceControlinatorMobile/issues/169)
 - [x] [Modify the Purchase List Screen query](https://github.com/gumberss/PurchaseListinator/issues/142) to include the presentation of shared lists, allowing customers to view and access the lists that have been shared with them
-- [ ] Spike - Analyze if there are other queries that should be changed, making all the customers able to manage the list
+- [ ] [Spike - Analyze if there are other queries that should be changed, making all the customers able to manage the list](https://github.com/gumberss/FinanceControlinatorDocs/issues/45)
+	- [ ] Create the allowed lists for the customer
+	- [ ] Update the endpoint /api/purchases/lists/:id/managementData to validate the allowed-lists 
+	- [ ] Update the endpoint /api/shopping/existent/:list-id to validate the allowed-lists
+	- [ ] Update the endpoint api/shopping/list/:shopping-id to validate the allowed-lists
+	- [ ] Check others queries that need to be updated too
 
 ## Epic - Shopping Cart Revamp 
 
