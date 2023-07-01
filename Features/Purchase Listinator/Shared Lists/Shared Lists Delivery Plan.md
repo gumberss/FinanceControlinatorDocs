@@ -39,6 +39,12 @@ This feature revolves around granting customers the capability to share their li
 - [x] [Refresh button on the purchase-list management screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/175)
 - [x] [Refresh button on the shopping screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/176)
 
+Epic video
+
+https://github.com/gumberss/FinanceControlinatorDocs/assets/38296002/16f2b059-49b2-4a01-b22f-cea8a6d25131
+
+
+
 ## Epic - Shopping Cart Revamp 
 
 This epic focuses on reorganizing the Shopping module into two distinct modules: the Shopping module and the Shopping Cart module. The primary goal is to improve code organization and promote a clear segregation of responsibilities and domains. By separating the Shopping Cart functionality into its own module, it gains the ability to evolve independently with minimal direct dependencies on other modules. This restructuring aims to enhance maintainability, scalability, and facilitate future development and enhancements to the Shopping and Shopping Cart modules.
