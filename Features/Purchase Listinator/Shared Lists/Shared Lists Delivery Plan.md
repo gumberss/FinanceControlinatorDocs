@@ -34,8 +34,10 @@ This feature revolves around granting customers the capability to share their li
 - [x] [Spike - Analyze if there are other queries that should be changed, making all the customers able to manage the list](https://github.com/gumberss/FinanceControlinatorDocs/issues/45)
 	- [x] [Create the allowed lists for the customer](https://github.com/gumberss/PurchaseListinator/issues/147)
 	- [x] [Update all the queries to consider the allowed lists instead of the user-id](https://github.com/gumberss/PurchaseListinator/issues/148)
-- [ ] Present the share button only for the owner of the list
-- [ ] When a customer deletes a list from other customer, should unlink he instead of delete
+- [x] [Present the share button only for the owner of the list](https://github.com/gumberss/FinanceControlinatorMobile/issues/173)
+- [x] [When a customer deletes a list from other customer, should unlink he instead of delete](https://github.com/gumberss/PurchaseListinator/issues/150)
+- [x] [Refresh button on the purchase-list management screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/175)
+- [x] [Refresh button on the shopping screen](https://github.com/gumberss/FinanceControlinatorMobile/issues/176)
 
 ## Epic - Shopping Cart Revamp 
 
@@ -107,3 +109,17 @@ Who is the owner of the expenses?
 ## Notifications
 
 It can be planned in the future, with more context of the things that were done before
+
+
+
+
+
+
+## For the future
+
+### Unshare button
+- [ ] Change the trash icon for the link icon on the delete button when the customer is trying to delete a list that was shared
+- [ ] Create an endpoint to unlink the list
+- [ ] Request the unlink endpoint when the customers "deletes" a list that was shared with them
+
+- [ ] Make only the owner of the list edit the name of it
