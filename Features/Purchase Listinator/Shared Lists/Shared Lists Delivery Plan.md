@@ -47,14 +47,14 @@ This epic focuses on reorganizing the Shopping module into two distinct modules:
 
 This feature encompasses the creation of the new Shopping Cart module and its parallel execution alongside the existing Shopping Cart implementation. The focus is initially on building the new module while preserving the functionality of the current cart. By adopting this approach, we ensure a seamless integration of the new Shopping Cart module while maintaining continuity in the current system's functionality.
 
-- [ ] Create the Shopping Cart module
-- [ ] Create the Redis instance for the new module
-- [ ] Create the Shopping Cart module Read.me 
+- [x] [Create the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/152)
+- [x] [Create the Redis instance for the new module](https://github.com/gumberss/PurchaseListinator/issues/153)
+- [x] [Abstract carmine from the db code](https://github.com/gumberss/PurchaseListinator/issues/160)
 - [ ] Create the Integration with Purchase List
-	- [ ] Create the Purchase List Endpoint (request by a specific date)
-	- [ ] Create the Purchase List request
-	- [ ] Create the logic to save the list on Redis
-	- [ ] Save the list on Redis
+	- [ ] [Create the Purchase List Endpoint (request by a specific date)](https://github.com/gumberss/PurchaseListinator/issues/154)
+	- [ ] [Create the Purchase List request](https://github.com/gumberss/PurchaseListinator/issues/155)
+	- [ ] [Create the logic to save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/156)
+	- [ ] [Save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/157)
 	- [ ] Make the Shopping Cart module Listen the Purchase List events
 	- [ ] Create the logic to save the events on Redis
 	- [ ] Create the logic to save the events on the global cart session per purchase list
@@ -69,6 +69,7 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 	- [ ] Make the Shopping Cart module unlink the shopping session when the shopping session is closed
 - [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
 - [ ] Send the shopping cart session closed event
+- [ ] Create the Shopping Cart module Read.me 
 
 ### Feature - Switch Shopping Cart 
 
