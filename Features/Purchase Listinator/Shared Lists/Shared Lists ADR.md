@@ -1,1 +1,8 @@
-- How the events were saved on the Shopping Cart module
+- How the events were saved on the Shopping Cart module 
+	- [#157](https://github.com/gumberss/PurchaseListinator/issues/157)
+	- Why use set in this case?
+- Uncouple shopping and purchase list [#154](https://github.com/gumberss/PurchaseListinator/issues/154)
+- The controller output schema can't be set because it can be either the result or a left
+	- Create our own left/right/branch to have the control and the schemas
+- The request (components.http/request) does not consider the status to parse the result-schema. 
+	- The result schema should be for each status
