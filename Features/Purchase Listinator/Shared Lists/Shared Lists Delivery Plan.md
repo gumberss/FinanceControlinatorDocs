@@ -51,14 +51,18 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 - [x] [Create the Redis instance for the new module](https://github.com/gumberss/PurchaseListinator/issues/153)
 - [x] [Abstract carmine from the db code](https://github.com/gumberss/PurchaseListinator/issues/160)
 - [ ] Create the Integration with Purchase List
-	- [ ] [Create the Purchase List Endpoint (request by a specific date)](https://github.com/gumberss/PurchaseListinator/issues/154)
-	- [ ] [Create the Purchase List request](https://github.com/gumberss/PurchaseListinator/issues/155)
-	- [ ] [Create the logic to save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/156)
-	- [ ] [Save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/157)
+	- [x] [Create the Purchase List Endpoint (request by a specific date)](https://github.com/gumberss/PurchaseListinator/issues/154) 
+	- [x] [Create the Purchase List request](https://github.com/gumberss/PurchaseListinator/issues/155)
+	- [x] [Create the logic to save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/156)
+	- [x] [Save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/157)
 	- [ ] Make the Shopping Cart module Listen the Purchase List events
-	- [ ] Create the logic to save the events on Redis
-	- [ ] Create the logic to save the events on the global cart session per purchase list
-	- [ ] Save the Purchase List events on Redis
+		- [ ] [Starts to listen to category created event](https://github.com/gumberss/PurchaseListinator/issues/166)
+		- [ ] Starts to listen to category deleted event
+		- [ ] Starts to listen to item created event
+		- [ ] Starts to listen to item deleted event
+		- [ ] Starts to listen to item changed event
+	- [x] [Create the logic to save the events on the global cart session per purchase list](https://github.com/gumberss/PurchaseListinator/issues/167)
+	- [x] [Save the Purchase List events on Redis](https://github.com/gumberss/PurchaseListinator/issues/169)
 		-  Retain the purchase list state on Redis based on the moment of the first active shopping was created
 - [ ] Create the endpoint to receive events directly from the customer
 - [ ] Create the integration with Shopping 
@@ -67,6 +71,7 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 	- [ ] Make the Shopping Cart Module link the shopping session with the Purchase List's active shopping sessions 
 	- [ ] Make the Shopping Cart module listen the shopping session closed to close the cart
 	- [ ] Make the Shopping Cart module unlink the shopping session when the shopping session is closed
+	- [ ] When no one shopping session is activated for the purchase list, make sure the list keys are removed from Redis
 - [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
 - [ ] Send the shopping cart session closed event
 - [ ] Create the Shopping Cart module Read.me 
@@ -84,6 +89,10 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module ( #definitive)
 	- [ ] Remove Old Redis instance
 	- [ ] Remove the Cart Events Saved on Shopping Module
+	- [ ] Make the shopping module stop to listen the purchase list events
+	- [ ] Remove the purchase list events consumers from the shopping module
+	- [ ] Remove the purchase list events adapters from the shopping module
+	- [ ] Remove the purchase list events wires from the shopping module
 
 
 ## Epic - Multi Shopping Session
@@ -99,7 +108,7 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [ ] Enable the customers to see all the active shopping
 	- [ ] Enable the customers to create new shopping even if already exist an active shopping
 
-### Multi Shopping Session Financial
+### Multi Shopping Session Finance
 ***Need to be discovered yet***
 Who can finish the shopping?
 Who is the owner of the expenses? 
