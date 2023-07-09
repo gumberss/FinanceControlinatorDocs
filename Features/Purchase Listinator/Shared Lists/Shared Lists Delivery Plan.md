@@ -50,17 +50,17 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 - [x] [Create the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/152)
 - [x] [Create the Redis instance for the new module](https://github.com/gumberss/PurchaseListinator/issues/153)
 - [x] [Abstract carmine from the db code](https://github.com/gumberss/PurchaseListinator/issues/160)
-- [ ] Create the Integration with Purchase List
+- [x] Create the Integration with Purchase List
 	- [x] [Create the Purchase List Endpoint (request by a specific date)](https://github.com/gumberss/PurchaseListinator/issues/154) 
 	- [x] [Create the Purchase List request](https://github.com/gumberss/PurchaseListinator/issues/155)
 	- [x] [Create the logic to save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/156)
 	- [x] [Save the list on Redis](https://github.com/gumberss/PurchaseListinator/issues/157)
-	- [ ] Make the Shopping Cart module Listen the Purchase List events
-		- [ ] [Starts to listen to category created event](https://github.com/gumberss/PurchaseListinator/issues/166)
-		- [ ] Starts to listen to category deleted event
-		- [ ] Starts to listen to item created event
-		- [ ] Starts to listen to item deleted event
-		- [ ] Starts to listen to item changed event
+	- [x] Make the Shopping Cart module Listen the Purchase List events
+		- [x] [Starts to listen to category created event](https://github.com/gumberss/PurchaseListinator/issues/166)
+		- [x] [Starts to listen to category deleted event](https://github.com/gumberss/PurchaseListinator/issues/171)
+		- [x] [Starts to listen to item created event](https://github.com/gumberss/PurchaseListinator/issues/172)
+		- [x] [Starts to listen to item deleted event](https://github.com/gumberss/PurchaseListinator/issues/173)
+		- [x] [Starts to listen to item changed event](https://github.com/gumberss/PurchaseListinator/issues/174)
 	- [x] [Create the logic to save the events on the global cart session per purchase list](https://github.com/gumberss/PurchaseListinator/issues/167)
 	- [x] [Save the Purchase List events on Redis](https://github.com/gumberss/PurchaseListinator/issues/169)
 		-  Retain the purchase list state on Redis based on the moment of the first active shopping was created
@@ -74,6 +74,10 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 	- [ ] When no one shopping session is activated for the purchase list, make sure the list keys are removed from Redis
 - [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
 - [ ] Send the shopping cart session closed event
+- [ ] Send an event when a purchase list is deleted
+- [ ] Shopping Cart listen the purchase list deleted event
+	- [ ] Listen the event
+	- [ ] If the list in Redis, remove it and all the other keys related to the list
 - [ ] Create the Shopping Cart module Read.me 
 
 ### Feature - Switch Shopping Cart 
