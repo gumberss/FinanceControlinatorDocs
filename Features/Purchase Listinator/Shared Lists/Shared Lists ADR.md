@@ -6,3 +6,6 @@
 	- Create our own left/right/branch to have the control and the schemas
 - The request (components.http/request) does not consider the status to parse the result-schema. 
 	- The result schema should be for each status
+- The shopping cart will create the price suggestion events on the cart
+	- It requests the price suggestion only when the cart is created
+	- It  Doesn't make sense to request every time a item is created or other moment
