@@ -64,15 +64,15 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 	- [x] [Create the logic to save the events on the global cart session per purchase list](https://github.com/gumberss/PurchaseListinator/issues/167)
 	- [x] [Save the Purchase List events on Redis](https://github.com/gumberss/PurchaseListinator/issues/169)
 		-  Retain the purchase list state on Redis based on the moment of the first active shopping was created
-- [ ] Create the endpoint to receive events directly from the customer
-- [ ] Create the integration with Shopping 
-	- [ ] Make the Shopping module send these events to the Shopping Cart module (while in test - #shadow) 
-	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated ( #shadow)
-	- [ ] Make the Shopping Cart Module link the shopping session with the Purchase List's active shopping sessions 
-	- [ ] Make the Shopping Cart module listen the shopping session closed to close the cart
-	- [ ] Make the Shopping Cart module unlink the shopping session when the shopping session is closed
-	- [ ] When no one shopping session is activated for the purchase list, make sure the list keys are removed from Redis
-- [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
+- [x] [Create the endpoint to receive events directly from the customer](https://github.com/gumberss/PurchaseListinator/issues/179)
+- [x] Create the integration with Shopping 
+	- [x] [Make the Shopping module send these events to the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/180) (while in test - #shadow) 
+	- [x] [Make the Shopping module create a shopping cart when a shopping is initiated](https://github.com/gumberss/PurchaseListinator/issues/181) ( #shadow)
+	- [x] [Make the Shopping Cart Module link the shopping session with the Purchase List's active shopping sessions](https://github.com/gumberss/PurchaseListinator/issues/182) 
+	- [x] [Make the Shopping Cart module request the price suggestion for the existent items when the shopping cart is initiated](https://github.com/gumberss/PurchaseListinator/issues/188)
+	- [x] [Make the Shopping Cart module listen the shopping session closed to close the cart](https://github.com/gumberss/PurchaseListinator/issues/185)
+	- [x] [Make the Shopping Cart module unlink the shopping session when the shopping session is closed](https://github.com/gumberss/PurchaseListinator/issues/186)
+	- [x] [When no one shopping session is activated for the purchase list, make sure the list keys are removed from Redis](https://github.com/gumberss/PurchaseListinator/issues/187)
 - [ ] Send the shopping cart session closed event
 - [ ] Send an event when a purchase list is deleted
 - [ ] Shopping Cart listen the purchase list deleted event
@@ -97,15 +97,18 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [ ] Remove the purchase list events consumers from the shopping module
 	- [ ] Remove the purchase list events adapters from the shopping module
 	- [ ] Remove the purchase list events wires from the shopping module
+	- [ ] Remove the Price suggestion from the shopping module
 
 
 ## Epic - Multi Shopping Session
 
 ### Multi Shopping Session Management
 
+- [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
 - [ ] Make the cart divide events by shopping when the cart events are requested
 	- Like remove reorder items from another customer or shopping
 	- Events that change the amount of items shouldn't change the price of others shopping sessions, but the shopping session it belongs.
+
 - [ ] Create the logic to close the global cart only when there is no shopping session opened 
 - [ ] Create the logic to remove the shopping session linked with the shopping cart when a shopping is closed
 - [ ] Create the Active Shopping Screen, enabling the customers to see the active shopping
