@@ -102,9 +102,9 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 - [ ] Make the shopping use the shopping cart when the customer refreshes the screen ( #definitive)
 - [ ] Make the Shopping Events Module listen the Shopping Cart Session Closed event instead of the Shopping Closed event ( #definitive)
 - [ ] Remove the old shopping cart
-	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated
+	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated ( #definitive)
 	- [ ] Make the mobile send these events to the Shopping Cart module
-	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module 
+	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module  
 	- [ ] Remove Old Redis instance
 	- [ ] Remove the Cart Events Saved on Shopping Module
 	- [ ] Make the shopping module stop to listen the purchase list events
