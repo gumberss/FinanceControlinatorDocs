@@ -79,24 +79,32 @@ This feature encompasses the creation of the new Shopping Cart module and its pa
 	- [x] [Make the Shopping Cart module listen the shopping session closed to close the cart](https://github.com/gumberss/PurchaseListinator/issues/185)
 	- [x] [Make the Shopping Cart module unlink the shopping session when the shopping session is closed](https://github.com/gumberss/PurchaseListinator/issues/186)
 	- [x] [When no one shopping session is activated for the purchase list, make sure the list keys are removed from Redis](https://github.com/gumberss/PurchaseListinator/issues/187)
-- [ ] Send the shopping cart session closed event
-- [ ] Send an event when a purchase list is deleted
-- [ ] Shopping Cart listen the purchase list deleted event
-	- [ ] Listen the event
-	- [ ] If the list in Redis, remove it and all the other keys related to the list
-- [ ] Create the Shopping Cart module Read.me 
+- [x] [Send the shopping cart session closed event](https://github.com/gumberss/PurchaseListinator/issues/193)
+- [x] [Make the events module listen the shopping cart closed event](https://github.com/gumberss/PurchaseListinator/issues/194) ( #shadow)
+- [x] [Send an event when a purchase list is deleted](https://github.com/gumberss/PurchaseListinator/issues/196)
+- [x] [Shopping Cart listen the purchase list deleted event](https://github.com/gumberss/PurchaseListinator/issues/197)
+- [x] [When the list is deleted, If the list in Redis, remove it and all the other keys related to the list](https://github.com/gumberss/PurchaseListinator/issues/198)
+- [x] [Endpoint to return the events based on a shopping](https://github.com/gumberss/PurchaseListinator/issues/201)
+- [x] [Create the Shopping Cart module Read.me](https://github.com/gumberss/PurchaseListinator/issues/203)
 
 ### Feature - Switch Shopping Cart 
 
 This epic focuses on transitioning from the old version of the Shopping Cart to the new Shopping Cart module. It entails thorough validation of the new module's consistent results through logging and monitoring. Once the reliability is established, the system can confidently rely on the integration events from the Shopping Cart Module. Finally, the goal is to eliminate all dependencies on the old Shopping Cart, enabling a seamless transition to the improved module.
 
-- [ ] Create a log monitoring to check if the Shopping Cart events and list produce the same results as the Original Shopping events and list (compare original with the shadow) 
+- [x] [Make the shopping module get the shopping events when the customer requests the in progress list](https://github.com/gumberss/PurchaseListinator/issues/208)
+- [x] [Build the shopping list based on the cart response](https://github.com/gumberss/PurchaseListinator/issues/209)
+- [x] [Create a log monitoring to check if the Shopping Cart events and list produce the same results as the Original Shopping events and list](https://github.com/gumberss/PurchaseListinator/issues/210) (compare original with the shadow) 
+- [x] [Ensure both carts have the same results](https://github.com/gumberss/PurchaseListinator/issues/212)
 		- When the result is the same in both shopping, we should wait for a period (like days) and just ignore the original shopping and use the new shopping (shopping module + shopping cart module), because all the shopping sessions will be created in both places (shopping module and shopping cart module)
-- [ ] Make the Shopping Events Module listen the Shopping Cart Session Closed event instead of the Shopping Closed event
+- [x] [Make the shopping module get the events when closing the shopping](https://github.com/gumberss/PurchaseListinator/issues/215)
+- [x] [Create a log monitoring to check if the Shopping Cart events in the shopping Redis are the same provided by the shopping cart module](https://github.com/gumberss/PurchaseListinator/issues/216) ( #shadow)
+- [ ] Make the shopping module use the shopping cart events when closing the cart ( #definitive)
+- [ ] Make the shopping use the shopping cart when the customer refreshes the screen ( #definitive)
+- [ ] Make the Shopping Events Module listen the Shopping Cart Session Closed event instead of the Shopping Closed event ( #definitive)
 - [ ] Remove the old shopping cart
 	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated ( #definitive)
 	- [ ] Make the mobile send these events to the Shopping Cart module
-	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module ( #definitive)
+	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module  
 	- [ ] Remove Old Redis instance
 	- [ ] Remove the Cart Events Saved on Shopping Module
 	- [ ] Make the shopping module stop to listen the purchase list events
@@ -144,5 +152,4 @@ It can be planned in the future, with more context of the things that were done 
 - [ ] Change the trash icon for the link icon on the delete button when the customer is trying to delete a list that was shared
 - [ ] Create an endpoint to unlink the list
 - [ ] Request the unlink endpoint when the customers "deletes" a list that was shared with them
-
-- [ ] Make only the owner of the list edit the name of it
+- [ ] Make only the owner of the list able to edit the name of it
