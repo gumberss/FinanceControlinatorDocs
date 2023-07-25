@@ -9,3 +9,5 @@
 - The shopping cart will create the price suggestion events on the cart
 	- It requests the price suggestion only when the cart is created
 	- It  Doesn't make sense to request every time a item is created or other moment
+- Why the shopping cart listen the shopping close event instead of listen a HTTP post 
+	- Because if something happen between the close-cart request and the shopping closed event publication, we lost all the events forever 
