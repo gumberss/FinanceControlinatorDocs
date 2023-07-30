@@ -98,20 +98,24 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 		- When the result is the same in both shopping, we should wait for a period (like days) and just ignore the original shopping and use the new shopping (shopping module + shopping cart module), because all the shopping sessions will be created in both places (shopping module and shopping cart module)
 - [x] [Make the shopping module get the events when closing the shopping](https://github.com/gumberss/PurchaseListinator/issues/215)
 - [x] [Create a log monitoring to check if the Shopping Cart events in the shopping Redis are the same provided by the shopping cart module](https://github.com/gumberss/PurchaseListinator/issues/216) ( #shadow)
-- [ ] Make the shopping module use the shopping cart events when closing the cart ( #definitive)
-- [ ] Make the shopping use the shopping cart when the customer refreshes the screen ( #definitive)
-- [ ] Make the Shopping Events Module listen the Shopping Cart Session Closed event instead of the Shopping Closed event ( #definitive)
-- [ ] Remove the old shopping cart
-	- [ ] Make the Shopping module create a shopping cart when a shopping is initiated ( #definitive)
-	- [ ] Make the mobile send these events to the Shopping Cart module
-	- [ ] Make the Shopping module stop sending the events to the Shopping Cart module  
-	- [ ] Remove Old Redis instance
-	- [ ] Remove the Cart Events Saved on Shopping Module
-	- [ ] Make the shopping module stop to listen the purchase list events
-	- [ ] Remove the purchase list events consumers from the shopping module
-	- [ ] Remove the purchase list events adapters from the shopping module
-	- [ ] Remove the purchase list events wires from the shopping module
-	- [ ] Remove the Price suggestion from the shopping module
+- [x] [Make the shopping use the shopping cart when the customer refreshes the screen](https://github.com/gumberss/PurchaseListinator/issues/219) ( #definitive)
+- [x] [Make the shopping module use the shopping cart events when closing the cart](https://github.com/gumberss/PurchaseListinator/issues/218) ( #definitive)
+- [x] [Make the Shopping Events Module listen the Shopping Cart Session Closed event instead of the Shopping Closed event](https://github.com/gumberss/PurchaseListinator/issues/220) ( #definitive)
+- [x] Remove the old shopping cart
+	- [x] [Make the Shopping module create a shopping cart when a shopping is initiated](https://github.com/gumberss/PurchaseListinator/issues/225) ( #definitive)
+	- [x] [Make the mobile send these events to the Shopping Cart module](https://github.com/gumberss/FinanceControlinatorMobile/issues/182)
+	- [x] [Make the Shopping module stop sending the events to the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/226)  
+
+	- [x] [Remove the Cart Events Saved on Shopping Module](https://github.com/gumberss/PurchaseListinator/issues/228)
+	- [x] [Remove the Price suggestion from the shopping module](https://github.com/gumberss/PurchaseListinator/issues/233)
+	- [x] [Make the shopping module stop to listen the purchase list events](https://github.com/gumberss/PurchaseListinator/issues/234)
+	- [x] [Remove the purchase list events consumers from the shopping module](https://github.com/gumberss/PurchaseListinator/issues/235)
+	- [x] [Remove the purchase list events adapters from the shopping module](https://github.com/gumberss/PurchaseListinator/issues/236)
+	- [x] [Remove the shopping receive events endpoint](https://github.com/gumberss/PurchaseListinator/issues/240)
+	- [x] [Remove the purchase list events wires from the shopping module](https://github.com/gumberss/PurchaseListinator/issues/237)
+	- [x] [Remove Old Redis instance](https://github.com/gumberss/PurchaseListinator/issues/227)
+	- [x] [Replace the shopping cart internal for the cart events](https://github.com/gumberss/PurchaseListinator/issues/239)
+
 
 
 ## Epic - Multi Shopping Session
@@ -129,25 +133,12 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [ ] Enable the customers to see all the active shopping
 	- [ ] Enable the customers to create new shopping even if already exist an active shopping
 
-### Multi Shopping Session Finance
-***Need to be discovered yet***
-Who can finish the shopping?
-Who is the owner of the expenses? 
-- The user that started the list
-- Should enable who is going to finish the shopping to select the person who is going to pay?
-- When there is more than one customer changing one shopping at the same time, provide a way to select who is the owner of the expense?
-
 ## Notifications
 
 It can be planned in the future, with more context of the things that were done before
 
-
-
-
-
-
-## For the future
-
+## For the future 
+#for-the-future 
 ### Unshare button
 - [ ] Change the trash icon for the link icon on the delete button when the customer is trying to delete a list that was shared
 - [ ] Create an endpoint to unlink the list
