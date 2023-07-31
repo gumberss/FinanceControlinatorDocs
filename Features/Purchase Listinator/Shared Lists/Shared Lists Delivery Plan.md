@@ -107,7 +107,6 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [x] [Make the Shopping module create a shopping cart when a shopping is initiated](https://github.com/gumberss/PurchaseListinator/issues/225) ( #definitive)
 	- [x] [Make the mobile send these events to the Shopping Cart module](https://github.com/gumberss/FinanceControlinatorMobile/issues/182)
 	- [x] [Make the Shopping module stop sending the events to the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/226)  
-
 	- [x] [Remove the Cart Events Saved on Shopping Module](https://github.com/gumberss/PurchaseListinator/issues/228)
 	- [x] [Remove the Price suggestion from the shopping module](https://github.com/gumberss/PurchaseListinator/issues/233)
 	- [x] [Make the shopping module stop to listen the purchase list events](https://github.com/gumberss/PurchaseListinator/issues/234)
