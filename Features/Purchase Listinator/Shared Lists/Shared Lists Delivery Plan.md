@@ -119,21 +119,19 @@ This epic focuses on transitioning from the old version of the Shopping Cart to 
 	- [x] [Replace the shopping cart internal for the cart events](https://github.com/gumberss/PurchaseListinator/issues/239)
 
 
-
 ## Epic - Multi Shopping Session
 
 ### Multi Shopping Session Management
 
-- [ ] Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event
-- [ ] Make the cart divide events by shopping when the cart events are requested
+- [x] [Make the Shopping Cart Module filter the events from the current shopping in the global cart before send the shopping cart session closed event](https://github.com/gumberss/PurchaseListinator/issues/245)
+- [x] [Make the cart divide events by shopping when the cart events are requested](https://github.com/gumberss/PurchaseListinator/issues/246)
 	- Like remove reorder items from another customer or shopping
-	- Events that change the amount of items shouldn't change the price of others shopping sessions, but the shopping session it belongs.
 
-- [ ] Create the logic to close the global cart only when there is no shopping session opened 
-- [ ] Create the logic to remove the shopping session linked with the shopping cart when a shopping is closed
-- [ ] Create the Active Shopping Screen, enabling the customers to see the active shopping
-	- [ ] Enable the customers to see all the active shopping
-	- [ ] Enable the customers to create new shopping even if already exist an active shopping
+- [x] [Create the logic to close the global cart only when there is no shopping session opened](https://github.com/gumberss/PurchaseListinator/issues/247) 
+- [x] [Create the logic to remove the shopping session linked with the shopping cart when a shopping is closed](https://github.com/gumberss/PurchaseListinator/issues/248)
+- [x] Create the Active Shopping Screen, enabling the customers to see the active shopping
+	- [x] [Enable the customers to see all the active shopping](https://github.com/gumberss/FinanceControlinatorMobile/issues/183)
+	- [x] [Enable the customers to create new shopping even if already exist an active shopping](https://github.com/gumberss/FinanceControlinatorMobile/issues/184)
 
 ## Notifications
 
@@ -146,3 +144,7 @@ It can be planned in the future, with more context of the things that were done 
 - [ ] Create an endpoint to unlink the list
 - [ ] Request the unlink endpoint when the customers "deletes" a list that was shared with them
 - [ ] Make only the owner of the list able to edit the name of it
+
+### Delete a shopping
+Delete a shopping means invalidate all the events, so it's needed to find a way to invalidate them
+- Property "deleted" on the database?
