@@ -8,7 +8,8 @@
     "FinanceControlinator",
     "Listinator",
     "listinator",
-    "wishlists"
+    "wishlists",
+    "idempotency"
   ],
   "pdfExportSettings": {
     "pageSize": "Letter",

@@ -1,13 +1,71 @@
-- How the events were saved on the Shopping Cart module 
-	- [#157](https://github.com/gumberss/PurchaseListinator/issues/157)
-	- Why use set in this case?
-- Uncouple shopping and purchase list [#154](https://github.com/gumberss/PurchaseListinator/issues/154)
-- The controller output schema can't be set because it can be either the result or a left
-	- Create our own left/right/branch to have the control and the schemas
-- The request (components.http/request) does not consider the status to parse the result-schema. 
-	- The result schema should be for each status
-- The shopping cart will create the price suggestion events on the cart
-	- It requests the price suggestion only when the cart is created
-	- It  Doesn't make sense to request every time a item is created or other moment
-- Why the shopping cart listen the shopping close event instead of listen a HTTP post 
-	- Because if something happen between the close-cart request and the shopping closed event publication, we lost all the events forever 
+#Done 
+
+## Context
+
+The inspiration behind the shared list feature emerged from the genuine needs of our customers. They expressed a desire to share their personal lists with their partners, family, friends, and anyone they choose. This request reflects a clear demand for enhanced collaboration and a seamless shopping experience among users, highlighting the importance of fostering social connections and convenience in our platform. 
+To know more about the benefits, you can check the [[Shared Lists RFC]] that provides all the details.
+
+## Decision
+
+### Customer identification
+
+Among the various options outlined in the [[Shared Lists RFC#Customer identification]], we opted to proceed with the username identification method referred to as "nickname". This approach involved storing the nickname as a new property within the user entity. Consequently, whenever a customer shared a list with another user, the system would locate the recipient user based on their nickname, retrieve their corresponding ID, and then create a new entity named "share" to establish and store the association between the shared list and the respective customer.
+
+As a result of this decision, adjustments were necessary to the endpoint functionalities. The modifications aimed to enable the retrieval of not only the data related to customers' own lists, but also the lists shared with them. To facilitate this process, a new endpoint was introduced within the purchase list module. This new endpoint can be accessed by other modules, allowing them to request and obtain all the lists permitted for a specific customer. By utilizing this endpoint, it becomes possible to verify whether the customer has the necessary permissions to access the desired data.
+
+It's important to mention that the monolith part of this system have the purchase-list, shopping and user functionalities together, so in this case, the purchase list accesses the allowed lists directly through the database. The endpoint is used for the other modules and also the shopping module that is part of the purchase-list monolith, but once we aim to separate them into their own modules, the shopping module requests the endpoint too
+
+It is essential to highlight that the monolithic part of this system encompasses the purchase-list, shopping, and user functionalities combined. Consequently, the purchase list directly accesses the allowed lists by interacting with the database. It doesn't happen with the shopping module that even it is part of the monolith once we aim to separate it into its own module, so shopping along with all the other modules request the endpoint.
+
+### Shopping Cart
+
+The primary objective behind the creation of this new module was to foster scalability and independence from other modules. To illustrate the motivation behind its development, consider the shopping module, which no longer needs to be concerned about the cart changes provided by different shopping sessions or the activities of other modules that impact only the cart over time. With the introduction of the shopping cart module, these responsibilities now lie solely within its domain.
+
+By decoupling the shopping cart functionality into a separate module, we ensure that both shopping and shopping cart module can grow and evolve independently. The shopping module focus solely on managing the shopping experience and each shopping session individually. The complexities of interaction between the shopping sessions related with the cart events are managed by the specialized shopping cart module.
+
+#### Price Suggestion
+  
+The placement of the price suggestion feature within the shopping module proved to be inefficient in its previous location. Each time the screen was refreshed, the shopping module had to request data from the price suggestion module, which negatively impacted performance. To address this, a more optimal approach was implemented. Now, price suggestions are obtained only when the shopping cart is initiated, and at this specific moment, as there is no need to request them continuously. This improvement prevents unnecessary requests, even when new items are added to the list. For such new items without any historical data to rely on for predicting price suggestions, the system sets the suggestion to zero.
+
+#### Shopping Finished Event
+
+Instead of the shopping cart module have an endpoint to be informed when a shopping is finished, the decision was to have a consumer for this situation because of if something wrong happened with the shopping module after inform the shopping cart module that the shopping was closed and before the request be entirely completed, the shopping cart would lose the events, once they are stored only in memory using Redis and not in a persistent data storage.
+
+Instead of using an endpoint to inform the shopping cart module when a shopping session is finished, a consumer was introduced for this purpose. This decision was made to ensure data integrity and prevent event loss in case any issues arise with the shopping module after informing the shopping cart module about the shopping closure.
+
+With the consumer in place, the shopping cart module is now able to consume the shopping finished events. By doing so, it ensures that even if any disruptions occur during the process, the events will not be lost. This is particularly important since the shopping cart stores the events in-memory using Redis and not in a persistent data storage. The consumer allows for better handling and processing of the events, ensuring a more robust and reliable system.
+
+#### Data Stored
+
+The shopping cart module stores the data on Redis for some reasons, the first one was because of the performance, once Redis is one of the fastest database and as we want to have many people shopping the same list at the same time, we need to answer the requests as fast as possible. The second one was because of the idempotency provided by the sets for the cart events received by the message queue events 
+
+The shopping cart module utilizes Redis as its data storage solution for two main reasons. Firstly, Redis is renowned for its exceptional performance, being one of the fastest databases available. Given our objective of supporting a large number of users shopping simultaneously the same list, it is crucial to respond to requests swiftly and efficiently, making Redis an ideal choice.
+
+Secondly, Redis's sets offer inherent idempotency for the cart events received through the message queue. This key feature ensures that duplicate events are automatically handled, preventing unintended consequences and ensuring data consistency and reliability throughout the shopping experience. Furthermore, extending the idempotency to cover HTTP requests is a valuable enhancement. Currently, the idempotency for HTTP requests is not functioning optimally due to the 'moment' attribute of the events being set on the server side.
+
+## Consequences
+
+To check if the customer has permission to change the list, it's needed to request the endpoint in the purchase list module.
+
+The shopping cart module has the responsibility to manage the entire lifecycle of the shopping cart, managing the events provided from all the shopping sessions.
+
+The shopping cart module is responsible to provide the list at the moment of the first active cart was created as well as the events. 
+
+The shopping module is responsible to create the shopping state with the events and the list provided by the shopping cart module
+
+-The events received by the shopping cart from the webapi doesn't have idempotency because of the property moment is provided by the server. This property wasn't got from the mobile app because of each mobile app can provide a different date. Manage it can be complex.
+
+Once the Redis is a key value database, each relationship needs to be a key and all of them will be explained below:
+- [LIST_ID]\_list: Store the purchase list at the moment of the first shopping session notify the shopping cart module that session is active;
+- [LIST_ID]\_shopping\_sessions: stores in a set all the active shopping sessions IDs. This key is used when a shopping session is closed to check if there is another session active or not;
+- [LIST_ID]\_global\_cart: stores in a set all the shopping cart events;
+- [SHOPPING_ID]\_list\_id: The list ID that the shopping session belongs to. This key was needed because the shopping events provided by the customer directly from the mobile app doesn't have the purchase list id inside of it.
+
+
+
+
+
+
+What becomes easier or more difficult to do because of this change?
+
+
