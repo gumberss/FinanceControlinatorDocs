@@ -13,9 +13,15 @@ Among the various options outlined in the [[Shared Lists RFC#Customer identifica
 
 As a result of this decision, adjustments were necessary to the endpoint functionalities. The modifications aimed to enable the retrieval of not only the data related to customers' own lists, but also the lists shared with them. To facilitate this process, a new endpoint was introduced within the purchase list module. This new endpoint can be accessed by other modules, allowing them to request and obtain all the lists permitted for a specific customer. By utilizing this endpoint, it becomes possible to verify whether the customer has the necessary permissions to access the desired data.
 
-It's important to mention that the monolith part of this system have the purchase-list, shopping and user functionalities together, so in this case, the purchase list accesses the allowed lists directly through the database. The endpoint is used for the other modules and also the shopping module that is part of the purchase-list monolith, but once we aim to separate them into their own modules, the shopping module requests the endpoint too
+It's important to mention that the monolith part of this system have the purchase-list, shopping and user functionalities together, so in this case, the purchase list accesses the allowed lists directly through the database. The endpoint is used for the other modules and also the shopping module that is part of the purchase-list monolith, but once we aim to separate them into their own modules, the shopping module requests the endpoint too;
 
-It is essential to highlight that the monolithic part of this system encompasses the purchase-list, shopping, and user functionalities combined. Consequently, the purchase list directly accesses the allowed lists by interacting with the database. It doesn't happen with the shopping module that even it is part of the monolith once we aim to separate it into its own module, so shopping along with all the other modules request the endpoint.
+#### Design Decisions 
+
+The decision to check customer permissions by requesting the endpoint in the purchase list endpoint was made to centralize and enforce consistent permission checks. This approach avoids duplicating permission checks across modules, promoting code modularity, and simplifying the overall architecture.
+
+#### Consequences
+
+To check if the customer has permission to change the list, it's needed to request the endpoint in the purchase list module.
 
 ### Shopping Cart
 
@@ -35,7 +41,7 @@ Instead of using an endpoint to inform the shopping cart module when a shopping 
 
 With the consumer in place, the shopping cart module is now able to consume the shopping finished events. By doing so, it ensures that even if any disruptions occur during the process, the events will not be lost. This is particularly important since the shopping cart stores the events in-memory using Redis and not in a persistent data storage. The consumer allows for better handling and processing of the events, ensuring a more robust and reliable system.
 
-#### Data Stored
+#### Data Storage
 
 The shopping cart module stores the data on Redis for some reasons, the first one was because of the performance, once Redis is one of the fastest database and as we want to have many people shopping the same list at the same time, we need to answer the requests as fast as possible. The second one was because of the idempotency provided by the sets for the cart events received by the message queue events 
 
@@ -43,29 +49,34 @@ The shopping cart module utilizes Redis as its data storage solution for two mai
 
 Secondly, Redis's sets offer inherent idempotency for the cart events received through the message queue. This key feature ensures that duplicate events are automatically handled, preventing unintended consequences and ensuring data consistency and reliability throughout the shopping experience. Furthermore, extending the idempotency to cover HTTP requests is a valuable enhancement. Currently, the idempotency for HTTP requests is not functioning optimally due to the 'moment' attribute of the events being set on the server side.
 
-## Consequences
-
-To check if the customer has permission to change the list, it's needed to request the endpoint in the purchase list module.
+#### Design Decisions 
 
 The shopping cart module has the responsibility to manage the entire lifecycle of the shopping cart, managing the events provided from all the shopping sessions.
 
-The shopping cart module is responsible to provide the list at the moment of the first active cart was created as well as the events. 
-
-The shopping module is responsible to create the shopping state with the events and the list provided by the shopping cart module
-
--The events received by the shopping cart from the webapi doesn't have idempotency because of the property moment is provided by the server. This property wasn't got from the mobile app because of each mobile app can provide a different date. Manage it can be complex.
-
-Once the Redis is a key value database, each relationship needs to be a key and all of them will be explained below:
+Once the Redis is a key value database, each relationship needs to be between key and values and all of them will be explained below:
 - [LIST_ID]\_list: Store the purchase list at the moment of the first shopping session notify the shopping cart module that session is active;
 - [LIST_ID]\_shopping\_sessions: stores in a set all the active shopping sessions IDs. This key is used when a shopping session is closed to check if there is another session active or not;
 - [LIST_ID]\_global\_cart: stores in a set all the shopping cart events;
 - [SHOPPING_ID]\_list\_id: The list ID that the shopping session belongs to. This key was needed because the shopping events provided by the customer directly from the mobile app doesn't have the purchase list id inside of it.
+- 
+
+#### Consequences
+
+The shopping cart module is responsible to provide the list at the moment of the first active cart was created, as well as the events that happen since there. 
+
+The shopping module is responsible to create the shopping state with the events and the list provided by the shopping cart module, as well as, managing each shopping session separately, informing when the session was opened and closed.
+
+The events received by the shopping cart from the webapi doesn't have idempotency because of the property moment is provided by the server. This property wasn't got from the mobile app because of each mobile app can provide a different date. Manage it can be complex.
+
+## Final Architecture 
+
+The image below presents the vision only of the shopping cart module and how it interacts with the other modules
+<img src="https://github.com/gumberss/FinanceControlinatorDocs/assets/38296002/5acadbd7-63cf-46cb-be95-55f8c0664787"/>
+
+ 
 
 
 
 
-
-
-What becomes easier or more difficult to do because of this change?
 
 
