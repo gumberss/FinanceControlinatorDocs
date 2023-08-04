@@ -61,7 +61,7 @@ Once the Redis is a key value database, each relationship needs to be between ke
 
 #### Consequences
 
-If other complex relationships need to be established in the future, it would be advisable to consider incorporating another database for their management, as Redis may not be the ideal choice for handling such complexities. The reason for this lies in Redis's design as an in-memory key-value database, which excels in fast data retrieval for simple key-value pairs but may encounter limitations when dealing with complex relationships and advanced querying capabilities.
+If other complex relationships need to be established in the future in the shopping cart module, it would be advisable to consider incorporating another database for their management, as Redis may not be the ideal choice for handling such complexities. The reason for this lies in Redis's design as an in-memory key-value database, which excels in fast data retrieval for simple key-value pairs but may encounter limitations when dealing with complex relationships and advanced querying capabilities.
 
 The shopping cart module is responsible to provide the list at the moment of the first active cart was created, as well as the events that happen since there. 
 
