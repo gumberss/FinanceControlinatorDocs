@@ -31,7 +31,7 @@ By decoupling the shopping cart functionality into a separate module, we ensure 
 
 #### Price Suggestion
   
-The placement of the price suggestion feature within the shopping module proved to be inefficient in its previous location. Each time the screen was refreshed, the shopping module had to request data from the price suggestion module, which negatively impacted performance. To address this, a more optimal approach was implemented. Now, price suggestions are obtained only when the shopping cart is initiated, and at this specific moment, as there is no need to request them continuously. This improvement prevents unnecessary requests, even when new items are added to the list. For such new items without any historical data to rely on for predicting price suggestions, the system sets the suggestion to zero.
+The placement of the price suggestion feature within the shopping module proved to be inefficient in its previous location. Each time the screen was refreshed, the shopping module had to request data from the price suggestion module, which negatively impacted performance. To address this, a more optimal approach was implemented. Now, price suggestions are obtained only when the shopping cart is initiated, and only at this specific moment, as there is no need to request them continuously. This improvement prevents unnecessary requests, even when new items are added to the list. For such new items without any historical data to rely on for predicting price suggestions, the system sets the suggestion to zero.
 
 #### Shopping Finished Event
 
