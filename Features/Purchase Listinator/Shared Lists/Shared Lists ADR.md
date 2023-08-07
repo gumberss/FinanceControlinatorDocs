@@ -41,11 +41,9 @@ With the consumer in place, the shopping cart module is able to consume the shop
 
 #### Data Storage
 
-The shopping cart module stores the data on Redis for some reasons, the first one was because of the performance, once Redis is one of the fastest database and as we want to have many people shopping the same list at the same time, we need to answer the requests as fast as possible. The second one was because of the idempotency provided by the sets for the cart events received by the message queue events 
+The shopping cart module stores the data on Redis for some reasons, the first one was because of the performance, Redis is one of the fastest databases and as we want to have many people shopping the same list at the same time, we need to answer the requests as fast as possible.
 
-The shopping cart module utilizes Redis as its data storage solution for two main reasons. Firstly, Redis is renowned for its exceptional performance, being one of the fastest databases available. Given our objective of supporting a large number of users shopping simultaneously the same list, it is crucial to respond to requests swiftly and efficiently, making Redis an ideal choice.
-
-Secondly, Redis's sets offer inherent idempotency for the cart events received through the message queue. This key feature ensures that duplicate events are automatically handled, preventing unintended consequences and ensuring data consistency and reliability throughout the shopping experience. Furthermore, extending the idempotency to cover HTTP requests is a valuable enhancement. Currently, the idempotency for HTTP requests is not functioning optimally due to the 'moment' attribute of the events being set on the server side.
+Secondly, Redis's sets offer idempotency for the cart events received through the message queue. This key feature ensures that duplicate events are automatically handled, preventing unintended consequences and ensuring data consistency and reliability throughout the shopping experience. Furthermore, extending the idempotency to cover HTTP requests is a valuable enhancement. Currently, the idempotency for HTTP requests is not functioning optimally due to the 'moment' attribute of the events being set on the server side.
 
 #### Design Decisions 
 
