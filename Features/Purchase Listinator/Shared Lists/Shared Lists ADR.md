@@ -27,7 +27,7 @@ To check if the customer has permission to change the list, it's needed to reque
 
 The primary objective behind the creation of this new module was to foster scalability and independence from other modules. To illustrate the motivation behind its development, consider the shopping module, which no longer needs to be concerned about the cart changes provided by different shopping sessions or the activities of other modules that impact only the cart over time. With the introduction of the shopping cart module, these responsibilities now lie solely within its domain.
 
-By decoupling the shopping cart functionality into a separate module, we ensure that both shopping and shopping cart module can grow and evolve independently. The shopping module focus solely on managing the shopping experience and each shopping session individually. The complexities of interaction between the shopping sessions related with the cart events are managed by the specialized shopping cart module.
+By decoupling the shopping cart functionality into a separate module, we ensure that both shopping and shopping cart modules can grow and evolve independently. The shopping module focuses solely on managing the shopping experience and each shopping session individually. The complexities of interaction between the shopping sessions related to the cart events are managed by the specialized shopping cart module.
 
 #### Price Suggestion
   
@@ -59,11 +59,11 @@ Once Redis is a key value database, each relationship needs to be between keys a
 
 If other complex relationships need to be established in the future in the shopping cart module, it would be advisable to consider incorporating another database for their management, as Redis may not be the ideal choice for handling such complexities. The reason for this lies in Redis's design as an in-memory key-value database, which excels in fast data retrieval for simple key-value pairs but may encounter limitations when dealing with complex relationships and advanced querying capabilities.
 
-The shopping cart module is responsible to provide the list at the moment of the first active cart was created, as well as the events that happen since there. 
+The shopping cart module is responsible to provide the list at the moment the first active cart was created, as well as the events that happen since there. 
 
 The shopping module is responsible to create the shopping state with the events and the list provided by the shopping cart module, as well as, managing each shopping session separately, informing when the session was opened and closed.
 
-The events received by the shopping cart from the webapi don't have idempotency because the property "moment" is provided by the server. This property wasn't got from the mobile app because each mobile app can provide a different date. Managing it can be complex.
+The events received by the shopping cart from the Webapi don't have idempotency because the property "moment" is provided by the server. This property wasn't got from the mobile app because each mobile app can provide a different date. Managing it can be complex.
 
 ## Final Architecture 
 
