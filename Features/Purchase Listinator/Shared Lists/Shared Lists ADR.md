@@ -49,11 +49,11 @@ Secondly, Redis's sets offer idempotency for the cart events received through th
 
 The shopping cart module holds the primary responsibility for managing the entire lifecycle of the shopping cart, handling both the events originating from all shopping sessions and external events not directly tied to any specific shopping session.
 
-Once the Redis is a key value database, each relationship needs to be between key and values and all of them will be explained below:
-- [LIST_ID]\_list: Store the purchase list at the moment of the first shopping session notify the shopping cart module that session is active;
-- [LIST_ID]\_shopping\_sessions: stores in a set all the active shopping sessions IDs. This key is used when a shopping session is closed to check if there is another session active or not;
+Once Redis is a key value database, each relationship needs to be between keys and values and all of them will be explained below:
+- [LIST_ID]\_list: Store the purchase list at the moment of the first shopping session and notify the shopping cart module that the session is active;
+- [LIST_ID]\_shopping\_sessions: stores in a set of all the active shopping session IDs. This key is used when a shopping session is closed to check if there is another session active or not;
 - [LIST_ID]\_global\_cart: stores in a set all the shopping cart events;
-- [SHOPPING_ID]\_list\_id: The list ID that the shopping session belongs to. This key was needed because the shopping events provided by the customer directly from the mobile app doesn't have the purchase list id inside of it.
+- [SHOPPING_ID]\_list\_id: The list ID that the shopping session belongs to. This key was needed because the shopping events provided by the customer directly from the mobile app don't have the purchase list id inside of it.
 
 #### Consequences
 
@@ -63,7 +63,7 @@ The shopping cart module is responsible to provide the list at the moment of the
 
 The shopping module is responsible to create the shopping state with the events and the list provided by the shopping cart module, as well as, managing each shopping session separately, informing when the session was opened and closed.
 
-The events received by the shopping cart from the webapi doesn't have idempotency because of the property moment is provided by the server. This property wasn't got from the mobile app because of each mobile app can provide a different date. Manage it can be complex.
+The events received by the shopping cart from the webapi don't have idempotency because the property "moment" is provided by the server. This property wasn't got from the mobile app because each mobile app can provide a different date. Managing it can be complex.
 
 ## Final Architecture 
 
