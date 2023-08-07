@@ -2,9 +2,9 @@ This is the designated space for organizing the shared list task. Our strategy i
 
 The shared lists encompass three significant epics, each with distinct features and tasks. The first epic, 'Shared Lists,' has a key objective of empowering customers by enabling list sharing with others. This facilitates collaborative shopping experiences where multiple users can contribute to the same list. However, there is a current restriction limiting only one active shopping session at a time per purchase list.
 
-In response to this limitation, the next two epics focus on enhancing the system to allow multiple simultaneous shopping sessions within a single purchase list. The second epic, 'Shopping Cart Revamp' plays a vital role in achieving this goal. It aims to separate the shopping cart's responsibilities into a new module, which will effectively manage the entire shopping cart lifecycle. After this revamp, the system should keep efficiently handle the cart functionality without impacting the customer's shopping experience. The 'Shopping Cart Revamp' epic lays a robust foundation by effectively separating concerns and creating a distinct bounded context for the shopping cart. This strategic overhaul not only streamlines the current functionality but also paves the way for seamless integration of new features specific to the shopping cart domain. With the shopping cart operating autonomously within its bounded context, future enhancements and innovations can be seamlessly introduced without disrupting other parts of the system.
+In response to this limitation, the next two epics focus on enhancing the system to allow multiple simultaneous shopping sessions within a single purchase list. The second epic, 'Shopping Cart Revamp' plays a vital role in achieving this goal. It aims to separate the shopping cart's responsibilities into a new module, which will effectively manage the entire shopping cart lifecycle. After this revamp, the system should keep efficiently handling the cart functionality without impacting the customer's shopping experience. The 'Shopping Cart Revamp' epic lays a robust foundation by effectively separating concerns and creating a distinct bounded context for the shopping cart. This strategic overhaul not only streamlines the current functionality but also paves the way for the seamless integration of new features specific to the shopping cart domain. With the shopping cart operating autonomously within its bounded context, future enhancements, and innovations can be seamlessly introduced without disrupting other parts of the system.
 
-The third epic, 'Multi Shopping Session,' capitalizes on the advancements brought about by the 'Shopping Cart Revamp' and centers around facilitating multiple simultaneous shopping sessions within a single purchase list. With this enhancement, multiple users can actively shop together in real-time, fostering a more dynamic and collaborative shopping environment.
+The third epic, 'Multi Shopping Session,' capitalizes on the advancements brought about by the 'Shopping Cart Revamp' and centers around facilitating multiple simultaneous shopping sessions within a single purchase list. With this enhancement, multiple users can actively shop together in real time, fostering a more dynamic and collaborative shopping environment.
 
 ## Epic - Shared Lists 
 
@@ -49,11 +49,11 @@ https://github.com/gumberss/FinanceControlinatorDocs/assets/38296002/16f2b059-49
 
 ## Epic - Shopping Cart Revamp 
 
-This epic focuses on reorganizing the Shopping module into two distinct modules: the Shopping module and the Shopping Cart module. The primary goal is to improve code organization and promote a clear segregation of responsibilities and domains. By separating the Shopping Cart functionality into its own module, it gains the ability to evolve independently with minimal direct dependencies on other modules. This restructuring aims to enhance maintainability, scalability, and facilitate future development and enhancements to the Shopping and Shopping Cart modules.
+This epic focuses on reorganizing the Shopping module into two distinct modules: the Shopping module and the Shopping Cart module. The primary goal is to improve code organization and promote a clear segregation of responsibilities and domains. By separating the Shopping Cart functionality into its own module, it gains the ability to evolve independently with minimal direct dependencies on other modules. This restructuring aims to enhance maintainability, and scalability, and facilitate future development and enhancements to the Shopping and Shopping Cart modules.
 
 ### Feature - Shopping Cart Module Creation
 
-This feature encompasses the creation of the new Shopping Cart module and its parallel execution alongside the existing Shopping Cart implementation. The focus is initially on building the new module while preserving the functionality of the current cart. By adopting this approach, we ensure a seamless integration of the new Shopping Cart module while maintaining continuity in the current system's functionality.
+This feature encompasses the creation of the new Shopping Cart module and its parallel execution alongside the existing Shopping Cart implementation. The focus is initially on building the new module while preserving the functionality of the current cart. By adopting this approach, we ensure seamless integration of the new Shopping Cart module while maintaining continuity in the current system's functionality.
 
 - [x] [Create the Shopping Cart module](https://github.com/gumberss/PurchaseListinator/issues/152)
 - [x] [Create the Redis instance for the new module](https://github.com/gumberss/PurchaseListinator/issues/153)
@@ -141,9 +141,9 @@ It can be planned in the future, with more context of the things that were done 
 ### Unshare button
 - [ ] Change the trash icon for the link icon on the delete button when the customer is trying to delete a list that was shared
 - [ ] Create an endpoint to unlink the list
-- [ ] Request the unlink endpoint when the customers "deletes" a list that was shared with them
+- [ ] Request the unlink endpoint when the customers "delete" a list that was shared with them
 - [ ] Make only the owner of the list able to edit the name of it
 
 ### Delete a shopping
-Delete a shopping means invalidate all the events, so it's needed to find a way to invalidate them
+Delete a shopping means invalidating all the events, so it's needed to find a way to invalidate them
 - Property "deleted" on the database?
