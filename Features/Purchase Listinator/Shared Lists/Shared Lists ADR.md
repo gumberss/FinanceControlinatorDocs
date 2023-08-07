@@ -13,7 +13,7 @@ Among the various options outlined in the [[Shared Lists RFC#Customer identifica
 
 As a result of this decision, adjustments were necessary to the endpoint functionalities. The modifications aimed to enable the retrieval of not only the data related to customers' own lists, but also the lists shared with them. To facilitate this process, a new endpoint was introduced within the purchase list module. This new endpoint can be accessed by other modules, allowing them to request and obtain all the lists permitted for a specific customer. By utilizing this endpoint, it becomes possible to verify whether the customer has the necessary permissions to access the desired data.
 
-It's important to mention that the monolith part of this system have the purchase-list, shopping and user functionalities together, so in this case, the purchase list accesses the allowed lists directly through the database. The endpoint is used for the other modules and also the shopping module that is part of the purchase-list monolith, but once we aim to separate them into their own modules, the shopping module requests the endpoint too;
+It's important to mention that the monolith part of this system has the purchase-list, shopping, and user functionalities together, so in this case, the purchase list accesses the allowed lists directly through the database. The endpoint is used for the other modules and also the shopping module that is part of the purchase-list monolith, but once we aim to separate them into their own modules, the shopping module requests the endpoint too.
 
 #### Design Decisions 
 
