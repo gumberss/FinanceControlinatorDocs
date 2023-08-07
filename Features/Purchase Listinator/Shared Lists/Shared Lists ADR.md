@@ -51,16 +51,17 @@ Secondly, Redis's sets offer inherent idempotency for the cart events received t
 
 #### Design Decisions 
 
-The shopping cart module has the responsibility to manage the entire lifecycle of the shopping cart, managing the events provided from all the shopping sessions.
+The shopping cart module holds the primary responsibility for managing the entire lifecycle of the shopping cart, handling both the events originating from all shopping sessions and external events not directly tied to any specific shopping session.
 
 Once the Redis is a key value database, each relationship needs to be between key and values and all of them will be explained below:
 - [LIST_ID]\_list: Store the purchase list at the moment of the first shopping session notify the shopping cart module that session is active;
 - [LIST_ID]\_shopping\_sessions: stores in a set all the active shopping sessions IDs. This key is used when a shopping session is closed to check if there is another session active or not;
 - [LIST_ID]\_global\_cart: stores in a set all the shopping cart events;
 - [SHOPPING_ID]\_list\_id: The list ID that the shopping session belongs to. This key was needed because the shopping events provided by the customer directly from the mobile app doesn't have the purchase list id inside of it.
-- 
 
 #### Consequences
+
+If other complex relationships need to be established in the future in the shopping cart module, it would be advisable to consider incorporating another database for their management, as Redis may not be the ideal choice for handling such complexities. The reason for this lies in Redis's design as an in-memory key-value database, which excels in fast data retrieval for simple key-value pairs but may encounter limitations when dealing with complex relationships and advanced querying capabilities.
 
 The shopping cart module is responsible to provide the list at the moment of the first active cart was created, as well as the events that happen since there. 
 
