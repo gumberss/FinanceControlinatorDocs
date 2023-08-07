@@ -37,8 +37,6 @@ The placement of the price suggestion feature within the shopping module proved 
 
 Instead of the shopping cart module have an endpoint to be informed when a shopping is finished, the decision was to have a consumer for this situation because of if something wrong happened with the shopping module after inform the shopping cart module that the shopping was closed and before the request be entirely completed, the shopping cart would lose the events, once they are stored only in memory using Redis and not in a persistent data storage.
 
-Instead of using an endpoint to inform the shopping cart module when a shopping session is finished, a consumer was introduced for this purpose. This decision was made to ensure data integrity and prevent event loss in case any issues arise with the shopping module after informing the shopping cart module about the shopping closure.
-
 With the consumer in place, the shopping cart module is now able to consume the shopping finished events. By doing so, it ensures that even if any disruptions occur during the process, the events will not be lost. This is particularly important since the shopping cart stores the events in-memory using Redis and not in a persistent data storage. The consumer allows for better handling and processing of the events, ensuring a more robust and reliable system.
 
 #### Data Storage
