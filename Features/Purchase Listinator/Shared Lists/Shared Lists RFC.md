@@ -26,7 +26,7 @@ In essence, there are three flow scenarios to consider:
     - A mechanism will be provided to determine the purchaser.
 - Multiple shopping sessions with one or multiple people interactions:
     - A way to designate the purchaser for each shopping session will be available.
-    - This scenario is particularly interesting as each shopping session may require its own cart. For instance, customers may be shopping at different markets. However, if one person adds an item to their cart, the system should ensure visibility of that item to other shopping sessions, preventing multiple customers from inadvertently purchasing the same items.
+    - This scenario is particularly interesting as each shopping session may require its own cart. For instance, customers may be shopping at different markets. However, if one person adds an item to their cart, the system should ensure the visibility of that item to other shopping sessions, preventing multiple customers from inadvertently purchasing the same items.
 
 The system needs to incorporate mechanisms to handle all of these scenarios, which will have a significant impact on various aspects of the architecture. Currently, the architecture only supports one active shopping session per purchase list. Additionally, the system should facilitate separate shopping carts that can reflect each other in real-time, ensuring synchronization of events across multiple shopping sessions.
 
@@ -46,12 +46,12 @@ To enhance the customer experience and enable them to track the number of active
 
 #### Shopping Cart
 
-At the moment of this RFC, the shopping cart is built on top of #Redis, which is an in-memory, open source, key value database, and in the actual architecture, the key of a shopping cart is the shopping id. Each shopping has a list of events inside of it.
+At the moment of this RFC, the shopping cart is built on top of #Redis, which is an in-memory, open source, key-value database, and in the actual architecture, the key of a shopping cart is the shopping id. Each shopping has a list of events inside of it.
 
 Thinking on the new architecture, some of the events will need to be shared between the carts, avoiding misinformation, like items added in the cart, if one shopping has the item in the cart, the system should prevent another customer in another shopping add this item in the cart, unless he wants anyway.
 In the same way, some events won't be shared because they aren't in the same context. Like order items, categories, and item price changes, because those events are particular for each place and may change from one place to another.
 
-Another important change will be in the way of how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already done before, and shouldn't be lost. 
+Another important change will be in the way how the shopping events are built. The current flow gets the purchase list in the state of the moment the shopping is started, it works well because the system allows only one active shopping at the same time. Once we change the architecture to enable multiple shopping at the same time, when the second shopping is started, some events may be already been created before, and shouldn't be lost. 
 
 Below is a simplified flow chart outlining the behavior of the cart module. It provides a high-level overview of how the module should operate and handle its actions and events.
 
@@ -59,17 +59,17 @@ Below is a simplified flow chart outlining the behavior of the cart module. It p
 
 #### Cart Changes Notification
 
-Once the shopping can be shared with many customers at the same time, another important feature is the notification system, this feature provides the real-time notification to the customers, avoiding them to stay with the old state of the shopping for a long time. To provide this feature to the customers, some challenges should be solved, such as the complexity of the mobile app to react based on the server events, as well as define who should be notified based on the event produced.
+Once the shopping can be shared with many customers at the same time, another important feature is the notification system, this feature provides real-time notification to the customers, avoiding them to stay with the old state of the shopping for a long time. To provide this feature to the customers, some challenges should be solved, such as the complexity of the mobile app to react based on the server events, as well as defining who should be notified based on the event produced.
 
 With the ability to share shopping sessions among multiple customers, a crucial feature to consider is the notification system. This feature ensures real-time updates for customers, preventing them from being unaware of the latest changes in the shopping session. However, implementing this feature comes with its own set of challenges. The mobile app needs to effectively react to server notifications, however, the ultimate responsibility for determining when notifications should be sent lies with the notification module, which plays a crucial role in identifying the appropriate recipients based on the event produced. Overcoming these challenges is essential to provide a seamless and up-to-date shopping experience for all customers involved.
 
-The decision-making responsibility for sending notifications to customers depends on the specific event received by the shopping cart. For instance, events such as a change in the category order or item order may not require notification to other shopping. Since the customer who initiated the event is already aware of the changes, the notification should be sent only for the other customers' interacting with the same shopping session, because the other shopping sessions don't want to know about these events. By assigning the responsibility to the shopping cart module, notifications can be selectively triggered based on the relevance of the event. This ensures that customers receive timely notifications that are specifically tailored to their needs, enhancing their overall shopping experience.
+The decision-making responsibility for sending notifications to customers depends on the specific event received by the shopping cart. For instance, events such as a change in the category order or item order may not require notification to other shopping sessions. Since the customer who initiated the event is already aware of the changes, the notification should be sent only for the other customers' interacting with the same shopping session, because the other shopping sessions don't want to know about these events. By assigning the responsibility to the shopping cart module, notifications can be selectively triggered based on the relevance of the event. This ensures that customers receive timely notifications that are specifically tailored to their needs, enhancing their overall shopping experience.
 
 #### High-level Architecture
 
 The shopping service is currently responsible for managing the cart and the shopping lifecycle, and it has been functioning well due to the simplicity of the cart structure, which primarily holds shopping events. As of this RFC, the cart is as straightforward as a Redis key-value pair that requires updating whenever a new event occurs.
 
-However, with the introduction of shared lists in Purchase Listinator, a single list will be able to accommodate multiple active shopping sessions, presenting a new challenge: the interaction between these active shoppings. Purchase Lists serve as a controlled means for customers to manage the items they need to buy, and the system allows customers to specify the quantity of each item they want to purchase. Consequently, if one active shopping already includes certain items in the cart, the system must provide visibility of these items to other carts, ensuring they are not inadvertently purchased twice.
+However, with the introduction of shared lists in Purchase Listinator, a single list will be able to accommodate multiple active shopping sessions, presenting a new challenge: the interaction between these active shopping sessions. Purchase Lists serve as a controlled means for customers to manage the items they need to buy, and the system allows customers to specify the quantity of each item they want to purchase. Consequently, if one active shopping already includes certain items in the cart, the system must provide visibility of these items to other carts, ensuring they are not inadvertently purchased twice.
 
 Therefore, it will be necessary to redefine the interaction between shopping and the cart, decoupling them from each other. This means that the cart will no longer be directly associated with a specific shopping session. Instead, the cart will have the freedom to manage itself and react to events from the message broker, and received by the API.
 
@@ -83,7 +83,7 @@ With the proposed enhancements to the system, it becomes essential to visualize 
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/42d50000-c135-40fd-ba42-872679aea63b"/>
 <img src="https://github.com/gumberss/FinanceControlinator/assets/38296002/4ff10be5-e846-41f9-bdeb-af2c0ba81688"/>
 
-The C4 model provides a structured overview of the system architecture, as depicted in the C4 model diagram. This diagram illustrates the separation of concerns and the relationships between the Purchase List, Shopping and Cart Modules.
+The C4 model provides a structured overview of the system architecture, as depicted in the C4 model diagram. This diagram illustrates the separation of concerns and the relationships between the Purchase List, Shopping, and Cart Modules.
 
 To complement the C4 model, a detailed flow chart has been created to visualize the sequential steps and decision points within the system. The first flow chart captures the user journey, from initiating the first shopping session to the moment that are two activated sessions. On the other hand, the second flow chart presents the close of these two sessions and the end of the shopping cart lifecycle. Those flow together provide a granular view of the system's functionality and user interactions, complementing the high-level perspective offered by the C4 mode.
 
