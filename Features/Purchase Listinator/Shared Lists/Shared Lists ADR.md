@@ -68,12 +68,4 @@ The events received by the shopping cart from the Webapi don't have idempotency 
 ## Final Architecture 
 
 The image below presents the vision only of the shopping cart module and how it interacts with the other modules
-<img src="https://github.com/gumberss/FinanceControlinatorDocs/assets/38296002/5acadbd7-63cf-46cb-be95-55f8c0664787"/>
-
- 
-
-
-
-
-
-
+<img src="https://github.com/gumberss/FinanceControlinatorDocs/assets/38296002/bbac3da5-e211-4501-b381-e6b1c20279c2"/>
