@@ -1,4 +1,4 @@
-The main idea is to use an LLM (Language Model) to help customers check off items based on what they have already added to their cart. This way, customers can ensure they are getting the items they intend to buy and ask the LLM to evaluate what has been selected and mark the corresponding items on their shopping list.
+The main idea is to use an LLM (Large Language Models) to help customers check off items based on what they have already added to their cart. This way, customers can ensure they are getting the items they intend to buy and ask the LLM to evaluate what has been selected and mark the corresponding items on their shopping list.
 
 One of the significant challenges will be linking the price of each item. Once the LLM marks items on the shopping list, it won't automatically know the product prices. To facilitate marking items without knowing their prices, we may need to change the data structure of a shopping item. Associating a price with each item will likely require modifications to how the system operates.
 
