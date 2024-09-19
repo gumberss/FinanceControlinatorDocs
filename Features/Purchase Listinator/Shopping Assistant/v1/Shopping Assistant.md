@@ -2,7 +2,7 @@ The main idea is to use an LLM (Large Language Models) to help customers check o
 
 One of the significant challenges will be linking the price of each item. Once the LLM marks items on the shopping list, it won't automatically know the product prices. To facilitate marking items without knowing their prices, we may need to change the data structure of a shopping item. Associating a price with each item will likely require modifications to how the system operates.
 
-# Purposed Solution
+# Proposed Solution
 
 There are two features that will drive this new solution. The first feature will enable customers to use the LLM to tick items without needing to provide the prices of each item, helping them to better organize their shopping. The second feature will allow customers to associate prices with each item after their shopping is completed.
 
